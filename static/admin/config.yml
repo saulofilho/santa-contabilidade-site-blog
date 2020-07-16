@@ -25,35 +25,9 @@ collections:
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
 
   - name: posts
-    label: Posts
+    label: Criar Posts
     editor:
       preview: true
     folder: content/posts
@@ -61,25 +35,10 @@ collections:
     create: true 
     fields: 
       - { label: Template, name: template, widget: hidden, default: SinglePost }
-      - { label: Title, name: title, widget: string }
-      - label: 'Status'
-        name: 'status'
-        widget: 'select'
-        options: ['Published', 'Featured', 'Draft']
-        default: 'Published'
-      - { label: Date / Order, name: date, widget: date, format: 'YYYY-MM-DD' }
-      - {
-          label: Featured Image,
-          name: featuredImage,
-          widget: image,
-          required: false,
-        }
-      - { label: Excerpt, name: excerpt, widget: text }
-      - { label: Content, name: body, widget: markdown }
-      - label: 'Categories'
+      - { label: Date, name: date, widget: datetime, format: 'DD/MM/YYYY' }
+      - label: 'Categorias de Post'
         name: 'categories'
         widget: 'list'
-        required: false
         fields:
           - label: 'Category'
             name: 'category'
@@ -87,10 +46,50 @@ collections:
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
+      - { label: Titulo, name: title, widget: string }
+      - { label: SubTitulo, name: subtitle, widget: text }
+      - {
+        label: Imagem,
+        name: featuredImage,
+        widget: image
+      }
+      - { label: Tempo de Leitura, name: leitura, widget: string }
+      - label: 'Post: Conteudo e Boxes'
+        name: 'contentbody'
+        widget: 'list'
+        types:
+        - label: 'Bloco de Conteudo'
+          name: 'addbodypost'
+          fields:
+            - { name: bodypost, label: Bloco de Conteudo, widget: markdown }
+        - label: 'Green Box'
+          name: 'addgreenbox'
+          fields:
+            - { name: greenboxtitle, label: Green Box Titulo, widget: string }
+            - { name: greenboxtitlebutton, label: Green Box Titulo Botao, widget: string }
+            - { name: greenboxlink, label: Green Box Link, widget: string }
+        - label: 'Yellow Box'
+          name: 'addyellowbox'
+          fields:
+            - { name: yellowboxtitle, label: Yellow Box Titulo, widget: string }
+      - label: 'Autor'
+        name: 'autor'
+        widget: 'list'
+        fields:
+          - label: 'Autor Name'
+            name: 'autorname'
+            widget: 'relation'
+            collection: 'autores'
+            searchFields: ['title']
+            valueField: 'title'
+      - label: 'Status'
+        name: 'status'
+        widget: 'select'
+        options: ['AllPosts', 'Destaque']
+        default: 'AllPosts'
 
   - name: postCategories
-    label: Categorias
+    label: Criar Categoria de Post
     editor:
       preview: false
     folder: content/postCategories
@@ -99,32 +98,22 @@ collections:
     fields:
       - { label: Template, name: template, widget: hidden, default: BlogIndex }
       - { label: Title, name: title, widget: string }
-      - { label: Subtitle, name: subtitle, widget: string, required: false }
+
+  - name: autores
+    label: Criar Autor
+    editor:
+      preview: false
+    folder: content/autores
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - { label: Nome, name: title, widget: string }
+      - { label: About, name: about, widget: text }
       - {
-          label: Featured Image,
-          name: featuredImage,
-          widget: image,
-          required: false,
-        }
-      - label: 'Meta'
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
+        label: Imagem,
+        name: featuredImage,
+        widget: image
+      }
 
   - name: 'settings'
     label: 'Settings'

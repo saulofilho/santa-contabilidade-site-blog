@@ -9,17 +9,6 @@ import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 
 /**
- * Filter posts by date. Feature dates will be fitered
- * When used, make sure you run a cronejob each day to show schaduled content. See docs
- *
- * @param {posts} object
- */
-export const byDate = posts => {
-  const now = Date.now()
-  return posts.filter(post => Date.parse(post.date) <= now)
-}
-
-/**
  * filter posts by category.
  *
  * @param {posts} object
@@ -34,7 +23,6 @@ export const byCategory = (posts, title, contentType) => {
   return isCategory ? posts.filter(byCategory) : posts
 }
 
-// Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
   title,
   subtitle,
@@ -48,7 +36,7 @@ export const BlogIndexTemplate = ({
     {({ location }) => {
       let filteredPosts =
         posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
+          ? byCategory(posts, title, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -90,7 +78,6 @@ export const BlogIndexTemplate = ({
   </Location>
 )
 
-// Export Default BlogIndex for front-end
 const BlogIndex = ({ data: { page, posts, postCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
@@ -128,31 +115,30 @@ export const pageQuery = graphql`
         contentType
       }
       frontmatter {
-        title
-        excerpt
         template
+        title
         subtitle
         featuredImage
       }
     }
-
     posts: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }
           frontmatter {
-            title
             date
             categories {
               category
             }
+            title
+            subtitle
             featuredImage
+            leitura
           }
         }
       }

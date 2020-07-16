@@ -7,88 +7,208 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './SinglePost.css'
 
+/**
+ * filter autor
+ *
+ * @param {posts} object
+ * @param {title} string
+ * @param {contentType} string
+ */
+export const byAutor = (posts, title, contentType) => {
+  const isCategory = contentType === 'autores'
+  const byAutor = post =>
+    post.autor &&
+    post.autor.filter(name => name.autor === title).length
+  return isCategory ? posts.filter(byAutor) : posts
+}
+
 export const SinglePostTemplate = ({
-  title,
   date,
-  body,
+  categories = [],
+  title,
+  subtitle,
+  featuredImage,
+  leitura,
+  contentbody = [],
+  autor,
+  status,
   nextPostURL,
   prevPostURL,
-  categories = []
-}) => (
-  <main>
-    <article
-      className="SinglePost section light"
-      itemScope
-      itemType="http://schema.org/BlogPosting"
-    >
-      <div className="container skinny">
-        <Link className="SinglePost--BackButton" to="/blog/">
-          <ChevronLeft /> BACK
+  autores = [],
+}) => {
+  // let filteredPosts =
+  //   posts && !!posts.length
+  //     ? byAutor(posts, title, contentType)
+  //     : []
+
+  console.log('autores', autores)
+  console.log('autor', autor[0].autorname)
+
+  return (
+    <main>
+      <article
+        className="SinglePost section light"
+        itemScope
+        itemType="http://schema.org/BlogPosting"
+      >
+        <div className="container skinny">
+          <Link className="SinglePost--BackButton" to="/blog/">
+            <ChevronLeft /> BACK
         </Link>
-        <div className="SinglePost--Content relative">
-          <div className="SinglePost--Meta">
+          <div className="SinglePost--Content relative">
+            <div className="SinglePost--Meta">
+              {date && (
+                <time
+                  className="SinglePost--Meta--Date"
+                  itemProp="dateCreated pubdate datePublished"
+                  date={date}
+                >
+                  {date}
+                </time>
+              )}
+              {categories && (
+                <Fragment>
+                  <span>|</span>
+                  {categories.map((cat, index) => (
+                    <span
+                      key={cat.category}
+                      className="SinglePost--Meta--Category"
+                    >
+                      {cat.category}
+                      {/* Add a comma on all but last category */}
+                      {index !== categories.length - 1 ? ',' : ''}
+                    </span>
+                  ))}
+                </Fragment>
+              )}
+            </div>
+
+            {autor[0].autorname == 'Saulo Filho' ? <p>ola</p> : <p>olaxxxx</p> }
+
             {date && (
-              <time
-                className="SinglePost--Meta--Date"
-                itemProp="dateCreated pubdate datePublished"
-                date={date}
-              >
+              <h1 className="SinglePost--Title" itemProp="title">
                 {date}
-              </time>
+              </h1>
             )}
-            {categories && (
-              <Fragment>
-                <span>|</span>
-                {categories.map((cat, index) => (
-                  <span
-                    key={cat.category}
-                    className="SinglePost--Meta--Category"
-                  >
-                    {cat.category}
-                    {/* Add a comma on all but last category */}
-                    {index !== categories.length - 1 ? ',' : ''}
-                  </span>
-                ))}
-              </Fragment>
-            )}
-          </div>
 
-          {title && (
-            <h1 className="SinglePost--Title" itemProp="title">
-              {title}
-            </h1>
-          )}
-
-          <div className="SinglePost--InnerContent">
-            <Content source={body} />
-          </div>
-
-          <div className="SinglePost--Pagination">
-            {prevPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link prev"
-                to={prevPostURL}
-              >
-                Previous Post
-              </Link>
+            {title && (
+              <h1 className="SinglePost--Title" itemProp="title">
+                {title}
+              </h1>
             )}
-            {nextPostURL && (
-              <Link
-                className="SinglePost--Pagination--Link next"
-                to={nextPostURL}
-              >
-                Next Post
-              </Link>
+
+            {subtitle && (
+              <h1 className="SinglePost--Title" itemProp="title">
+                {subtitle}
+              </h1>
             )}
+
+            {featuredImage && (
+              <img src={featuredImage} alt={title} />
+            )}
+
+            {leitura && (
+              <h1 className="SinglePost--Title" itemProp="title">
+                {leitura}
+              </h1>
+            )}
+
+            {status && (
+              <h1 className="SinglePost--Title" itemProp="title">
+                {status}
+              </h1>
+            )}
+
+            {/* {autor &&
+              autor.length > 0 && (
+                <div className="">
+                  {autor.map((item, index) => (
+                    <div
+                      className=""
+                      key={item.autorname + index}
+                    >
+                      <div>
+                        {item.autorname && <p>{item.autorname}</p>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )
+            } */}
+
+            {autores &&
+              autores.length > 0 && (
+                <div className="">
+                  {autores.map((item, index) => (
+                    <div
+                      className=""
+                      key={item.title + index}
+                    >
+                      <div>
+                        {item.title && <p>{item.title}</p>}
+                        {item.about && <p>{item.about}</p>}
+                        {item.featuredImage && <img src={item.featuredImage} alt={item.about} />}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )
+            }
+
+            {contentbody &&
+              contentbody.length > 0 && (
+                <div className="SinglePost--InnerContent">
+                  {contentbody.map((item, index) => (
+                    <div
+                      className=""
+                      key={item + index}
+                    >
+                      {item.bodypost && <Content source={item.bodypost} />}
+                      {item.greenboxlink &&
+                        <div className="box-green">
+                          {item.greenboxtitle && <p>{item.greenboxtitle}</p>}
+                          <button>
+                            <a href={item.greenboxlink}>{item.greenboxtitlebutton}</a>
+                          </button>
+                        </div>
+                      }
+                      {item.yellowboxtitle &&
+                        <div className="box-yellow">
+                          <p>{item.yellowboxtitle}</p>
+                        </div>
+                      }
+                    </div>
+                  ))}
+                </div>
+              )
+            }
+
+            <div className="SinglePost--Pagination">
+              {prevPostURL && (
+                <Link
+                  className="SinglePost--Pagination--Link prev"
+                  to={prevPostURL}
+                >
+                  Previous Post
+                </Link>
+              )}
+              {nextPostURL && (
+                <Link
+                  className="SinglePost--Pagination--Link next"
+                  to={nextPostURL}
+                >
+                  Next Post
+                </Link>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-  </main>
-)
+      </article>
+    </main>
+  )
+}
 
-// Export Default SinglePost for front-end
-const SinglePost = ({ data: { post, allPosts } }) => {
+const SinglePost = ({ data: { post, allPosts, autores } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
   return (
     <Layout
@@ -98,7 +218,11 @@ const SinglePost = ({ data: { post, allPosts } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
-        body={post.html}
+        autores={autores.edges.map(post => ({
+          ...post.node,
+          ...post.node.frontmatter,
+          ...post.node.fields
+        }))}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -119,16 +243,28 @@ export const pageQuery = graphql`
       html
       id
       frontmatter {
-        title
         template
-        subtitle
-        date(formatString: "MMMM Do, YYYY")
+        date
         categories {
           category
         }
+        title
+        subtitle
+        featuredImage
+        leitura
+        contentbody {
+          bodypost
+          greenboxtitle
+          greenboxtitlebutton
+          greenboxlink
+          yellowboxtitle
+        }
+        autor {
+          autorname
+        }
+        status
       }
     }
-
     allPosts: allMarkdownRemark(
       filter: { fields: { contentType: { eq: "posts" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -151,6 +287,23 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+          }
+        }
+      }
+    }
+    autores: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "autores" } } }
+      sort: { order: ASC, fields: [frontmatter___title] }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            about
+            featuredImage
           }
         }
       }
