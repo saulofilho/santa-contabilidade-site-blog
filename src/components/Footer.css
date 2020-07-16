@@ -1,10 +1,81 @@
-.footer {
-  padding: 2rem 0;
-  background: var(--lightGrey);
-  font-size: 1.2rem;
+footer {
+  height: auto;
+  width: 100%;
+  background: #06606B;
+  color: #fff;
+}
+footer h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+footer p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.infos-footer {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 96px !important;
+  padding-bottom: 96px !important;
+}
+.sobre-nos,
+.para-empresas,
+.entre-em-contato {
+  padding-right: 30px;
+}
+.logo-footer {
+  height: 83px;
+  width: 100%;
+  background: #06585E;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer img {
+  max-width: 100%;
+}
+.para-empresas p a {
+  color: #fff;
+}
+.para-empresas p a:hover {
+  opacity: 0.6;
+}
+.btns-sociais-wrapper {
+  padding-top: 40px;
+}
+.btns-sociais-wrapper > button{
+  padding-right: 20px;
+}
+.btns-sociais-wrapper button {
+  border: unset;
+}
+.btns-sociais-wrapper button:hover {
+  border: unset;
+  opacity: 0.6;
 }
 
-.footer a {
-  color: black;
-  text-decoration: none;
+/* desktop */
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  .infos-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sobre-nos,
+  .para-empresas,
+  .entre-em-contato {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .infos-footer {
+    grid-template-columns: 1fr;
+  }
 }

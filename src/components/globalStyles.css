@@ -1,76 +1,76 @@
-:root {
-  --primary: #00c2bd;
-  --secondary: #000;
-  --lightGrey: whitesmoke;
-  --midGrey: #cacaca;
-  --darkGrey: #272727;
-  --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
-  --font-system: system-ui; /* postcssPresetEnv */
-  --borderRadius: 3px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*:focus {
+  outline: 0;
+}
 ::-webkit-scrollbar {
   width: 0.4rem;
 }
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 3px var(--grey);
-}
-
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: #60B38D;
 }
-
 ::selection {
-  background: rgba(0, 194, 189, 0.6);
+  background-color: #60B38D;
+  color: #fff;
 }
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  min-height: 100%;
-  background: var(--lightGrey);
-}
-
-body {
-  font-family: var(--font-system);
-  min-height: 100%;
-  position: relative;
-  background: white;
-  color: var(--secondary);
-  font-size: 1.6em;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
 a {
-  color: var(--primary);
+  text-decoration: none;
+}
+li {
+  list-style-type:none;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 20px 40px;
+}
+.page-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  height: 100vh;
 }
 
-strong {
-  font-weight: 600;
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }
-
-p {
-  margin-top: 0;
-  margin-bottom: 1em;
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  margin-bottom: 0.5em;
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
 
 pre {
-  background: var(--lightGrey);
+  background: lightgray;
   line-height: 1.45;
   font-size: 85%;
   border-radius: 3px;
@@ -80,7 +80,7 @@ pre {
 code {
   font-size: 85%;
   padding: 0.15em 0;
-  background: var(--lightGrey);
+  background: lightgray;
   border-radius: 3px;
 }
 code:before,
@@ -101,29 +101,8 @@ blockquote {
   line-height: 1.1;
   font-size: 1em;
   font-style: italic;
-  border-left: 2px solid var(--primary);
+  border-left: 2px solid #000;
 }
-
-/* Utility Classes */
-.light {
-  background-color: var(--lightGrey);
-}
-.white {
-  background-color: white;
-}
-.dark {
-  background-color: var(--primary);
-  color: white;
-}
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6 {
-  color: white;
-}
-
 .relative {
   position: relative;
 }
@@ -134,101 +113,8 @@ blockquote {
   right: 0;
   bottom: 0;
 }
-.taCenter {
-  text-align: center;
-}
-.taLeft {
-  text-align: left;
-}
-.taRight {
-  text-align: right;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-}
-
-/* Layout */
-
-.section {
-  width: 100%;
-  padding: 5rem 0;
-  border-bottom: 1px solid #f1f1f1;
-}
-.section:last-child {
-  border: 0;
-}
-.section.thick {
-  padding: 10rem 0;
-}
-.section.thin {
-  padding: 3.5rem 0;
-}
-.section.noPadding {
-  padding: 0;
-}
-
-@media (max-width: 600px) {
-  .section {
-    width: 100%;
-    padding: 5rem 0;
-  }
-  .section.thick {
-    padding: 7rem 0;
-  }
-  .section.thin {
-    padding: 1.5rem 0;
-  }
-}
-
-.container {
-  max-width: 1111px;
-  width: 90%;
-  margin: 0 auto;
-}
-.container.skinny {
-  max-width: 888px;
-}
-.container.skinnier {
-  max-width: 555px;
-}
-
-/* Buttons */
-
-.Button {
-  background: var(--primary);
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  font-size: 1.4rem;
-  display: inline-block;
-  padding: 1.25rem 3rem;
-  border: none;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border-radius: var(--borderRadius);
-}
-.Button:hover,
-.Button:focus {
-  opacity: 0.95;
-  outline: none;
-}
-.Button[disabled] {
-  opacity: 0.4;
-  pointer-events: none;
-  cursor: progress;
-}
-.Button-blank {
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

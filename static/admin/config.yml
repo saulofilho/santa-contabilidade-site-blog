@@ -2,13 +2,13 @@ backend:
   name: git-gateway
   branch: master
 
-display_url: https://gatsbro.netlify.com
+display_url: https://santacontabilidade-blog.netlify.app/
 media_folder: static/assets
 public_folder: /assets
 
 collections:
   - name: 'pages'
-    label: 'Page'
+    label: 'Paginas'
     delete: false
     editor:
       preview: true
@@ -53,13 +53,13 @@ collections:
                 }
 
   - name: posts
-    label: Post
+    label: Posts
     editor:
       preview: true
     folder: content/posts
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    create: true 
+    fields: 
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Title, name: title, widget: string }
       - label: 'Status'
@@ -90,13 +90,13 @@ collections:
           - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: postCategories
-    label: Post Category
+    label: Categorias
     editor:
       preview: false
     folder: content/postCategories
     slug: '{{slug}}'
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    create: true
+    fields:
       - { label: Template, name: template, widget: hidden, default: BlogIndex }
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
@@ -128,7 +128,7 @@ collections:
 
   - name: 'settings'
     label: 'Settings'
-    delete: false # Prevent users from deleting documents in this collection
+    delete: false 
     editor:
       preview: false
     files:
