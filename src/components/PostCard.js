@@ -7,24 +7,46 @@ import './PostCard.css'
 const PostCard = ({
   featuredImage,
   title,
-  excerpt,
+  subtitle,
+  date,
+  leitura,
   slug,
   categories = [],
   className = '',
   ...props
 }) => (
-  <Link to={slug} className={`PostCard ${className}`}>
+  <Link to={slug} className={`post-card ${className}`}>
     {featuredImage && (
-      <div className="PostCard--Image relative">
+      <div className="post-card-image relative">
         <Image background src={featuredImage} alt={title} />
       </div>
     )}
-    <div className="PostCard--Content">
-      {title && <h3 className="PostCard--Title">{title}</h3>}
-      <div className="PostCard--Category">
+    <div className="post-card-content">
+      <div className="post-card-category">
         {categories && categories.map(cat => cat.category).join(', ')}
       </div>
-      {excerpt && <div className="PostCard--Excerpt">{excerpt}</div>}
+      {title && 
+        <p>
+          {title}
+        </p>
+      }
+      {subtitle && 
+        <p>
+          {subtitle}
+        </p>
+      }
+      <div className="date-leitura-wrapper">
+        {date && 
+          <p>
+            {date}
+          </p>
+        }
+        {leitura && 
+          <p>
+            {leitura}
+          </p>
+        }
+      </div>
     </div>
   </Link>
 )

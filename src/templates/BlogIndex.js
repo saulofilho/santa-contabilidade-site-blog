@@ -3,10 +3,12 @@ import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 
-import PageHeader from '../components/PageHeader'
+import Destaques from "../components/Destaques"
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
+
+import './BlogIndex.css'
 
 /**
  * filter posts by category.
@@ -25,8 +27,6 @@ export const byCategory = (posts, title, contentType) => {
 
 export const BlogIndexTemplate = ({
   title,
-  subtitle,
-  featuredImage,
   posts = [],
   postCategories = [],
   enableSearch = true,
@@ -49,30 +49,37 @@ export const BlogIndexTemplate = ({
         )
       }
 
+      const postsDestaques = posts.filter(post => post.status == "Destaque")
+
+      console.log('destaque', postsDestaques)
+
       return (
-        <main className="Blog">
-          <PageHeader
-            title={title}
-            subtitle={subtitle}
-            backgroundImage={featuredImage}
-          />
-
-          {!!postCategories.length && (
-            <section className="section thin">
-              <div className="container">
+        <>
+          <section className="destaques">
+            <div className="container">
+              <h1>Destaques</h1>
+              <div className="destaques-wrapper">
+                {postsDestaques.map((post, index) => (
+                  <Destaques key={post + index} post={post} />
+                ))}
+              </div>
+            </div>
+          </section>
+          <main>
+            {!!postCategories.length && (
+              <section className="container">
+                <h1>Navegue por categorias</h1>
                 <PostCategoriesNav enableSearch categories={postCategories} />
-              </div>
-            </section>
-          )}
-
-          {!!posts.length && (
-            <section className="section">
-              <div className="container">
+              </section>
+            )}
+            {!!posts.length && (
+              <section className="container">
+                <h1>{title}</h1>
                 <PostSection posts={filteredPosts} />
-              </div>
-            </section>
-          )}
-        </main>
+              </section>
+            )}
+          </main>
+        </>
       )
     }}
   </Location>
@@ -117,8 +124,6 @@ export const pageQuery = graphql`
       frontmatter {
         template
         title
-        subtitle
-        featuredImage
       }
     }
     posts: allMarkdownRemark(
@@ -139,6 +144,7 @@ export const pageQuery = graphql`
             subtitle
             featuredImage
             leitura
+            status
           }
         }
       }

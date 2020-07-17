@@ -5,22 +5,27 @@ import BlogSearch from './BlogSearch'
 import './PostCategoriesNav.css'
 
 const PostCategoriesNav = ({ categories, enableSearch }) => (
-  <div className="PostCategoriesNav">
-    <Link className="NavLink" exact="true" to={`/`}>
-      All
+  <div className="post-categories-nav">
+    <Link className="nav-link" exact="true" to={`/`}>
+      <div className="box">
+      Todos
+      </div>
     </Link>
     {categories.map((category, index) => (
       <Link
         exact="true"
-        className="NavLink"
+        className="nav-link"
         key={category.title + index}
         to={category.slug}
       >
-        {category.title}
+        <div className="box">
+          {category.title}
+        </div>
       </Link>
     ))}
-
-    {enableSearch && <BlogSearch />}
+    <div className="box box-full">
+      {enableSearch && <BlogSearch />}
+    </div>
   </div>
 )
 

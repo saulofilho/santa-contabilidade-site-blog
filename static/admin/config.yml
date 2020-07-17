@@ -11,7 +11,7 @@ collections:
     label: 'Paginas'
     delete: false
     editor:
-      preview: true
+      preview: false
     files:
       - file: 'content/pages/blog.md'
         label: 'Blog Page'
@@ -29,7 +29,7 @@ collections:
   - name: posts
     label: Criar Posts
     editor:
-      preview: true
+      preview: false
     folder: content/posts
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true 

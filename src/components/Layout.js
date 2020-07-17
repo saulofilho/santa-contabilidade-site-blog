@@ -3,7 +3,6 @@ import Header from './Header'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
-import Nav from './Nav'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
@@ -49,7 +48,6 @@ export default ({ children, meta, title }) => {
                 })
               : false
           }
-
         return (
           <Fragment>
             <Helmet
@@ -61,7 +59,6 @@ export default ({ children, meta, title }) => {
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
               {/* Add font link tags here */}
             </Helmet>
-
             <Meta
               googleTrackingId={googleTrackingId}
               absoluteImageUrl={
@@ -72,8 +69,6 @@ export default ({ children, meta, title }) => {
               {...meta}
               {...data.settingsYaml}
             />
-
-            {/* <Nav subNav={subNav} /> */}
             <Header />
             <Fragment>{children}</Fragment>
             <Footer />

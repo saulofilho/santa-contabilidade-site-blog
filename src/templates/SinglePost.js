@@ -42,7 +42,12 @@ export const SinglePostTemplate = ({
   //     : []
 
   console.log('autores', autores)
-  console.log('autor', autor[0].autorname)
+  console.log('autor', autor)
+  
+
+  const postDestaque = autor.filter(aut => aut.autorname == "Saulo Filho")
+  const xxx = postDestaque.map(aut => aut.autorname)
+  // console.log('filter', xxx)
 
   return (
     <main>
@@ -82,8 +87,6 @@ export const SinglePostTemplate = ({
                 </Fragment>
               )}
             </div>
-
-            {autor[0].autorname == 'Saulo Filho' ? <p>ola</p> : <p>olaxxxx</p> }
 
             {date && (
               <h1 className="SinglePost--Title" itemProp="title">
@@ -136,7 +139,7 @@ export const SinglePostTemplate = ({
               )
             } */}
 
-            {autores &&
+            {/* {autores &&
               autores.length > 0 && (
                 <div className="">
                   {autores.map((item, index) => (
@@ -153,7 +156,7 @@ export const SinglePostTemplate = ({
                   ))}
                 </div>
               )
-            }
+            } */}
 
             {contentbody &&
               contentbody.length > 0 && (
@@ -219,9 +222,7 @@ const SinglePost = ({ data: { post, allPosts, autores } }) => {
         {...post}
         {...post.frontmatter}
         autores={autores.edges.map(post => ({
-          ...post.node,
-          ...post.node.frontmatter,
-          ...post.node.fields
+          ...post.node.frontmatter
         }))}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
