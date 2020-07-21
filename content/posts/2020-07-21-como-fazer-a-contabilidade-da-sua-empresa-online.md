@@ -79,6 +79,7 @@ contentbody:
       Entre eles está a representação comercial. Entenda mais sobre esse assunto!
   - type: addyellowbox
     yellowboxtitle: BAIXE O  EBOOK GUIA DE PRODUTIVIDADE
+    yellowboxlink: http://localhost:8000/posts/como-fazer-a-contabilidade-da-sua-empresa-online/
   - type: addbodypost
     bodypost: >-
       ### Vantagens da Contabilidade Online
