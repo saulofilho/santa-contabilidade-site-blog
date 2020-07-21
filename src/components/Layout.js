@@ -1,11 +1,9 @@
 import React, { Fragment } from 'react'
-import Header from './Header'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Footer from './Footer'
 
-import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
 
 export default ({ children, meta, title }) => {
@@ -69,7 +67,6 @@ export default ({ children, meta, title }) => {
               {...meta}
               {...data.settingsYaml}
             />
-            <Header />
             <Fragment>{children}</Fragment>
             <Footer />
           </Fragment>

@@ -1,8 +1,12 @@
 .destaques {
   width: 100%;
   height: auto;
-  background: orange;
-  margin: 50px 0;
+}
+.blog h1 {
+  color: #808080;
+  font-size: 33px;
+  font-weight: 200;
+  padding: 20px 0;
 }
 .destaques-wrapper {
   height: auto;
@@ -10,7 +14,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  padding-bottom: 90px;
 }
 .categorias {
   width: 100%;

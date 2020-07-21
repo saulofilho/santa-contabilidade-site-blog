@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react'
+import HeaderPost from '../components/HeaderPost'
 import _get from 'lodash/get'
-import { Link, graphql } from 'gatsby'
-import { ChevronLeft } from 'react-feather'
-
+import { graphql } from 'gatsby'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import Facebook from '../../static/assets/facebook.png'
+import Whatsapp from '../../static/assets/whatsapp.png'
+import Linkedin from '../../static/assets/linkedin.png'
+import Twitter from '../../static/assets/twitter.png'
 import './SinglePost.css'
 
 /**
@@ -32,8 +35,6 @@ export const SinglePostTemplate = ({
   contentbody = [],
   autor,
   status,
-  nextPostURL,
-  prevPostURL,
   autores = [],
 }) => {
   // let filteredPosts =
@@ -43,171 +44,177 @@ export const SinglePostTemplate = ({
 
   console.log('autores', autores)
   console.log('autor', autor)
-  
+
 
   const postDestaque = autor.filter(aut => aut.autorname == "Saulo Filho")
   const xxx = postDestaque.map(aut => aut.autorname)
   // console.log('filter', xxx)
 
   return (
-    <main>
-      <article
-        className="SinglePost section light"
-        itemScope
-        itemType="http://schema.org/BlogPosting"
-      >
-        <div className="container skinny">
-          <Link className="SinglePost--BackButton" to="/blog/">
-            <ChevronLeft /> BACK
-        </Link>
-          <div className="SinglePost--Content relative">
-            <div className="SinglePost--Meta">
-              {date && (
-                <time
-                  className="SinglePost--Meta--Date"
-                  itemProp="dateCreated pubdate datePublished"
-                  date={date}
-                >
-                  {date}
-                </time>
-              )}
-              {categories && (
-                <Fragment>
-                  <span>|</span>
-                  {categories.map((cat, index) => (
-                    <span
-                      key={cat.category}
-                      className="SinglePost--Meta--Category"
-                    >
+    <>
+      <div className="headerpost-wrapper">
+        <HeaderPost />
+      </div>
+      <main>
+        <article
+          className="singlepost-wrapper"
+          itemScope
+          itemType="http://schema.org/BlogPosting"
+        >
+          <div className="singlepost-infos-wrapper">
+            {categories && (
+              <Fragment>
+                {categories.map((cat, index) => (
+                  <div
+                    key={cat.category + index}
+                    className="categoria"
+                  >
+                    <p>
                       {cat.category}
-                      {/* Add a comma on all but last category */}
-                      {index !== categories.length - 1 ? ',' : ''}
-                    </span>
-                  ))}
-                </Fragment>
-              )}
-            </div>
-
-            {date && (
-              <h1 className="SinglePost--Title" itemProp="title">
-                {date}
-              </h1>
+                    </p>
+                  </div>
+                ))}
+              </Fragment>
             )}
-
             {title && (
-              <h1 className="SinglePost--Title" itemProp="title">
-                {title}
-              </h1>
+              <div className="post-titulo container">
+                <p itemProp="title">
+                  {title}
+                </p>
+              </div>  
             )}
-
-            {subtitle && (
-              <h1 className="SinglePost--Title" itemProp="title">
-                {subtitle}
-              </h1>
-            )}
-
-            {featuredImage && (
-              <img src={featuredImage} alt={title} />
-            )}
-
-            {leitura && (
-              <h1 className="SinglePost--Title" itemProp="title">
-                {leitura}
-              </h1>
-            )}
-
-            {status && (
-              <h1 className="SinglePost--Title" itemProp="title">
-                {status}
-              </h1>
-            )}
-
-            {/* {autor &&
-              autor.length > 0 && (
-                <div className="">
-                  {autor.map((item, index) => (
-                    <div
-                      className=""
-                      key={item.autorname + index}
-                    >
-                      <div>
-                        {item.autorname && <p>{item.autorname}</p>}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )
-            } */}
-
-            {/* {autores &&
-              autores.length > 0 && (
-                <div className="">
-                  {autores.map((item, index) => (
-                    <div
-                      className=""
-                      key={item.title + index}
-                    >
-                      <div>
-                        {item.title && <p>{item.title}</p>}
-                        {item.about && <p>{item.about}</p>}
-                        {item.featuredImage && <img src={item.featuredImage} alt={item.about} />}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )
-            } */}
-
-            {contentbody &&
-              contentbody.length > 0 && (
-                <div className="SinglePost--InnerContent">
-                  {contentbody.map((item, index) => (
-                    <div
-                      className=""
-                      key={item + index}
-                    >
-                      {item.bodypost && <Content source={item.bodypost} />}
-                      {item.greenboxlink &&
-                        <div className="box-green">
-                          {item.greenboxtitle && <p>{item.greenboxtitle}</p>}
-                          <button>
-                            <a href={item.greenboxlink}>{item.greenboxtitlebutton}</a>
-                          </button>
-                        </div>
-                      }
-                      {item.yellowboxtitle &&
-                        <div className="box-yellow">
-                          <p>{item.yellowboxtitle}</p>
-                        </div>
-                      }
-                    </div>
-                  ))}
-                </div>
-              )
-            }
-
-            <div className="SinglePost--Pagination">
-              {prevPostURL && (
-                <Link
-                  className="SinglePost--Pagination--Link prev"
-                  to={prevPostURL}
+            <div className="autor-data-leitura-wrapper">
+              {autor && autor.map((item, index) => (
+                <div
+                  className="post-info-text"
+                  key={item.autorname + index}
                 >
-                  Previous Post
-                </Link>
+                  {item.autorname && <p>{item.autorname}</p>}
+                </div>
+              ))}
+              {date && (
+                <div className="post-info-text">
+                  <time
+                    itemProp="dateCreated pubdate datePublished"
+                    date={date}
+                  >
+                    {date}
+                  </time>
+                </div>
               )}
-              {nextPostURL && (
-                <Link
-                  className="SinglePost--Pagination--Link next"
-                  to={nextPostURL}
-                >
-                  Next Post
-                </Link>
+              {leitura && (
+                <div className="post-info-text">
+                  <p itemProp="title">
+                    {leitura}
+                  </p>
+                </div>
               )}
             </div>
           </div>
-        </div>
-      </article>
-    </main>
+
+          {/* {autores &&
+                autores.length > 0 && (
+                  <div className="">
+                    {autores.map((item, index) => (
+                      <div
+                        className=""
+                        key={item.title + index}
+                      >
+                        <div>
+                          {item.title && <p>{item.title}</p>}
+                          {item.about && <p>{item.about}</p>}
+                          {item.featuredImage && <img src={item.featuredImage} alt={item.about} />}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )
+              } */}
+
+          {contentbody &&
+            contentbody.length > 0 && (
+              <div className="singlepost-content-wrapper">
+                <section className="btns-share-left">
+                  <a href="http://localhost:8000/">
+                    <img src={Facebook} alt="facebook buton share"/>
+                  </a>
+                  <a href="http://localhost:8000/">
+                    <img src={Twitter} alt="facebook buton share"/>
+                  </a>
+                  <a href="http://localhost:8000/">
+                    <img src={Whatsapp} alt="facebook buton share"/>
+                  </a>
+                  <a href="http://localhost:8000/">
+                    <img src={Linkedin} alt="facebook buton share"/>
+                  </a>
+                </section>
+                {contentbody.map((item, index) => (
+                  <div
+                    className="container-content"
+                    key={item + index}
+                  >
+                    {item.bodypost && <Content source={item.bodypost} />}
+                    {item.greenboxlink &&
+                      <div className="box-green">
+                        {item.greenboxtitle && <p>{item.greenboxtitle}</p>}
+                        <button>
+                          <a href={item.greenboxlink}>{item.greenboxtitlebutton}</a>
+                        </button>
+                      </div>
+                    }
+                    {item.yellowboxtitle &&
+                      <a href={item.yellowboxlink}>
+                        <div className="box-yellow">
+                          <p>{item.yellowboxtitle}</p>
+                        </div>
+                      </a>
+                    }
+                  </div>
+                ))}
+              </div>
+            )
+          }
+          <div className="autor-wrapper">
+            <img src={Facebook} alt=""/>
+            <div className="autor-infos-wrapper">
+              <div className="autor-texts">
+                <p>Escrito por</p>
+                <p>autor name var</p>
+                <p>autor name about</p>
+              </div>
+              <div className="autor-share">
+                <p>Curti?</p>
+                <p>Compartilhe</p>
+                <a href="http://localhost:8000/">
+                    <img src={Facebook} alt="facebook buton share"/>
+                  </a>
+                  <a href="http://localhost:8000/">
+                    <img src={Twitter} alt="facebook buton share"/>
+                  </a>
+                  <a href="http://localhost:8000/">
+                    <img src={Whatsapp} alt="facebook buton share"/>
+                  </a>
+                  <a href="http://localhost:8000/">
+                    <img src={Linkedin} alt="facebook buton share"/>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div className="comentarios-wrapper">
+            <p>Gostou?</p>
+            <p>Deixe seu comentario</p>
+          </div>
+        </article>
+        <section className="posts-relacionados">
+          <p>POSTS RELACIONADOS</p>
+          <div className="relacionados-wrapper">
+            <h1>posts relacionados</h1>
+            <h1>posts relacionados</h1>
+            <h1>posts relacionados</h1>
+          </div>
+        </section>
+      </main>
+    </>
   )
 }
 
@@ -259,6 +266,7 @@ export const pageQuery = graphql`
           greenboxtitlebutton
           greenboxlink
           yellowboxtitle
+          yellowboxlink
         }
         autor {
           autorname

@@ -41,7 +41,7 @@ module.exports = {
         background_color: '#00C2BD',
         theme_color: '#00C2BD',
         display: 'standalone',
-        icon: `${__dirname}/static/images/logo.svg`
+        icon: `${__dirname}/static/images/logo-vertical.png`
       }
     },
     {

@@ -8,13 +8,12 @@ export default ({ pageCount }) => {
     <Location>
       {({ location }) => {
         let search = qs.parse(location.search.replace('?', ''))
-
         return (
           <input
             type="text"
             value={search.s || ''}
-            placeholder="Search..."
             onChange={e => {
+              e.preventDefault()
               let search = {}
               search.s = e.target.value
               search = qs.stringify(search)
@@ -22,6 +21,7 @@ export default ({ pageCount }) => {
               const url = location.href
                 .replace(location.origin, '')
                 .replace(location.search, '')
+                .replace(location.hash, '')
 
               navigate(`${url}?${search}`)
             }}

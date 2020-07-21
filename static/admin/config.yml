@@ -72,6 +72,7 @@ collections:
           name: 'addyellowbox'
           fields:
             - { name: yellowboxtitle, label: Yellow Box Titulo, widget: string }
+            - { name: yellowboxlink, label: Yellow Box Link, widget: string }
       - label: 'Autor'
         name: 'autor'
         widget: 'list'

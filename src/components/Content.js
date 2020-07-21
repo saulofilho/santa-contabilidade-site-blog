@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import Marked from 'react-markdown'
 import PropTypes from 'prop-types'
-import Image from './Image'
 
 import './Content.css'
 
@@ -26,7 +25,7 @@ const withContentImages = source => {
     source = source.replace(
       images[i],
       ReactDOMServer.renderToStaticMarkup(
-        <Image
+        <img
           resolutions="medium"
           className="Content--Image"
           lazy={false}
@@ -44,7 +43,7 @@ const withContentImages = source => {
 const MyImage = ({ nodeKey, src, title, alt }) => {
   const decodedSrc = decodeURI(src)
   return (
-    <Image
+    <img
       className="Content--Image markdown-preview"
       resolutions="medium"
       lazy={false}

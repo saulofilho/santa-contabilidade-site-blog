@@ -1,30 +1,38 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import BlogSearch from './BlogSearch'
 import './PostCategoriesNav.css'
+import loadable from '@loadable/component'
 
-const PostCategoriesNav = ({ categories, enableSearch }) => (
+const SearchField = loadable(() => import('react-search-field'))
+
+const PostCategoriesNav = ({
+  onSearchClickExample,
+  showContabilidade,
+  showEmpreendedorismo,
+  showFinancas,
+  showGestao,
+  showAll,
+}) => (
   <div className="post-categories-nav">
-    <Link className="nav-link" exact="true" to={`/`}>
-      <div className="box">
-      Todos
-      </div>
-    </Link>
-    {categories.map((category, index) => (
-      <Link
-        exact="true"
-        className="nav-link"
-        key={category.title + index}
-        to={category.slug}
-      >
-        <div className="box">
-          {category.title}
-        </div>
-      </Link>
-    ))}
-    <div className="box box-full">
-      {enableSearch && <BlogSearch />}
+    <div className="box">
+      <button onClick={() => showAll()}>Todos os posts</button>
+    </div>
+    <div className="box">
+      <button onClick={() => showContabilidade()}>Contabilidade</button>
+    </div>
+    <div className="box">
+      <button onClick={() => showEmpreendedorismo()}>Empreendedorismo</button>
+    </div>
+    <div className="box">
+      <button onClick={() => showFinancas()}>Finanças</button>
+    </div>
+    <div className="box">
+      <button onClick={() => showGestao()}>Gestão</button>
+    </div>
+    <div className="box box-full search-blog" id="search">
+      <SearchField
+        placeholder=""
+        onChange={onSearchClickExample}
+      />
     </div>
   </div>
 )

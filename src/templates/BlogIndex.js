@@ -1,89 +1,112 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
-import qs from 'qs'
-
+import Header from '../components/Header'
 import Destaques from "../components/Destaques"
 import PostSection from '../components/PostSection'
 import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
-
+import TypeChecker from 'typeco';
 import './BlogIndex.css'
-
-/**
- * filter posts by category.
- *
- * @param {posts} object
- * @param {title} string
- * @param {contentType} string
- */
-export const byCategory = (posts, title, contentType) => {
-  const isCategory = contentType === 'postCategories'
-  const byCategory = post =>
-    post.categories &&
-    post.categories.filter(cat => cat.category === title).length
-  return isCategory ? posts.filter(byCategory) : posts
-}
 
 export const BlogIndexTemplate = ({
   title,
   posts = [],
-  postCategories = [],
-  enableSearch = true,
-  contentType
-}) => (
+  destaquesSize = 2,
+}) => {
+
+  const [allPosts, setAllPosts] = useState([...posts]);
+
+  const postsDestaques = posts.filter(post => post.status == "Destaque")
+
+  const postContabilidade = posts.filter(el => {
+    return el.categories.map(cat => cat.category) == "Contabilidade"
+  });
+  
+  const postsEmpreendedorismo = posts.filter(el => {
+    return el.categories.map(cat => cat.category) == "Empreendedorismo"
+  });
+  
+  const postsFinancas = posts.filter(el => {
+    return el.categories.map(cat => cat.category) == "Finanças"
+  });
+  
+  const postsGestao = posts.filter(el => {
+    return el.categories.map(cat => cat.category) == "Gestão"
+  });
+
+  const showContabilidade = () => {
+    setAllPosts(postContabilidade)
+  }
+
+  const showEmpreendedorismo = () => {
+    setAllPosts(postsEmpreendedorismo)
+  }
+  
+  const showFinancas = () => {
+    setAllPosts(postsFinancas)
+  }
+  
+  const showGestao = () => {
+    setAllPosts(postsGestao)
+  }
+  
+  const showAll = () => {
+    setAllPosts([...posts])
+  }
+
+  const getMatchedList = (searchText) => {
+    if (TypeChecker.isEmpty(searchText)) return posts;
+    return posts.filter(post => post.title.toLowerCase().includes(searchText.toLowerCase()));
+  };
+
+  const onSearchClickExample = (value) => {
+    setAllPosts(getMatchedList(value))
+  }
+
+  return (
   <Location>
-    {({ location }) => {
-      let filteredPosts =
-        posts && !!posts.length
-          ? byCategory(posts, title, contentType)
-          : []
-
-      let queryObj = location.search.replace('?', '')
-      queryObj = qs.parse(queryObj)
-
-      if (enableSearch && queryObj.s) {
-        const searchTerm = queryObj.s.toLowerCase()
-        filteredPosts = filteredPosts.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
-        )
-      }
-
-      const postsDestaques = posts.filter(post => post.status == "Destaque")
-
-      console.log('destaque', postsDestaques)
-
+    {({ location }) => {      
       return (
         <>
-          <section className="destaques">
-            <div className="container">
-              <h1>Destaques</h1>
-              <div className="destaques-wrapper">
-                {postsDestaques.map((post, index) => (
-                  <Destaques key={post + index} post={post} />
-                ))}
+          <Header />
+          <div className="blog">
+            <section className="destaques">
+              <div className="container">
+                <h1>Destaques</h1>
+                <div className="destaques-wrapper">
+                  {postsDestaques.slice(0, destaquesSize).map((post, index) => (
+                    <Destaques key={post + index} post={post} />
+                  ))}
+                </div>
               </div>
-            </div>
-          </section>
-          <main>
-            {!!postCategories.length && (
+            </section>
+            <main>
               <section className="container">
                 <h1>Navegue por categorias</h1>
-                <PostCategoriesNav enableSearch categories={postCategories} />
+                <PostCategoriesNav 
+                  onSearchClickExample={onSearchClickExample} 
+                  showContabilidade={showContabilidade}
+                  showEmpreendedorismo={showEmpreendedorismo}
+                  showFinancas={showFinancas}
+                  showGestao={showGestao}
+                  showAll={showAll}
+                />
               </section>
-            )}
-            {!!posts.length && (
-              <section className="container">
-                <h1>{title}</h1>
-                <PostSection posts={filteredPosts} />
-              </section>
-            )}
-          </main>
+              {!!posts.length && (
+                <section className="container">
+                  <h1>{title}</h1>
+                  <PostSection posts={allPosts} />
+                </section>
+              )}
+            </main>
+          </div>
         </>
       )
     }}
   </Location>
-)
+  )
+}
 
 const BlogIndex = ({ data: { page, posts, postCategories } }) => (
   <Layout

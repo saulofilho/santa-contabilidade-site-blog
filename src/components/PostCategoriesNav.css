@@ -1,10 +1,10 @@
 .post-categories-nav {
-  height: auto;
+  height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   column-gap: 5px;
-  padding-bottom: 90px;
+  position: relative;
 }
 .post-categories-nav .nav-link {
   width: 100%;
@@ -14,15 +14,30 @@
 .post-categories-nav input[type='text'] {
   right: 0;
   border: 1px solid red;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
   font-size: 10px;
   color: black;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  width: 10px;
+}
+.post-categories-nav input[type='text']:focus {
+  width: 100%;
+  position: absolute;
+  padding: 1rem 2rem;
+  right: 0;
 }
 .box {
   width: 100%;
   height: 100px;
   background: #06606B;
+}
+.box:hover {
+  opacity: 0.8;
+}
+.box button {
+  width: 100%;
+  height: 100px;
+  border: none;
 }
 .post-categories-nav input[type='text']:focus {
   outline: none;
@@ -30,6 +45,53 @@
 .post-categories-nav input[type='text']::placeholder {
   color: black;
 }
+.search-blog {
+  width: 100%;
+}
+.search-blog .react-search-field {
+  border: unset !important;
+  justify-content: unset !important;
+  height: unset !important;
+  display: flex !important;
+  flex-flow: column;
+}
+.search-blog .react-search-field input[type='text'] {
+  right: 0 !important;
+  border: 0 !important;
+  padding: 16px 15px !important;
+  background: #FFFFFF !important;
+  border: 1px solid #989898 !important;
+  margin: 24px auto 8px 24px !important;
+  width: 232px !important;
+  height: 48px !important;
+}
+.search-blog .react-search-field input[type='text']:focus {
+  border: 2px solid #000000 !important;
+}
+.search-blog .react-search-field input[type='text']::placeholder {
+  font-family: var(--font-secondary) !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  color: #989898 !important;
+}
+.search-blog .react-search-field button {
+  display: none;
+}
+.search-blog .react-search-field button::after {
+  content: "SEARCH";
+  font-family: var(--font-secondary) !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.search-blog .react-search-field button.react-search-field-button svg {
+  display: none !important;
+}
+
+
 @media (max-width: 992px) {
   .post-categories-nav {
     grid-template-columns: repeat(4, 1fr);
