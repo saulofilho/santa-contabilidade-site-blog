@@ -33,22 +33,13 @@ export const SinglePostTemplate = ({
   featuredImage,
   leitura,
   contentbody = [],
-  autor,
+  autor = [],
   status,
   autores = [],
 }) => {
-  // let filteredPosts =
-  //   posts && !!posts.length
-  //     ? byAutor(posts, title, contentType)
-  //     : []
 
-  console.log('autores', autores)
-  console.log('autor', autor)
-
-
-  const postDestaque = autor.filter(aut => aut.autorname == "Saulo Filho")
-  const xxx = postDestaque.map(aut => aut.autorname)
-  // console.log('filter', xxx)
+  const postAutor = autor.filter(aut => aut.autorname)
+  const autorInfos = autores.filter(aut => aut.title == postAutor.map(aut => aut.autorname))
 
   return (
     <>
@@ -111,26 +102,6 @@ export const SinglePostTemplate = ({
               )}
             </div>
           </div>
-
-          {/* {autores &&
-                autores.length > 0 && (
-                  <div className="">
-                    {autores.map((item, index) => (
-                      <div
-                        className=""
-                        key={item.title + index}
-                      >
-                        <div>
-                          {item.title && <p>{item.title}</p>}
-                          {item.about && <p>{item.about}</p>}
-                          {item.featuredImage && <img src={item.featuredImage} alt={item.about} />}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )
-              } */}
-
           {contentbody &&
             contentbody.length > 0 && (
               <div className="singlepost-content-wrapper">
@@ -155,7 +126,7 @@ export const SinglePostTemplate = ({
                   >
                     {item.bodypost && <Content source={item.bodypost} />}
                     {item.greenboxlink &&
-                      <div className="box-green">
+                      <div className="box-green container">
                         {item.greenboxtitle && <p>{item.greenboxtitle}</p>}
                         <button>
                           <a href={item.greenboxlink}>{item.greenboxtitlebutton}</a>
@@ -164,7 +135,7 @@ export const SinglePostTemplate = ({
                     }
                     {item.yellowboxtitle &&
                       <a href={item.yellowboxlink}>
-                        <div className="box-yellow">
+                        <div className="box-yellow container">
                           <p>{item.yellowboxtitle}</p>
                         </div>
                       </a>
@@ -174,32 +145,46 @@ export const SinglePostTemplate = ({
               </div>
             )
           }
-          <div className="autor-wrapper">
-            <img src={Facebook} alt=""/>
-            <div className="autor-infos-wrapper">
-              <div className="autor-texts">
-                <p>Escrito por</p>
-                <p>autor name var</p>
-                <p>autor name about</p>
+          {autorInfos &&
+            autorInfos.length > 0 && (
+              <div className="container">
+                {autorInfos.map((item, index) => (
+                  <div
+                    className="autor-wrapper"
+                    key={item.title + index}
+                  >
+                      {item.featuredImage && 
+                      <div className="autor-img">
+                        <img src={item.featuredImage} alt={item.about} />
+                      </div>
+                      }
+                    <div className="autor-infos-wrapper">
+                      <div className="autor-texts">
+                        <p className="escrito">Escrito por</p>
+                        {item.title && <p className="titulo">{item.title}</p>}
+                        {item.about && <p className="about">{item.about}</p>}
+                      </div>
+                      <div className="autor-share">
+                        <p className="escrito">Curtiu? Compartilhe</p>
+                        <a href="http://localhost:8000/">
+                          <img src={Twitter} alt="facebook buton share" />
+                        </a>
+                        <a href="http://localhost:8000/">
+                          <img src={Linkedin} alt="facebook buton share" />
+                        </a>
+                        <a href="http://localhost:8000/">
+                          <img src={Whatsapp} alt="facebook buton share" />
+                        </a>
+                        <a href="http://localhost:8000/">
+                          <img src={Facebook} alt="facebook buton share" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="autor-share">
-                <p>Curti?</p>
-                <p>Compartilhe</p>
-                <a href="http://localhost:8000/">
-                    <img src={Facebook} alt="facebook buton share"/>
-                  </a>
-                  <a href="http://localhost:8000/">
-                    <img src={Twitter} alt="facebook buton share"/>
-                  </a>
-                  <a href="http://localhost:8000/">
-                    <img src={Whatsapp} alt="facebook buton share"/>
-                  </a>
-                  <a href="http://localhost:8000/">
-                    <img src={Linkedin} alt="facebook buton share"/>
-                  </a>
-              </div>
-            </div>
-          </div>
+            )
+          }
           <div className="comentarios-wrapper">
             <p>Gostou?</p>
             <p>Deixe seu comentario</p>

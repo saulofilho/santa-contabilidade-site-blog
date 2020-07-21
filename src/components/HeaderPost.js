@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Menu, X } from 'react-feather'
 import LogoHero from '../../static/assets/logo-branco.png'
-import LupaBranca from '../../static/assets/lupa-branca.png'
+// import LupaBranca from '../../static/assets/lupa-branca.png'
 import './HeaderPost.css'
 
 const Header = () => {
@@ -20,13 +20,13 @@ const Header = () => {
         </div>
       </div>
       <div className="header-right-desk">
-        <a href="#search">
+        {/* <a href="#search">
           <img src={LupaBranca} alt="lupa anchor search" />
-        </a>
+        </a> */}
         <div className="btns-wrapper">
-          <button className="btn-materiais">
+          <button className="btn-materiais-post">
             <a href="http://localhost:8000/">
-              Blog
+              Materiais Gratuitos
               </a>
           </button>
           <button className="btn-fale">
@@ -37,19 +37,19 @@ const Header = () => {
         </div>
       </div>
       <div className="header-right-mob">
-        <a href="#search">
+        {/* <a href="#search">
           <img src={LupaBranca} alt="lupa anchor search" />
-        </a>
+        </a> */}
         <div className="btns-wrapper">
-          <button className="btn-materiais">
+          <button className="btn-materiais-post">
             <a href="http://localhost:8000/">
-              Blog
-              </a>
+              Materiais Gratuitos
+            </a>
           </button>
           <button className="btn-fale">
             <a href="http://localhost:8000/">
               Fale com um especialista
-              </a>
+            </a>
           </button>
         </div>
       </div>
@@ -59,12 +59,12 @@ const Header = () => {
       >
         {isOpen ?
           <X
-            color={"#06606B"}
+            color={"#fff"}
             className="x"
           />
             :
           <Menu
-            color={"#06606B"}
+            color={"#fff"}
             className="menu"
           />}
       </button>

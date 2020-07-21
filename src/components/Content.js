@@ -28,7 +28,6 @@ const withContentImages = source => {
         <img
           resolutions="medium"
           className="Content--Image"
-          lazy={false}
           src={src ? src[1] : null}
           alt={alt ? alt[1] : null}
           title={title ? title[1] : null}
@@ -46,7 +45,6 @@ const MyImage = ({ nodeKey, src, title, alt }) => {
     <img
       className="Content--Image markdown-preview"
       resolutions="medium"
-      lazy={false}
       src={decodedSrc}
       title={title}
       alt={alt}

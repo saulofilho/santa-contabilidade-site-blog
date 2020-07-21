@@ -26,8 +26,8 @@ const Header = () => {
         <div className="btns-wrapper">
           <button className="btn-materiais">
             <a href="http://localhost:8000/">
-              Blog
-              </a>
+              Materiais Gratuitos
+            </a>
           </button>
           <button className="btn-fale">
             <a href="http://localhost:8000/">
@@ -43,8 +43,8 @@ const Header = () => {
         <div className="btns-wrapper">
           <button className="btn-materiais">
             <a href="http://localhost:8000/">
-              Blog
-              </a>
+              Materiais Gratuitos
+            </a>
           </button>
           <button className="btn-fale">
             <a href="http://localhost:8000/">

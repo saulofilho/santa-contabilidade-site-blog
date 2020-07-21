@@ -9,6 +9,11 @@ import Layout from '../components/Layout'
 import TypeChecker from 'typeco';
 import './BlogIndex.css'
 
+// https://github.com/gitalk/gitalk#install
+
+// https://khalilstemmler.com/articles/gatsby-related-posts-component/
+// https://www.gatsbyjs.org/packages/gatsby-remark-related-posts/
+
 export const BlogIndexTemplate = ({
   title,
   posts = [],
