@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import HeaderPost from '../components/HeaderPost'
 import _get from 'lodash/get'
-import { graphql } from 'gatsby'
+import { graphql, Link} from 'gatsby'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Facebook from '../../static/assets/facebook.png'
@@ -9,21 +9,6 @@ import Whatsapp from '../../static/assets/whatsapp.png'
 import Linkedin from '../../static/assets/linkedin.png'
 import Twitter from '../../static/assets/twitter.png'
 import './SinglePost.css'
-
-/**
- * filter autor
- *
- * @param {posts} object
- * @param {title} string
- * @param {contentType} string
- */
-export const byAutor = (posts, title, contentType) => {
-  const isCategory = contentType === 'autores'
-  const byAutor = post =>
-    post.autor &&
-    post.autor.filter(name => name.autor === title).length
-  return isCategory ? posts.filter(byAutor) : posts
-}
 
 export const SinglePostTemplate = ({
   date,
@@ -36,10 +21,18 @@ export const SinglePostTemplate = ({
   autor = [],
   status,
   autores = [],
+  allPosts = [],
+  destaquesSize = 3,
 }) => {
 
   const postAutor = autor.filter(aut => aut.autorname)
   const autorInfos = autores.filter(aut => aut.title == postAutor.map(aut => aut.autorname))
+
+  const postCategories = categories.map(cat => cat.category)
+
+  const relatedPosts = allPosts.filter(el => {
+    return el.categories.map(cat => cat.category) == postCategories[0]
+  });
 
   return (
     <>
@@ -188,14 +181,51 @@ export const SinglePostTemplate = ({
           <div className="comentarios-wrapper">
             <p>Gostou?</p>
             <p>Deixe seu comentario</p>
+
           </div>
         </article>
         <section className="posts-relacionados">
           <p>POSTS RELACIONADOS</p>
           <div className="relacionados-wrapper">
-            <h1>posts relacionados</h1>
-            <h1>posts relacionados</h1>
-            <h1>posts relacionados</h1>
+          {relatedPosts &&
+              relatedPosts.length > 0 && (
+                <div className="relacionados-wrapper">
+                  {relatedPosts.slice(0, destaquesSize).map((item, index) => (
+                    <div
+                      className="relacionados-item"
+                      key={item + index}
+                    >
+                      <div className="relacionados-img">
+                        <img src={item.featuredImage} alt={item.title}/>
+                      </div>
+                      <div className="related-tag">
+                        {categories.map((cat, index) => (
+                          <div
+                            key={cat.category + index}
+                            className="categoria"
+                          >
+                            <p>
+                              {cat.category}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="related-titulo">
+                        <p>{item.title}</p>
+                      </div>
+                      <div className="related-titulo">
+                        <p>{item.subtitle}</p>
+                      </div>
+                      <div className="related-titulo">
+                        <button>
+                          <Link to={item.slug}>LER AGORA</Link>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )
+            }
           </div>
         </section>
       </main>
@@ -216,8 +246,10 @@ const SinglePost = ({ data: { post, allPosts, autores } }) => {
         autores={autores.edges.map(post => ({
           ...post.node.frontmatter
         }))}
-        nextPostURL={_get(thisEdge, 'next.fields.slug')}
-        prevPostURL={_get(thisEdge, 'previous.fields.slug')}
+        allPosts={allPosts.edges.map(post => ({
+          ...post.node.frontmatter,
+          ...post.node.fields
+        }))}
       />
     </Layout>
   )
@@ -266,6 +298,20 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            categories {
+              category
+            }
+            title
+            subtitle
+            featuredImage
+            leitura
+            status
+          }
         }
         next {
           fields {
