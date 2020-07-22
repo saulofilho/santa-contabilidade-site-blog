@@ -1,66 +1,42 @@
-.PostSection {
+.post-section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
 }
-
-.PostSection--Grid {
+.post-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 25px;
+}
+.ver-mais {
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 20px;
 }
-
-.PostSection button {
-  margin-top: 1rem;
-  margin-top: 5rem;
-  background: white;
-  border: 2px solid black;
-  padding: 1rem 2rem;
+.ver-mais button {
+  width: 185px;
+  height: 43px;
+  border: 2px solid #60B38D;
+  color: #60B38D;
+  border-radius: 2px;
+  background: #fff;
   cursor: pointer;
 }
-
-.PostSection button:hover {
-  background: black;
-  border: 2px solid white;
-  color: white;
-}
-
-.PostSection--Grid > * {
-  width: calc(33.33% - 2rem);
-  margin-bottom: 4rem;
-}
-
-@supports (display: grid) {
-  .PostSection--Grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4rem;
-  }
-
-  .PostSection--Grid > * {
-    width: auto;
-    margin: 0;
-  }
-}
-
-.PostSection--Title {
-  width: 100%;
-  max-width: 200px;
-  margin: 0 auto 4rem auto;
-  line-height: 1.2;
+.ver-mais button:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 888px) {
-  .PostSection--Grid > * {
-    width: 100%;
-    max-width: 50rem;
-    margin: 0 auto 4rem;
-    display: block;
+  .post-section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  @supports (display: grid) {
-    .PostSection--Grid {
-      display: block;
-      grid-template-columns: 1;
-      grid-gap: 0;
-    }
+}
+@media screen and (max-width: 576px) {
+  .post-section-wrapper {
+    grid-template-columns: 1fr;
   }
 }

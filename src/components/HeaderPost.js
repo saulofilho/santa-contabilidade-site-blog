@@ -6,7 +6,7 @@ import './HeaderPost.css'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper container';
+  const menuClassNames = isOpen ? 'header-wrapper-active bg-header-green container' : 'header-wrapper container';
 
   return (
     <header

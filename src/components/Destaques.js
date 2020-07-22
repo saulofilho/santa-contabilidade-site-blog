@@ -18,7 +18,7 @@ const Destaques = ({ post }) => (
         <div className="categoria-tag">
           <p>{post.categories.map(cat => cat.category)}</p>
         </div>
-        <p>{post.title}</p>
+        <p className="destaque-titulo">{post.title}</p>
         <div className="data-leitura-wrapper">
           <p>{post.date}</p>
           <p>{post.leitura}</p>

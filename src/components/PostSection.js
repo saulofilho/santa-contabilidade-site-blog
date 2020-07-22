@@ -2,6 +2,8 @@ import React from 'react'
 
 import PostCard from '../components/PostCard'
 import './PostSection.css'
+import AdCard from '../components/AdCard'
+import './PostSection.css'
 
 class PostSection extends React.Component {
   static defaultProps = {
@@ -28,18 +30,20 @@ class PostSection extends React.Component {
       visiblePosts = posts.slice(0, limit || posts.length)
 
     return (
-      <div className="PostSection">
-        {title && <h2 className="PostSection--Title">{title}</h2>}
+      <div className="post-section">
+        {title && <h2>{title}</h2>}
         {!!visiblePosts.length && (
-          <div className="PostSection--Grid">
-            {visiblePosts.map((post, index) => (
-              <PostCard key={post.title + index} {...post} />
-            ))}
+          <div className="post-section-wrapper">
+            {visiblePosts.map((post, index) => 
+              post.status == "Ad" 
+              ? <AdCard key={post.title + index} {...post} /> 
+              : <PostCard key={post.title + index} {...post} />
+              )}
           </div>
         )}
         {showLoadMore && visiblePosts.length < posts.length && (
-          <div className="taCenter">
-            <button className="button" onClick={this.increaseLimit}>
+          <div className="ver-mais">
+            <button onClick={this.increaseLimit}>
               {loadMoreTitle}
             </button>
           </div>

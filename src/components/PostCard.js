@@ -16,7 +16,7 @@ const PostCard = ({
 }) => (
   <Link to={slug} className={`post-card ${className}`}>
     {featuredImage && (
-      <div className="post-card-image relative">
+      <div className="post-card-image">
         <img src={featuredImage} alt={title} />
       </div>
     )}

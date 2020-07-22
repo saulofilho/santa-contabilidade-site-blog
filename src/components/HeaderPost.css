@@ -13,9 +13,11 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background: #06606B;
   z-index: 9;
   position: relative;
+}
+.bg-header-green {
+  background: #06606B !important;
 }
 .header-right-desk {
   display: flex;

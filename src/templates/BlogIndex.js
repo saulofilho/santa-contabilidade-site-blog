@@ -20,7 +20,37 @@ export const BlogIndexTemplate = ({
   destaquesSize = 2,
 }) => {
 
-  const [allPosts, setAllPosts] = useState([...posts]);
+  const insertYellowAd = (arr, index, ...newItems) => [
+    ...arr.slice(0, index),
+    ...newItems,
+    ...arr.slice(index)
+  ]
+
+  const insertGreenAd = (arr, index, ...newItems) => [
+    ...arr.slice(0, index),
+    ...newItems,
+    ...arr.slice(index)
+  ]
+  
+  const yellowAd = insertYellowAd(posts, 5, 
+      {
+        title: "CONTABILIDADE ONLINE? MITOS E VERDADES AGORA!",
+        subtitle: "yellow",
+        slug: "http://localhost:8000/",
+        status: "Ad"
+      }
+    )
+
+  const postsAndAds = insertGreenAd(yellowAd, 10, 
+      {
+        title: "FICOU COM GOSTINHO DE QUERO MAIS? CONFIRA NOSSA PÁGINA DE MATERIAIS RICOS",
+        subtitle: "green",
+        slug: "http://localhost:8000/",
+        status: "Ad"
+      }
+    )
+
+  const [allPosts, setAllPosts] = useState([...postsAndAds]);
 
   const postsDestaques = posts.filter(post => post.status == "Destaque")
 
@@ -65,7 +95,7 @@ export const BlogIndexTemplate = ({
     return posts.filter(post => post.title.toLowerCase().includes(searchText.toLowerCase()));
   };
 
-  const onSearchClickExample = (value) => {
+  const onSearchClick = (value) => {
     setAllPosts(getMatchedList(value))
   }
 
@@ -90,7 +120,7 @@ export const BlogIndexTemplate = ({
               <section className="container">
                 <h1>Navegue por categorias</h1>
                 <PostCategoriesNav 
-                  onSearchClickExample={onSearchClickExample} 
+                  onSearchClick={onSearchClick} 
                   showContabilidade={showContabilidade}
                   showEmpreendedorismo={showEmpreendedorismo}
                   showFinancas={showFinancas}

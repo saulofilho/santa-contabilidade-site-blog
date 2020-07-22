@@ -6,7 +6,7 @@ import './PostCategoriesNav.css'
 const SearchField = loadable(() => import('react-search-field'))
 
 const PostCategoriesNav = ({
-  onSearchClickExample,
+  onSearchClick,
   showContabilidade,
   showEmpreendedorismo,
   showFinancas,
@@ -46,7 +46,7 @@ const PostCategoriesNav = ({
       <div className={isOpen ? 'search-toggle active' : 'search-toggle'} >
         <SearchField
           placeholder="Qual assunto você está procurando?"
-          onChange={onSearchClickExample}
+          onChange={onSearchClick}
         />
       </div>
     </div>
