@@ -3,7 +3,7 @@ template: SinglePost
 date: 23/07/2020
 categories:
   - category: Empreendedorismo
-title: Como fazer a contabilidade  da sua empresa online
+title: Titulo teste do post
 subtitle: Exemplo de post em cima do post do post Passo quadrado zero
 featuredImage: /assets/fotolia_60596468_subscription_monthly_xxl-копировать-.jpg
 leitura: 10 min de leitura
