@@ -3,7 +3,7 @@ template: SinglePost
 date: 23/07/2020
 categories:
   - category: Empreendedorismo
-title: Exemplo de post em cima do post do post Passo quadrado zero
+title: Santa Contabilidade Blog 2020
 subtitle: Exemplo de post em cima do post do post Passo quadrado zero
 featuredImage: /assets/fotolia_76801219_subscription_monthly_xxl-копировать-.jpg
 leitura: 10 min de leitura
