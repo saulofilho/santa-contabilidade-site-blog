@@ -17,18 +17,17 @@
   padding-bottom: 20px;
 }
 .categoria-tag p {
-  font-size: 13px;
-  line-height: 14px;
+  font-size: 12px;
   text-transform: lowercase;
   width: auto;
   border: 1px solid #fff;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 7px 14px;
 }
 .destaque-titulo {
   font-weight: lighter;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 30px;
 }
 .destaque-image {
   width: 100%;

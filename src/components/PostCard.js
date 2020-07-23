@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Calendario from '../../static/assets/calendario-verde.png'
+import Relogio from '../../static/assets/relogio-verde.png'
 
 import './PostCard.css'
 
@@ -22,24 +24,28 @@ const PostCard = ({
     )}
     <div className="post-card-content">
       <div className="post-card-category">
-        {categories && categories.map(cat => cat.category)}
+        <p>
+          {categories && categories.map(cat => cat.category)}
+        </p>
       </div>
       {title && 
-        <p>
+        <p className="blog-post-titulo">
           {title}
         </p>
       }
       {subtitle && 
-        <p>
+        <p className="blog-post-subtitulo">
           {subtitle}
         </p>
       }
       <div className="date-leitura-wrapper">
+        <img src={Calendario} alt="calendario icon"/>
         {date && 
           <p>
             {date}
           </p>
         }
+        <img src={Relogio} alt="relogio icon"/>
         {leitura && 
           <p>
             {leitura}

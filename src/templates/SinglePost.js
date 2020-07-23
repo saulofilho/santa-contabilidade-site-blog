@@ -28,6 +28,9 @@ export const SinglePostTemplate = ({
   const postAutor = autor.filter(aut => aut.autorname)
   const autorInfos = autores.filter(aut => aut.title == postAutor.map(aut => aut.autorname))
 
+  console.log('postAutor', postAutor)
+  console.log('autores', autores)
+
   const postCategories = categories.map(cat => cat.category)
 
   const relatedPosts = allPosts.filter(el => {

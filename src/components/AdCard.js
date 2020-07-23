@@ -6,15 +6,21 @@ const AdCard = ({
   title,
   slug,
   subtitle,
+  leitura,
   ...props
 }) => (
-  <div className={`ad-card-content ${subtitle}`}>
+  <div className={`ad-card-content ${leitura}`}>
       {title && 
-        <p>
+        <p className="ad-titulo">
           {title}
         </p>
       }
-      <div className="">
+      {subtitle && 
+        <strong className="ad-titulo">
+          {subtitle}
+        </strong>
+      }
+      <div className="ad-button">
         <button>
           <a href={slug}>EU QUERO</a>
         </button>

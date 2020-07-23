@@ -184,8 +184,8 @@
   border-radius: 50%;
 }
 .autor-img img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 .autor-infos-wrapper {
   width: 100%;
