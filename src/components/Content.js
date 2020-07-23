@@ -42,13 +42,16 @@ const withContentImages = source => {
 const MyImage = ({ nodeKey, src, title, alt }) => {
   const decodedSrc = decodeURI(src)
   return (
-    <img
-      className="Content--Image markdown-preview"
-      resolutions="medium"
-      src={decodedSrc}
-      title={title}
-      alt={alt}
-    />
+    <>
+      <img
+        className="Content--Image markdown-preview"
+        resolutions="medium"
+        src={decodedSrc}
+        title={title}
+        alt={alt}
+      />
+      <p className="image-title">{title}</p>
+    </>
   )
 }
 

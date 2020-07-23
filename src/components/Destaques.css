@@ -5,8 +5,8 @@
   position: relative;
 }
 .destaque-item:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
 }
 .categoria-tag {
   width: auto;
@@ -28,6 +28,7 @@
   font-weight: lighter;
   font-size: 24px;
   line-height: 30px;
+  padding-bottom: 40px;
 }
 .destaque-image {
   width: 100%;
@@ -46,8 +47,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  filter: grayscale(100%) sepia(1) saturate(1) opacity(1) brightness(41%) contrast(99%) hue-rotate(92deg);
-  -webkit-filter: grayscale(100%) sepia(1) saturate(1) opacity(1) brightness(41%) contrast(99%) hue-rotate(92deg);
+  filter: grayscale(100%) sepia(1) saturate(1) opacity(1) brightness(41%) contrast(99%) hue-rotate(122deg);
+  -webkit-filter: grayscale(100%) sepia(1) saturate(1) opacity(1) brightness(41%) contrast(99%) hue-rotate(122deg);
 }
 .destaque-infos-wrapper {
   position: absolute;
@@ -65,4 +66,13 @@
   justify-content: left;
   align-items: center;
   flex-flow: row;
+}
+.data-leitura-wrapper p {
+  font-size: 14px;
+  padding-right: 20px;
+}
+.data-leitura-wrapper img {
+  padding-right: 5px;
+  width: auto;
+  height: 15px;
 }

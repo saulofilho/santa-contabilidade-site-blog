@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import HeaderPost from '../components/HeaderPost'
-import _get from 'lodash/get'
 import { graphql, Link} from 'gatsby'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
@@ -8,6 +7,11 @@ import Facebook from '../../static/assets/facebook.png'
 import Whatsapp from '../../static/assets/whatsapp.png'
 import Linkedin from '../../static/assets/linkedin.png'
 import Twitter from '../../static/assets/twitter.png'
+import Calendario from '../../static/assets/autor-calendario.png'
+import Relogio from '../../static/assets/autor-relogio.png'
+import Autor from '../../static/assets/autor.png'
+import WhiteLine from '../../static/assets/line.png'
+import { LinkedinShareButton } from "react-share";
 import './SinglePost.css'
 
 export const SinglePostTemplate = ({
@@ -23,13 +27,12 @@ export const SinglePostTemplate = ({
   autores = [],
   allPosts = [],
   destaquesSize = 3,
+  fields
 }) => {
 
   const postAutor = autor.filter(aut => aut.autorname)
-  const autorInfos = autores.filter(aut => aut.title == postAutor.map(aut => aut.autorname))
 
-  console.log('postAutor', postAutor)
-  console.log('autores', autores)
+  const autorInfos = autores.filter(aut => aut.title == postAutor.map(aut => aut.autorname))
 
   const postCategories = categories.map(cat => cat.category)
 
@@ -70,17 +73,22 @@ export const SinglePostTemplate = ({
                 </p>
               </div>  
             )}
+            <span className="white-line">
+              <img src={WhiteLine} alt="linha branca separando divs"/>
+            </span>
             <div className="autor-data-leitura-wrapper">
               {autor && autor.map((item, index) => (
                 <div
                   className="post-info-text"
                   key={item.autorname + index}
                 >
+                  <img src={Autor} alt="autor icon"/>
                   {item.autorname && <p>{item.autorname}</p>}
                 </div>
               ))}
               {date && (
                 <div className="post-info-text">
+                  <img src={Calendario} alt="calendario icon"/>
                   <time
                     itemProp="dateCreated pubdate datePublished"
                     date={date}
@@ -91,6 +99,7 @@ export const SinglePostTemplate = ({
               )}
               {leitura && (
                 <div className="post-info-text">
+                  <img src={Relogio} alt="relogio icon"/>
                   <p itemProp="title">
                     {leitura}
                   </p>
@@ -102,18 +111,38 @@ export const SinglePostTemplate = ({
             contentbody.length > 0 && (
               <div className="singlepost-content-wrapper">
                 <section className="btns-share-left">
-                  <a href="http://localhost:8000/">
-                    <img src={Facebook} alt="facebook buton share"/>
+                  <div 
+                    className="fb-share-button" 
+                    data-href="https://developers.facebook.com/docs/plugins/" 
+                    data-layout="button" data-size="small">
+                      <a 
+                        target="_blank" 
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
+                        className="fb-xfbml-parse-ignore"
+                      >
+                        <img src={Facebook} alt="facebook buton share"/>
+                      </a>
+                  </div>
+                  <a 
+                    target='_blank'
+                    rel="noopener" 
+                    href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+                    className="twitter-share-button" 
+                    data-show-count="false"
+                  >
+                    <img src={Twitter} alt="twitter buton share"/>
                   </a>
-                  <a href="http://localhost:8000/">
-                    <img src={Twitter} alt="facebook buton share"/>
+                  <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                  <a 
+                    target='_blank'
+                    rel="noopener" 
+                    href="https://wa.me/5548984289990?text=SantaContabilidade"
+                  >
+                    <img src={Whatsapp} alt="whatsapp buton share"/>
                   </a>
-                  <a href="http://localhost:8000/">
-                    <img src={Whatsapp} alt="facebook buton share"/>
-                  </a>
-                  <a href="http://localhost:8000/">
+                  <LinkedinShareButton url={fields} className="Demo__some-network__share-button">
                     <img src={Linkedin} alt="facebook buton share"/>
-                  </a>
+                  </LinkedinShareButton>
                 </section>
                 {contentbody.map((item, index) => (
                   <div
@@ -188,8 +217,8 @@ export const SinglePostTemplate = ({
           </div>
         </article>
         <section className="posts-relacionados">
-          <p>POSTS RELACIONADOS</p>
-          <div className="relacionados-wrapper">
+          <p className="container posts-relacionados-title">POSTS RELACIONADOS</p>
+          <div className="container">
           {relatedPosts &&
               relatedPosts.length > 0 && (
                 <div className="relacionados-wrapper">
@@ -201,28 +230,30 @@ export const SinglePostTemplate = ({
                       <div className="relacionados-img">
                         <img src={item.featuredImage} alt={item.title}/>
                       </div>
-                      <div className="related-tag">
-                        {categories.map((cat, index) => (
-                          <div
-                            key={cat.category + index}
-                            className="categoria"
-                          >
-                            <p>
-                              {cat.category}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="related-titulo">
-                        <p>{item.title}</p>
-                      </div>
-                      <div className="related-titulo">
-                        <p>{item.subtitle}</p>
-                      </div>
-                      <div className="related-titulo">
-                        <button>
-                          <Link to={item.slug}>LER AGORA</Link>
-                        </button>
+                      <div className="relacionados-content">
+                        <div className="related-tag">
+                          {categories.map((cat, index) => (
+                            <div
+                              key={cat.category + index}
+                              className="related-categoria"
+                            >
+                              <p>
+                                {cat.category}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="related-titulo">
+                          <p>{item.title}</p>
+                        </div>
+                        <div className="related-subtitulo">
+                          <p>{item.subtitle}</p>
+                        </div>
+                        <div className="related-button">
+                          <button>
+                            <Link to={item.slug}>LER AGORA</Link>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -237,7 +268,6 @@ export const SinglePostTemplate = ({
 }
 
 const SinglePost = ({ data: { post, allPosts, autores } }) => {
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
   return (
     <Layout
       meta={post.frontmatter.meta || false}
@@ -246,6 +276,7 @@ const SinglePost = ({ data: { post, allPosts, autores } }) => {
       <SinglePostTemplate
         {...post}
         {...post.frontmatter}
+        {...post.fields}
         autores={autores.edges.map(post => ({
           ...post.node.frontmatter
         }))}
@@ -270,6 +301,9 @@ export const pageQuery = graphql`
       ...Meta
       html
       id
+      fields {
+        slug
+      }
       frontmatter {
         template
         date
