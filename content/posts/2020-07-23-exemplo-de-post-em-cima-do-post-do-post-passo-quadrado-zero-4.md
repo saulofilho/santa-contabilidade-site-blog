@@ -3,7 +3,7 @@ template: SinglePost
 date: 23/07/2020
 categories:
   - category: Finanças
-title: Exemplo de post em cima do post do post Passo quadrado zero
+title: Post funcionando
 subtitle: Exemplo de post em cima do post do post Passo quadrado zero
 featuredImage: /assets/fotolia_97922876_subscription_monthly_xxl-копировать-.jpg
 leitura: 10 min de leitura
