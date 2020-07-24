@@ -12,6 +12,7 @@ import Relogio from '../../static/assets/autor-relogio.png'
 import Autor from '../../static/assets/autor.png'
 import WhiteLine from '../../static/assets/line.png'
 import { LinkedinShareButton } from "react-share";
+import { Disqus } from 'gatsby-plugin-disqus'
 import './SinglePost.css'
 
 export const SinglePostTemplate = ({
@@ -39,6 +40,22 @@ export const SinglePostTemplate = ({
   const relatedPosts = allPosts.filter(el => {
     return el.categories.map(cat => cat.category) == postCategories[0]
   });
+
+  const relatedPostsShuffle = array => {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
 
   return (
     <>
@@ -191,18 +208,37 @@ export const SinglePostTemplate = ({
                       </div>
                       <div className="autor-share">
                         <p className="escrito">Curtiu? Compartilhe</p>
-                        <a href="http://localhost:8000/">
-                          <img src={Twitter} alt="facebook buton share" />
+                        <a
+                          target='_blank'
+                          rel="noopener"
+                          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                          className="twitter-share-button"
+                          data-show-count="false"
+                        >
+                          <img src={Twitter} alt="twitter buton share" />
                         </a>
-                        <a href="http://localhost:8000/">
+                        <LinkedinShareButton url={fields} className="Demo__some-network__share-button">
                           <img src={Linkedin} alt="facebook buton share" />
+                        </LinkedinShareButton>
+                        <a
+                          target='_blank'
+                          rel="noopener"
+                          href="https://wa.me/5548984289990?text=SantaContabilidade"
+                        >
+                          <img src={Whatsapp} alt="whatsapp buton share" />
                         </a>
-                        <a href="http://localhost:8000/">
-                          <img src={Whatsapp} alt="facebook buton share" />
-                        </a>
-                        <a href="http://localhost:8000/">
-                          <img src={Facebook} alt="facebook buton share" />
-                        </a>
+                        <div
+                          className="fb-share-button"
+                          data-href="https://developers.facebook.com/docs/plugins/"
+                          data-layout="button" data-size="small">
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                            className="fb-xfbml-parse-ignore"
+                          >
+                            <img src={Facebook} alt="facebook buton share" />
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -210,19 +246,18 @@ export const SinglePostTemplate = ({
               </div>
             )
           }
-          <div className="comentarios-wrapper">
-            <p>Gostou?</p>
-            <p>Deixe seu comentario</p>
-
-          </div>
         </article>
+        <div className="comentarios-wrapper container">
+          <p>Gostou? Deixe seu comentario</p>
+          <Disqus />
+        </div>
         <section className="posts-relacionados">
           <p className="container posts-relacionados-title">POSTS RELACIONADOS</p>
           <div className="container">
           {relatedPosts &&
               relatedPosts.length > 0 && (
                 <div className="relacionados-wrapper">
-                  {relatedPosts.slice(0, destaquesSize).map((item, index) => (
+                  {relatedPostsShuffle(relatedPosts).slice(0, destaquesSize).map((item, index) => (
                     <div
                       className="relacionados-item"
                       key={item + index}

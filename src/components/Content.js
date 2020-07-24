@@ -50,7 +50,7 @@ const MyImage = ({ nodeKey, src, title, alt }) => {
         title={title}
         alt={alt}
       />
-      <p className="image-title">{title}</p>
+      <span className="image-title">{title}</span>
     </>
   )
 }

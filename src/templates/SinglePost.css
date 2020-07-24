@@ -7,9 +7,6 @@
 .singlepost-wrapper {
   margin: 0 auto;
   max-width: 900px;
-  position: relative;
-  width: auto;
-  height: auto;
 }
 .categoria {
   width: auto;
@@ -48,6 +45,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  height: auto;
 }
 .autor-data-leitura-wrapper {
   display: flex;
@@ -84,6 +82,8 @@
   top: -350px;
   border-radius: 10px;
   background: #fff;
+  height: auto;
+  margin-bottom: -300px;
 }
 .container-content {
   max-width: 700px;
@@ -173,9 +173,8 @@ h3 {
   border-top: 2px solid #A09F9F;
   border-bottom: 2px solid #A09F9F;
   padding: 50px 0;
-  position: relative;
-  top: -330px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .autor-wrapper img {
   width: auto;
@@ -186,14 +185,17 @@ h3 {
   flex-flow: row;
   align-items: center;
 }
-/* .comentarios-wrapper {
+.comentarios-wrapper {
   width: 100%;
-  height: 300px;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-} */
+  max-width: 700px;
+  height: auto;
+  padding-bottom: 50px;
+}
+.comentarios-wrapper p {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
 .autor-img {
   width: 100%;
   max-width: 100px;

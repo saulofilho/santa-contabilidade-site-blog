@@ -105,6 +105,12 @@ module.exports = {
     },
     'gatsby-plugin-sitemap',
     {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-santacontabilidade-blog-netlify-app`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
