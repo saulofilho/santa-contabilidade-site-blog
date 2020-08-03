@@ -1,11 +1,11 @@
 {
-  "name": "SantaContabilidadeBlog",
-  "HomePage": "https://santacontabilidade-blog.netlify.app/",
+  "name": "SantaContabilidadeSiteBlog",
+  "HomePage": "https://santacontabilidade-site-blog.netlify.app/",
   "description": "Blog da Santa Contabilidade.",
   "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/saulofilho/santa-contabilidade-blog"
+    "url": "https://github.com/saulofilho/santa-contabilidade-site-blog"
   },
   "dependencies": {
     "@loadable/component": "^5.13.1",

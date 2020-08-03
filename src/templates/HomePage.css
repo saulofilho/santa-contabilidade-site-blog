@@ -1,0 +1,40 @@
+.destaques {
+  width: 100%;
+  height: auto;
+}
+.blog h1 {
+  color: #808080;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 20px 0;
+}
+.destaques-wrapper {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.categorias {
+  width: 100%;
+  height: auto;
+  background: red;
+  margin: 50px 0;
+}
+.categorias button {
+  border: none;
+  background: greenyellow;
+  margin-right: 10px;
+}
+.categorias-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .destaques-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

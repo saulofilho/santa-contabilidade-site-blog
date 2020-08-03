@@ -1,8 +1,5 @@
 ---
-template: BlogIndex
+template: HomePage
 slug: ''
-title: Todos os posts
-meta:
-  description: This is a meta description.
-  title: Blog
+title: Home
 ---
