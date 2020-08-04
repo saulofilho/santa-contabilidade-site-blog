@@ -1,5 +1,16 @@
+.como-funciona-wrapper {
+  width: 100%;
+  height: auto;
+}
 .como-funciona-wrapper .texts-wrapper {
   padding: 50px 0;
   display: grid;
+  row-gap: 50px;
+  column-gap: 50px;
   grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 768px) {
+  .como-funciona-wrapper .texts-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

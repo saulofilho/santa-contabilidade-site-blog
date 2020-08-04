@@ -1,26 +1,38 @@
+.fale-gente-wrapper {
+  width: 100%;
+  height: auto;
+}
 .two-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   column-gap: 20px;
+  width: 100%;
+  height: auto;
 }
 .endereco-wrapper {
   display: flex;
   flex-flow: row;
   align-items: center;
   width: 100%;
+  height: auto;
 }
 .endereco-wrapper img {
   width: 16px;
   height: 16px;
 }
 .card-white {
+  width: auto;
+  height: auto;
   background: #fff;
   border: 1px solid red;
   border-radius: 3px;
+  font-size: 8px;
 }
 .card-green {
-  background: #fff;
+  width: 100%;
+  height: auto;
+  background: green;
   border: 1px solid red;
   border-radius: 3px;
   display: flex;

@@ -107,7 +107,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `https-santacontabilidade-blog-netlify-app`
+        shortname: `santacontabilidade`
       }
     },
     {

@@ -57,6 +57,10 @@ export const SinglePostTemplate = ({
     return array;
   }
 
+  let disqusConfig = {
+    identifier: title,
+  }
+
   return (
     <>
       <div className="headerpost-wrapper">
@@ -203,7 +207,11 @@ export const SinglePostTemplate = ({
                     <div className="autor-infos-wrapper">
                       <div className="autor-texts">
                         <p className="escrito">Escrito por</p>
-                        {item.title && <p className="titulo">{item.title}</p>}
+                        {item.title && item.linkedin &&
+                          <a href={item.linkedin}>
+                            <p className="titulo">{item.title}</p>
+                          </a>
+                        }
                         {item.about && <p className="about">{item.about}</p>}
                       </div>
                       <div className="autor-share">
@@ -249,7 +257,7 @@ export const SinglePostTemplate = ({
         </article>
         <div className="comentarios-wrapper container">
           <p>Gostou? Deixe seu comentario</p>
-          <Disqus />
+          <Disqus config={disqusConfig} />
         </div>
         <section className="posts-relacionados">
           <p className="container posts-relacionados-title">POSTS RELACIONADOS</p>
@@ -415,6 +423,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             about
+            linkedin
             featuredImage
           }
         }

@@ -1,0 +1,53 @@
+.accordion-wrapper {
+  background: #60B38D;
+}
+.accordion-wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 70px 0 50px;
+  color: #fff;
+  text-align: center;
+}
+.react-sanfona {
+  width: 100%;
+  height: auto;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+.react-sanfona-item {
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+}
+.react-sanfona-item-title {
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 3px;
+  color: #414141;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px;
+}
+@media (max-width: 992px) {
+  .react-sanfona {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .react-sanfona {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .react-sanfona {
+    max-width: 540px;
+  }
+  .react-sanfona-item {
+    margin: 20px 20px;
+  }
+}

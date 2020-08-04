@@ -10,7 +10,7 @@ import Planos from '../components/Planos'
 import Carousel from '../components/Carousel'
 import Duvidas from '../components/Duvidas'
 import ComoFunciona from '../components/ComoFunciona'
-import Accordion from '../components/Accordion'
+import AccordionComponent from '../components/AccordionComponent'
 import FaleComAGente from '../components/FaleComAGente'
 import BlogDestaques from '../components/BlogDestaques'
 import VamosConversar from '../components/VamosConversar'
@@ -60,7 +60,7 @@ export const HomePageTemplate = ({
           <section>
             abertura de empresas
           </section>
-          <Accordion />
+          <AccordionComponent />
           <VamosConversar />
           <BlogDestaques />
           <FaleComAGente />

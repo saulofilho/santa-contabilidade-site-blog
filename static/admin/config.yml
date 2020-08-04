@@ -122,6 +122,7 @@ collections:
     fields:
       - { label: Nome, name: title, widget: string }
       - { label: About, name: about, widget: text }
+      - { label: Linkedin, name: linkedin, widget: string }
       - {
         label: Imagem,
         name: featuredImage,
