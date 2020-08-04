@@ -1,53 +1,29 @@
 import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
-import Header from '../components/Header'
-import Destaques from "../components/Destaques"
-import PostSection from '../components/PostSection'
-import PostCategoriesNav from '../components/PostCategoriesNav'
+import HeaderSite from '../components/HeaderSite'
+import Hero from '../components/Hero'
+import Clientes from "../components/Clientes"
+import Cards from '../components/Cards'
+import Ilustra from '../components/Ilustra'
+import Planos from '../components/Planos'
+import Carousel from '../components/Carousel'
+import Duvidas from '../components/Duvidas'
+import ComoFunciona from '../components/ComoFunciona'
+import Accordion from '../components/Accordion'
+import FaleComAGente from '../components/FaleComAGente'
+import BlogDestaques from '../components/BlogDestaques'
+import VamosConversar from '../components/VamosConversar'
 import Layout from '../components/Layout'
-import TypeChecker from 'typeco';
 import './HomePage.css'
 
 export const HomePageTemplate = ({
   title,
   posts = [],
-  destaquesSize = 2,
+  destaquesSize = 3,
 }) => {
 
-  const insertYellowAd = (arr, index, ...newItems) => [
-    ...arr.slice(0, index),
-    ...newItems,
-    ...arr.slice(index)
-  ]
-
-  const insertGreenAd = (arr, index, ...newItems) => [
-    ...arr.slice(0, index),
-    ...newItems,
-    ...arr.slice(index)
-  ]
-  
-  const yellowAd = insertYellowAd(posts, 5, 
-      {
-        title: "CONTABILIDADE ONLINE?",
-        subtitle: "MITOS E VERDADES AGORA!",
-        leitura: "yellow",
-        slug: "http://localhost:8000/",
-        status: "Ad"
-      }
-    )
-
-  const postsAndAds = insertGreenAd(yellowAd, 10, 
-      {
-        title: "FICOU COM GOSTINHO DE QUERO MAIS?",
-        subtitle: "CONFIRA NOSSA PÁGINA DE MATERIAIS RICOS",
-        leitura: "green",
-        slug: "http://localhost:8000/",
-        status: "Ad"
-      }
-    )
-
-  const [allPosts, setAllPosts] = useState([...postsAndAds]);
+  const [allPosts, setAllPosts] = useState([...posts]);
 
   const postsDestaques = posts.filter(post => post.status == "Destaque")
 
@@ -67,44 +43,27 @@ export const HomePageTemplate = ({
     return el.categories.map(cat => cat.category) == "Gestão"
   });
 
-  const showContabilidade = () => {
-    setAllPosts(postContabilidade)
-  }
-
-  const showEmpreendedorismo = () => {
-    setAllPosts(postsEmpreendedorismo)
-  }
-  
-  const showFinancas = () => {
-    setAllPosts(postsFinancas)
-  }
-  
-  const showGestao = () => {
-    setAllPosts(postsGestao)
-  }
-  
-  const showAll = () => {
-    setAllPosts([...posts])
-  }
-
-  const getMatchedList = (searchText) => {
-    if (TypeChecker.isEmpty(searchText)) return posts;
-    return posts.filter(post => post.title.toLowerCase().includes(searchText.toLowerCase()));
-  };
-
-  const onSearchClick = (value) => {
-    setAllPosts(getMatchedList(value))
-  }
-
   return (
   <Location>
     {({ location }) => {      
       return (
         <>
-          <Header />
-          <div className="home">
-            <h1>HOME PAGE</h1>
-          </div>
+          <HeaderSite />
+          <Hero />
+          <Clientes />
+          <Cards />
+          <Ilustra />
+          <Planos />
+          <Carousel />
+          <Duvidas />
+          <ComoFunciona />
+          <section>
+            abertura de empresas
+          </section>
+          <Accordion />
+          <VamosConversar />
+          <BlogDestaques />
+          <FaleComAGente />
         </>
       )
     }}

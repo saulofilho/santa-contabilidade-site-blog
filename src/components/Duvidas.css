@@ -1,0 +1,11 @@
+.duvidas-wrapper {
+  background: #06606B;
+  padding: 50px 0;
+}
+.duvidas-wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: #fff;
+}

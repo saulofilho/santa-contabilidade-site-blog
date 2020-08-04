@@ -1,0 +1,5 @@
+.como-funciona-wrapper .texts-wrapper {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
