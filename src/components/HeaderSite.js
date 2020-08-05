@@ -22,30 +22,30 @@ const Header = () => {
         </div>
         <div className="header-right-desk">
           <div className="btns-wrapper">
-            <button className="btn-blog">
               <Link to={"/blog"}>
-                Blog
+                <button className="btn-blog">
+                  Blog
+                </button>
               </Link>
-            </button>
-            <button className="btn-fale">
               <a href="http://localhost:8000/">
-                Fale com um especialista
-                </a>
-            </button>
+                <button className="btn-fale">
+                  Fale com um especialista
+                </button>
+              </a>
           </div>
         </div>
         <div className="header-right-mob">
           <div className="btns-wrapper">
-            <button className="btn-blog">
               <Link to={"/blog"}>
-                Blog
+                <button className="btn-blog">
+                  Blog
+                </button>
               </Link>
-            </button>
-            <button className="btn-fale">
               <a href="http://localhost:8000/">
-                Fale com um especialista
-                </a>
-            </button>
+                <button className="btn-fale">
+                  Fale com um especialista
+                </button>
+              </a>
           </div>
         </div>
         <button

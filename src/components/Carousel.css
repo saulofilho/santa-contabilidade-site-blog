@@ -1,9 +1,62 @@
-.swiper-container {
+.carousel-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 500px;
 }
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: red;
+.slick-slider {
+  width: 100%;
+  height: 100%;
+}
+.slick-list {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px !important;
+}
+.slick-dots {
+  bottom: 0 !important;
+}
+.slick-prev {
+  left: 0 !important;
+  z-index: 9 !important;
+}
+.slick-prev:before {
+  content: url('../../static/assets/arrow-left.png') !important;
+}
+.slick-next {
+  right: 0 !important;
+  z-index: 9 !important;
+}
+.slick-next:before {
+  content: url('../../static/assets/arrow-right.png') !important;
+}
+.slick-dots li button:before {
+  color: #60B38D !important;
+}
+.car-items-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  position: relative;
+}
+.car-items-wrapper iframe {
+  margin-right: 130px;
+}
+.car-texts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.car-texts-wrapper h3 {
+  color: #60B38D;
+  font-size: 16px;
+}
+.green-box {
+  background: #60B38D;
+  width: 375px;
+  height: 430px;
+  position: absolute;
+  z-index: -1;
+  right: 30px;
+  top: 0;
 }

@@ -10,64 +10,66 @@ const Header = () => {
 
   return (
     <header
-      className={menuClassNames}
+      className="header-blog"
     >
-      <div className="header-left">
-        <div className="logo-header">
-          <a href="/">
-            <img src={LogoHero} alt="" />
+      <div className={menuClassNames}>
+        <div className="header-left">
+          <div className="logo-header">
+            <a href="/">
+              <img src={LogoHero} alt="" />
+            </a>
+          </div>
+        </div>
+        <div className="header-right-desk">
+          <a href="#search">
+            <img src={Lupa} alt="lupa anchor search" />
           </a>
-        </div>
-      </div>
-      <div className="header-right-desk">
-        <a href="#search">
-          <img src={Lupa} alt="lupa anchor search" />
-        </a>
-        <div className="btns-wrapper">
-          <button className="btn-materiais">
-            <a href="http://localhost:8000/">
-              Materiais Gratuitos
-            </a>
-          </button>
-          <button className="btn-fale">
-            <a href="http://localhost:8000/">
-              Fale com um especialista
+          <div className="btns-wrapper">
+              <a href="http://localhost:8000/">
+                <button className="btn-materiais">
+                  Materiais Gratuitos
+                </button>
               </a>
-          </button>
-        </div>
-      </div>
-      <div className="header-right-mob">
-        <a href="#search">
-          <img src={Lupa} alt="lupa anchor search" />
-        </a>
-        <div className="btns-wrapper">
-          <button className="btn-materiais">
-            <a href="http://localhost:8000/">
-              Materiais Gratuitos
-            </a>
-          </button>
-          <button className="btn-fale">
-            <a href="http://localhost:8000/">
-              Fale com um especialista
+              <a href="http://localhost:8000/">
+                <button className="btn-fale">
+                  Fale com um especialista
+                </button>
               </a>
-          </button>
+          </div>
         </div>
-      </div>
-      <button
-        className="button-blank menu-button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ?
-          <X
-            color={"#06606B"}
-            className="x"
-          />
-            :
-          <Menu
-            color={"#06606B"}
-            className="menu"
-          />}
-      </button>
+        <div className="header-right-mob">
+          <a href="#search">
+            <img src={Lupa} alt="lupa anchor search" />
+          </a>
+          <div className="btns-wrapper">
+            <a href="http://localhost:8000/">
+              <button className="btn-materiais">
+                  Materiais Gratuitos
+              </button>
+            </a>
+            <a href="http://localhost:8000/">
+              <button className="btn-fale">
+                Fale com um especialista
+              </button>
+            </a>
+          </div>
+        </div>
+        <button
+          className="button-blank menu-button"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ?
+            <X
+              color={"#06606B"}
+              className="x"
+            />
+              :
+            <Menu
+              color={"#06606B"}
+              className="menu"
+            />}
+        </button>
+      </div>  
     </header>
   )
 }

@@ -24,16 +24,16 @@ const Header = () => {
           <img src={LupaBranca} alt="lupa anchor search" />
         </a> */}
         <div className="btns-wrapper">
-          <button className="btn-materiais-post">
             <a href="http://localhost:8000/">
-              Materiais Gratuitos
-              </a>
-          </button>
-          <button className="btn-fale">
+              <button className="btn-materiais-post">
+                Materiais Gratuitos
+              </button>
+            </a>
             <a href="http://localhost:8000/">
-              Fale com um especialista
-              </a>
-          </button>
+              <button className="btn-fale">
+                Fale com um especialista
+              </button>
+            </a>
         </div>
       </div>
       <div className="header-right-mob">
@@ -41,16 +41,16 @@ const Header = () => {
           <img src={LupaBranca} alt="lupa anchor search" />
         </a> */}
         <div className="btns-wrapper">
-          <button className="btn-materiais-post">
             <a href="http://localhost:8000/">
-              Materiais Gratuitos
+              <button className="btn-materiais-post">
+                Materiais Gratuitos
+              </button>
             </a>
-          </button>
-          <button className="btn-fale">
             <a href="http://localhost:8000/">
-              Fale com um especialista
+              <button className="btn-fale">
+                Fale com um especialista
+              </button>
             </a>
-          </button>
         </div>
       </div>
       <button

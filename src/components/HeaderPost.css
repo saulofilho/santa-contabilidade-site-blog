@@ -45,13 +45,13 @@
   border-radius: 4px;
   margin-right: 30px;
 }
-.btn-materiais-post a {
+a .btn-materiais-post {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
   font-family: 'Open Sans';
 }
-header button.btn-fale {
+header .btn-fale {
   width: 240px;
   height: 40px;
   background: #06606B;
@@ -59,7 +59,7 @@ header button.btn-fale {
   border: 1px solid #fff;
   border-radius: 4px;
 }
-header button.btn-fale a {
+header a .btn-fale {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
