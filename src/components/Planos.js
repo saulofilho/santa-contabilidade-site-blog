@@ -1,10 +1,12 @@
 import React from "react"
 import './Planos.css'
-import Nave from '../../static/assets/nave-notebook.png'
+import Bussola from '../../static/assets/bussola.png'
+import Binoculos from '../../static/assets/binoculos.png'
+import Montanha from '../../static/assets/montanha.png'
 
 const Planos = () => {
   return (
-    <section className="planos-wrapper">
+    <section className="planos-wrapper" id="planos">
       <div className="container">
         <h1>
           Você pediu e nós atendemos
@@ -25,7 +27,7 @@ const Planos = () => {
             <p className="title">
               MEI
             </p>
-            <img src={Nave} alt="ilustracao pessoa com fone"/>
+            <img src={Bussola} alt="ilustracao pessoa com fone"/>
             <p className="apartir">
               a partir de
             </p>
@@ -57,7 +59,7 @@ const Planos = () => {
             <p className="title">
               SIMPLES
             </p>
-            <img src={Nave} alt="ilustracao pessoa com fone"/>
+            <img src={Binoculos} alt="ilustracao pessoa com fone"/>
             <p className="apartir">
               a partir de
             </p>
@@ -89,7 +91,7 @@ const Planos = () => {
             <p className="title">
               MEI
             </p>
-            <img src={Nave} alt="ilustracao pessoa com fone"/>
+            <img src={Montanha} alt="ilustracao pessoa com fone"/>
             <p className="apartir">
               a partir de
             </p>

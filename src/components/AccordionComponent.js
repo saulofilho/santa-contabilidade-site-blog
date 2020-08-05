@@ -19,7 +19,11 @@ const AccordionComponent = () => {
         <Accordion>
           <AccordionItem title={"Quanto custa para abrir uma empresa MEI"} >
             <div>
-              teste
+              No painel Camadas, clique no ícone de cadeado perto da sua camada 
+              original para prevenir qualquer mudança acidental. E seguida, 
+              selecione a ferramenta Retângulo e arraste sobre a área que você 
+              gostaria de inverter. Selecione o seu novo retângulo e a camada 
+              duplicada, e então vá para "Janela"
             </div>
           </AccordionItem>
           <AccordionItem title={"Quanto custa para abrir uma empresa MEI"}>

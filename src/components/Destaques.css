@@ -52,7 +52,7 @@
 }
 .destaque-infos-wrapper {
   position: absolute;
-  width: auto;
+  width: 100%;
   height: 100%;
   color: #fff;
   z-index: 1;
@@ -75,4 +75,22 @@
   padding-right: 5px;
   width: auto;
   height: 15px;
+}
+@media (max-width: 600px) {
+  .data-leitura-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: column;
+  }
+  .data-leitura-wrapper p {
+    font-size: 14px;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .destaque-infos-wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
+  }
 }

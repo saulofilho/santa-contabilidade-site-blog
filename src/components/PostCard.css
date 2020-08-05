@@ -1,4 +1,6 @@
 .post-card {
+  width: 100%;
+  height: auto;
   background: #F3F7FB;
 }
 .post-card:hover,
@@ -16,7 +18,7 @@
   padding: 0 25px 25px;
 }
 .post-card-category {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: left;
@@ -59,4 +61,9 @@
   padding-right: 5px;
   width: auto;
   height: 15px;
+}
+@media screen and (max-width: 400px) {
+  .post-card {
+    width: 290px;
+  }
 }

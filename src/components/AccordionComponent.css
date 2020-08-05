@@ -18,20 +18,43 @@
   padding: 20px 40px;
 }
 .react-sanfona-item {
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 20px 0;
-}
-.react-sanfona-item-title {
-  width: auto;
-  height: auto;
   background: #fff;
   border-radius: 3px;
+}
+.react-sanfona-item-title {
+  width: 100%;
+  height: auto;
   color: #414141;
   font-size: 14px;
   font-weight: 600;
   text-align: left;
   padding: 20px;
+  padding-left: 40px;
+}
+.react-sanfona-item-body-wrapper {
+  background: #0A616C;
+  border-radius: 0 0 3px 3px;
+}
+.react-sanfona-item-title[aria-expanded="false"] {
+  content: '';
+  background-image: url('../../static/assets/arrow-down.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  right: 20px;
+}
+.react-sanfona-item-title[aria-expanded="true"] {
+  content: '';
+  background-image: url('../../static/assets/arrow-up.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  right: 20px;
 }
 @media (max-width: 992px) {
   .react-sanfona {

@@ -22,10 +22,14 @@ const Header = () => {
         </div>
         <div className="header-right-desk">
           <div className="btns-wrapper">
-              <Link to={"/blog"}>
-                <button className="btn-blog">
+              <a href="#servicos" className="btn-blog">
+                Serviços
+              </a>
+              <a href="#planos"  className="btn-blog">
+                Planos
+              </a>
+              <Link to={"/blog"} className="btn-blog">
                   Blog
-                </button>
               </Link>
               <a href="http://localhost:8000/">
                 <button className="btn-fale">
@@ -36,10 +40,14 @@ const Header = () => {
         </div>
         <div className="header-right-mob">
           <div className="btns-wrapper">
-              <Link to={"/blog"}>
-                <button className="btn-blog">
-                  Blog
-                </button>
+              <a href="#servicos" className="btn-blog">
+                Serviços
+                </a>
+              <a href="#planos" className="btn-blog">
+                Planos
+                </a>
+              <Link to={"/blog"} className="btn-blog">
+                Blog
               </Link>
               <a href="http://localhost:8000/">
                 <button className="btn-fale">

@@ -1,3 +1,6 @@
+.header-post {
+  padding-top: 30px;
+}
 .header-wrapper {
   width: 100%;
   height: auto;
@@ -37,15 +40,11 @@
   height: auto;
 }
 .btn-materiais-post {
-  width: 150px;
-  height: 40px;
-  background: transparent;
-  outline: unset;
-  border: unset;
-  border-radius: 4px;
+  width: auto;
+  height: auto;
   margin-right: 30px;
 }
-a .btn-materiais-post {
+a.btn-materiais-post {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -67,10 +66,6 @@ header a .btn-fale {
 }
 header button:hover {
   opacity: 0.9;
-}
-.btns-wrapper {
-  display: flex;
-  flex-flow: row;
 }
 .button-blank {
   appearance: none;
@@ -95,10 +90,11 @@ header button:hover {
 /* desktop */
 
 @media (max-width: 800px) {
-  .btns-wrapper {
+  .header-post .btns-wrapper {
     display: flex;
     flex-flow: column;
     padding-top: 20px;
+    text-align: center;
   }
   .btn-materiais-post {
     width: 100%;

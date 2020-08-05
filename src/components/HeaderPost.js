@@ -10,64 +10,62 @@ const Header = () => {
 
   return (
     <header
-      className={menuClassNames}
+      className="header-post"
     >
-      <div className="header-left">
-        <div className="logo-header">
-          <a href="/">
-            <img src={LogoHero} alt="" />
-          </a>
+      <div className={menuClassNames}>
+        <div className="header-left">
+          <div className="logo-header">
+            <a href="/">
+              <img src={LogoHero} alt="" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="header-right-desk">
-        {/* <a href="#search">
-          <img src={LupaBranca} alt="lupa anchor search" />
-        </a> */}
-        <div className="btns-wrapper">
-            <a href="http://localhost:8000/">
-              <button className="btn-materiais-post">
+        <div className="header-right-desk">
+          {/* <a href="#search">
+            <img src={LupaBranca} alt="lupa anchor search" />
+          </a> */}
+          <div className="btns-wrapper">
+              <a href="http://localhost:8000/" className="btn-materiais-post">
                 Materiais Gratuitos
-              </button>
-            </a>
-            <a href="http://localhost:8000/">
-              <button className="btn-fale">
-                Fale com um especialista
-              </button>
-            </a>
+              </a>
+              <a href="http://localhost:8000/">
+                <button className="btn-fale">
+                  Fale com um especialista
+                </button>
+              </a>
+          </div>
         </div>
-      </div>
-      <div className="header-right-mob">
-        {/* <a href="#search">
-          <img src={LupaBranca} alt="lupa anchor search" />
-        </a> */}
-        <div className="btns-wrapper">
-            <a href="http://localhost:8000/">
-              <button className="btn-materiais-post">
+        <div className="header-right-mob">
+          {/* <a href="#search">
+            <img src={LupaBranca} alt="lupa anchor search" />
+          </a> */}
+          <div className="btns-wrapper">
+              <a href="http://localhost:8000/" className="btn-materiais-post">
                 Materiais Gratuitos
-              </button>
-            </a>
-            <a href="http://localhost:8000/">
-              <button className="btn-fale">
-                Fale com um especialista
-              </button>
-            </a>
+              </a>
+              <a href="http://localhost:8000/">
+                <button className="btn-fale">
+                  Fale com um especialista
+                </button>
+              </a>
+          </div>
         </div>
+        <button
+          className="button-blank menu-button"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ?
+            <X
+              color={"#fff"}
+              className="x"
+            />
+              :
+            <Menu
+              color={"#fff"}
+              className="menu"
+            />}
+        </button>
       </div>
-      <button
-        className="button-blank menu-button"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ?
-          <X
-            color={"#fff"}
-            className="x"
-          />
-            :
-          <Menu
-            color={"#fff"}
-            className="menu"
-          />}
-      </button>
     </header>
   )
 }

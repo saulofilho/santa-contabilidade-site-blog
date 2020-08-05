@@ -25,10 +25,8 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-              <a href="http://localhost:8000/">
-                <button className="btn-materiais">
-                  Materiais Gratuitos
-                </button>
+              <a href="http://localhost:8000/" className="btn-materiais">
+                Materiais Gratuitos
               </a>
               <a href="http://localhost:8000/">
                 <button className="btn-fale">
@@ -42,10 +40,8 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-            <a href="http://localhost:8000/">
-              <button className="btn-materiais">
-                  Materiais Gratuitos
-              </button>
+            <a href="http://localhost:8000/" className="btn-materiais">
+              Materiais Gratuitos
             </a>
             <a href="http://localhost:8000/">
               <button className="btn-fale">

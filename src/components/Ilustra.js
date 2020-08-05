@@ -7,19 +7,22 @@ const Ilustra = () => {
   return (
     <section className="ilustra-wrapper">
       <div className="container">
-        <img src={PessoaCelular} alt="pessoa segurando celular" />
+        <img src={PessoaCelular} alt="pessoa segurando celular" className="pessoa-cel" />
         <div className="texts-wrapper">
           <h1>
             Atendemos Empresas
+            <br/>
             em mais de 30 municípios 
+            <br/>
             em toda Santa Catarina
           </h1>
           <p className="subtitle">
             Venha para a Contabilidade Online preferida
+            <br/>
             por mais de 3.000 empresas em todo o Brasil
           </p>
           <img src={BarraVerde} className="barra-verde" alt="barra verde em vetor"/>
-          <p className="subtitle">
+          <p className="subtitle-bottom">
             No painel Camadas, clique no ícone de cadeado perto da sua camada 
             original para prevenir qualquer mudança acidental. E seguida, 
             selecione a ferramenta Retângulo e arraste sobre a área que você 

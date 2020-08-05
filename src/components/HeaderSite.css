@@ -2,6 +2,7 @@
   background: #06606B;
   height: auto;
   width: 100%;
+  padding-top: 30px;
 }
 .header-wrapper {
   width: 100%;
@@ -37,15 +38,11 @@
   height: auto;
 }
 .btn-blog {
-  width: 150px;
+  width: 50px;
   height: 40px;
-  background: transparent;
-  outline: unset;
-  border: unset;
-  border-radius: 4px;
-  margin: 0 30px;
+  margin: 0 40px 0 0;
 }
-a .btn-blog {
+a.btn-blog {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -67,10 +64,6 @@ header a .btn-fale {
 }
 header button:hover {
   opacity: 0.9;
-}
-.btns-wrapper {
-  display: flex;
-  flex-flow: row;
 }
 .button-blank {
   appearance: none;
@@ -95,10 +88,11 @@ header button:hover {
 /* desktop */
 
 @media (max-width: 800px) {
-  .btns-wrapper {
+  .header-site .btns-wrapper {
     display: flex;
     flex-flow: column;
     padding-top: 20px;
+    text-align: center;
   }
   .btn-blog {
     width: 100%;

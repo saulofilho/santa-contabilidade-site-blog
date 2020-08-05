@@ -14,6 +14,7 @@ import AccordionComponent from '../components/AccordionComponent'
 import FaleComAGente from '../components/FaleComAGente'
 import BlogDestaques from '../components/BlogDestaques'
 import VamosConversar from '../components/VamosConversar'
+import AberturaEmpresa from '../components/AberturaEmpresa'
 import Layout from '../components/Layout'
 import './HomePage.css'
 
@@ -57,9 +58,7 @@ export const HomePageTemplate = ({
           <Carousel />
           <Duvidas />
           <ComoFunciona />
-          <section>
-            abertura de empresas
-          </section>
+          <AberturaEmpresa />
           <AccordionComponent />
           <VamosConversar />
           <BlogDestaques />

@@ -5,12 +5,12 @@ const ComoFunciona = () => {
   return (
     <section className="como-funciona-wrapper">
       <div className="container">
-        <p>
+        <h1>
           Como funciona a
           <br />
           Contabilidade Digital na prática
-        </p>
-        <p>
+        </h1>
+        <p className="subtitle">
           Planos que realmente têm a cara da sua empresa.
           <br />
           Com a gente você sabe exatamente quanto vai pagar sem aquelas 
@@ -26,7 +26,7 @@ const ComoFunciona = () => {
               <li>Resolve as suas dúvidas com nosso atendimento.</li>
             </ul>
           </section>
-          <section className="NOS">
+          <section className="nos">
             <p>o que você nós vamos fazer</p>
             <ul>
               <li>Calculamos as guias de impostos, folha de pagamento e pró-labore.</li>

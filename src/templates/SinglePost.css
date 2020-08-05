@@ -7,6 +7,7 @@
 .singlepost-wrapper {
   margin: 0 auto;
   max-width: 900px;
+  background: #fff;
 }
 .categoria {
   width: auto;
@@ -46,6 +47,8 @@
   align-items: center;
   color: #fff;
   height: auto;
+  z-index: 9;
+  background: #06606B;
 }
 .autor-data-leitura-wrapper {
   display: flex;
@@ -129,7 +132,7 @@
 }
 .box-green {
   width: 100%;
-  height: 160px;
+  height: auto;
   background: #60B38D;
   display: flex;
   justify-content: center;
@@ -350,5 +353,12 @@
   }
   .relacionados-wrapper {
     grid-template-columns: 1fr;
+  }
+  .box-green button {
+    width: auto;
+    height: 35px;
+  }
+  .posts-relacionados-title {
+    padding: 30px 0 20px 40px;
   }
 }

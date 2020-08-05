@@ -11,7 +11,7 @@ const Hero = () => {
             <strong>Contabilidade online</strong> da 
             <br/> sua empresa de forma 
             <br/>
-            <strong>prática</strong> e <strong>segura</strong>
+            <strong>prática</strong> e <strong>segura</strong> e <strong>econômica</strong>
           </h1>
           <p>
           Acesse gratuitamente eBooks, Webinars, Templates e outros 
@@ -21,13 +21,13 @@ const Hero = () => {
           tecnologia, empreendedorismo, marketing digital e outros.
           </p>
           <div className="btns-hero">
-          <a href="">
-            <button>quero abrir empresa</button>
-          </a>
-          <a href="">
-            <button>quero trocar de contador</button>
-          </a>
-        </div>
+            <a href="">
+              <button className="btn-green">Conheça mais</button>
+            </a>
+            <a href="">
+              <button className="btn-transparent">Abertura de empresa grátis</button>
+            </a>
+          </div>
         </div>
         <div className="img-hero">
           <img src={ImgHero} alt="hero-ilustration"/>
