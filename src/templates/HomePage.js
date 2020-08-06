@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { graphql } from 'gatsby'
-import { Location } from '@reach/router'
 import HeaderSite from '../components/HeaderSite'
 import Hero from '../components/Hero'
 import Clientes from "../components/Clientes"
@@ -19,54 +18,26 @@ import Layout from '../components/Layout'
 import './HomePage.css'
 
 export const HomePageTemplate = ({
-  title,
-  posts = [],
-  destaquesSize = 3,
+  posts = []
 }) => {
 
-  const [allPosts, setAllPosts] = useState([...posts]);
-
-  const postsDestaques = posts.filter(post => post.status == "Destaque")
-
-  const postContabilidade = posts.filter(el => {
-    return el.categories.map(cat => cat.category) == "Contabilidade"
-  });
-  
-  const postsEmpreendedorismo = posts.filter(el => {
-    return el.categories.map(cat => cat.category) == "Empreendedorismo"
-  });
-  
-  const postsFinancas = posts.filter(el => {
-    return el.categories.map(cat => cat.category) == "Finanças"
-  });
-  
-  const postsGestao = posts.filter(el => {
-    return el.categories.map(cat => cat.category) == "Gestão"
-  });
-
   return (
-  <Location>
-    {({ location }) => {      
-      return (
-        <>
-          <HeaderSite />
-          <Hero />
-          <Clientes />
-          <Cards />
-          <Ilustra />
-          <Planos />
-          <Carousel />
-          <Duvidas />
-          <ComoFunciona />
-          <AberturaEmpresa />
-          <AccordionComponent />
-          <VamosConversar />
-          <BlogDestaques />
-          <FaleComAGente />
-        </>
-      )
-    }}
-  </Location>
+    <>
+      <HeaderSite />
+      <Hero />
+      <Clientes />
+      <Cards />
+      <Ilustra />
+      <Planos />
+      <Carousel />
+      <Duvidas />
+      <ComoFunciona />
+      <AberturaEmpresa />
+      <AccordionComponent />
+      <VamosConversar />
+      <BlogDestaques posts={posts} />
+      <FaleComAGente />
+    </>
   )
 }
 
