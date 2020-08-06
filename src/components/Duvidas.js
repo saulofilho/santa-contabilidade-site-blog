@@ -12,7 +12,11 @@ const Duvidas = () => {
           Converse com nosso time de especialistas e  e descubra mais 
           sobre a contabilidade digital
         </p>
-        <a href="">
+        <a
+          target='_blank'
+          rel="noopener" 
+          href="https://wa.me/5548984289990?text=SantaContabilidade"
+        >
           <button>
             Quero falar com um especialista
           </button>

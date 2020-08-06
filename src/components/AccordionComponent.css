@@ -10,6 +10,21 @@
   color: #fff;
   text-align: center;
 }
+.accordion-wrapper h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 20px 0 20px;
+  text-align: center;
+}
+.accordion-wrapper p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 10px;
+  text-align: center;
+}
 .react-sanfona {
   width: 100%;
   height: auto;
@@ -37,6 +52,8 @@
 .react-sanfona-item-body-wrapper {
   background: #0A616C;
   border-radius: 0 0 3px 3px;
+  padding: 50px;
+  text-align: left;
 }
 .react-sanfona-item-title[aria-expanded="false"] {
   content: '';

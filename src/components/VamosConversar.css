@@ -1,0 +1,63 @@
+.vamos-conversar-wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  padding: 100px 0;
+}
+.vamos-conversar-wrapper h1 {
+  font-size: 32px;
+  color: #0A616C;
+  font-weight: bolder;
+  padding: 0 0 30px;
+}
+.vamos-conversar-wrapper p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 600;
+  padding: 0 0 30px;
+}
+.vamos-conversar-wrapper button {
+  background: #0A616C;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 30px;
+  border: unset;
+  border-radius: 3px;
+}
+.vamos-conversar-wrapper button:hover {
+  opacity: 0.8;
+}
+.conversa-img {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #60B38D;
+  margin: 0 80px 0 0;
+}
+@media (max-width: 700px) {
+  .vamos-conversar-wrapper .container {
+    flex-flow: column;
+    padding: 100px 0;
+  }
+  .conversa-img {
+    margin: 0 auto;
+  }
+  .vamos-conversar-wrapper h1 {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .vamos-conversar-wrapper p {
+    text-align: center;
+  }
+  .vamos-conversar-wrapper button {
+    margin: 0 auto;
+  }
+  .vamos-conversar-wrapper .text-btn-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

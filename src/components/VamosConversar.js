@@ -5,25 +5,23 @@ const VamosConversar = () => {
   return (
     <section className="vamos-conversar-wrapper">
       <div className="container">
-        <img src="" alt=""/>
-        <div className="text-btn-wrapper">
-
+        <div className="conversa-img">
+          <img src="" alt="" />
         </div>
-        <h1>
-          E aí, vamos conversar?
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing 
-          <br/>
-          elit, sed diam nonummy nibh euismod tincidunt ut 
-        </p>
-        <div className="btns">
-          <a href="">
-            <button>
-              Começar agora
-            </button>
-          </a>
-          <a href="">
+        <div className="text-btn-wrapper">
+          <h1>
+            E aí, vamos conversar?
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing
+            <br />
+            elit, sed diam nonummy nibh euismod tincidunt ut
+          </p>
+          <a
+            target='_blank'
+            rel="noopener"
+            href="https://wa.me/5548984289990?text=SantaContabilidade"
+          >
             <button>
               Falar com um especialista
             </button>

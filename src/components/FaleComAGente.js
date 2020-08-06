@@ -6,37 +6,43 @@ const FaleComAGente = () => {
   return (
     <section className="fale-gente-wrapper">
       <div className="container">
-        <h1>Fale com a gente</h1>
+        <h1>Fale com a Santa Contabilidade</h1>
         <div className="two-cards-wrapper">
           <div className="card-white">
-            <p>
+            <p className="ficou-duvida">
               Ficou com alguma dúvida?
               <br/>
               Solicite uma consultoria gratuita!
             </p>
-            <div className="endereco-wrapper">
-              <img src={WhatsApp} alt="whats app icon"/>
-              <p>Rua Adelino Boschetti Mateus, 144, Picadas do Sul</p>
+            <div className="enderecos">
+              <div className="endereco-wrapper">
+                <img src={WhatsApp} alt="whats app icon"/>
+                <p>Rua Adelino Boschetti Mateus, 144, Picadas do Sul</p>
+              </div>
+              <div className="endereco-wrapper">
+                <img src={WhatsApp} alt="whats app icon"/>
+                <p>São José  Santa Catarina</p>
+              </div>
+              <div className="endereco-wrapper">
+                <img src={WhatsApp} alt="whats app icon"/>
+                <p>(48) 999616963</p>
+              </div>
+              <div className="endereco-wrapper">
+                <img src={WhatsApp} alt="whats app icon"/>
+                <p>francisco@santacontabilidade.com.br</p>
+              </div>
             </div>
-            <div className="endereco-wrapper">
-              <img src={WhatsApp} alt="whats app icon"/>
-              <p>São José  Santa Catarina</p>
-            </div>
-            <div className="endereco-wrapper">
-              <img src={WhatsApp} alt="whats app icon"/>
-              <p>(48) 999616963</p>
-            </div>
-            <div className="endereco-wrapper">
-              <img src={WhatsApp} alt="whats app icon"/>
-              <p>francisco@santacontabilidade.com.br</p>
-            </div>
-            <p>
+            <p className="ficou-duvida">
               Ficou com alguma dúvida?
               <br/>
               Solicite uma consultoria gratuita!
             </p>
-            <a href="">
-              <button>
+            <a 
+              target='_blank'
+              rel="noopener" 
+              href="https://wa.me/5548984289990?text=SantaContabilidade"
+            >
+              <button className="falar-especialista">
                 Falar com um especialista
               </button>
             </a>

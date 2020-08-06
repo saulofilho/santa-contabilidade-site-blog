@@ -25,6 +25,9 @@
   border: unset;
   border-radius: 3px;
   background: #60B38D;
-  padding: 10px 30px;
+  padding: 10px 35px;
   color: #fff;
+}
+.duvidas-wrapper button:hover {
+opacity: 0.8;
 }

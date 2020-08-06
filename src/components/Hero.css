@@ -104,4 +104,7 @@
   .btns-hero a {
     padding: 0 0 20px;
   }
+  .btns-hero button {
+    margin: 0 auto;
+  }
 }
