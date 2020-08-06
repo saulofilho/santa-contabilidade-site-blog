@@ -16,7 +16,7 @@
 }
 .cards-wrapper .container .title-header {
   color: #414141;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   padding: 0 0 50px;
   text-align: center;
@@ -43,13 +43,13 @@
   align-items: center;
   flex-flow: column;
 }
-.card-wrapper .title {
+.four-cards-wrapper .title {
   color: #5FB38D !important;
   font-weight: bolder;
   font-size: 16px;
   text-align: center;
 }
-.card-wrapper .text {
+.four-cards-wrapper .text {
   color: #414141;
   font-size: 12px;
   font-weight: 600;

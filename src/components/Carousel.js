@@ -27,8 +27,12 @@ const Carousel = () => {
                   a dizer sobre o nosso trabalho
                 </h3>
                 <p className="quote">
-                  “Quando comecei a Santa Contabilidade eum resolvi problemas 
-                  contábeis de 3 anos em apenas 2 meses! Incrívell"
+                  “Quando comecei a Santa Contabilidade eu
+                  <br/> 
+                  resolvi problemas 
+                  contábeis de 3 anos em 
+                  <br/> 
+                  apenas 2 meses! Incrívell"
                 </p>
                 <p className="quote-autor">
                   Marcela Viana da Empresa TAL
@@ -38,9 +42,9 @@ const Carousel = () => {
                 width="560" 
                 height="315" 
                 src="https://www.youtube.com/embed/z9XmawB0t7Q?controls=0" 
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen 
+                allowFullScreen 
               />
               <span className="green-box"></span>
             </div>
@@ -54,8 +58,12 @@ const Carousel = () => {
                   a dizer sobre o nosso trabalho
                 </h3>
                 <p className="quote">
-                  “Quando comecei a Santa Contabilidade eum resolvi problemas 
-                  contábeis de 3 anos em apenas 2 meses! Incrívell"
+                  “Quando comecei a Santa Contabilidade eu
+                  <br/> 
+                  resolvi problemas 
+                  contábeis de 3 anos em 
+                  <br/> 
+                  apenas 2 meses! Incrívell"
                 </p>
                 <p className="quote-autor">
                   Marcela Viana da Empresa TAL
@@ -65,36 +73,9 @@ const Carousel = () => {
                 width="560" 
                 height="315" 
                 src="https://www.youtube.com/embed/z9XmawB0t7Q?controls=0" 
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen 
-              />
-              <span className="green-box"></span>
-            </div>
-          </div>
-          <div>
-            <div className="car-items-wrapper">
-              <div className="car-texts-wrapper">
-                <h3>
-                  Veja o que os  nossos clientes têm
-                  <br/>
-                  a dizer sobre o nosso trabalho
-                </h3>
-                <p className="quote">
-                  “Quando comecei a Santa Contabilidade eum resolvi problemas 
-                  contábeis de 3 anos em apenas 2 meses! Incrívell"
-                </p>
-                <p className="quote-autor">
-                  Marcela Viana da Empresa TAL
-                </p>
-              </div>
-              <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/z9XmawB0t7Q?controls=0" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen 
+                allowFullScreen 
               />
               <span className="green-box"></span>
             </div>

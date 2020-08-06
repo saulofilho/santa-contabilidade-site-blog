@@ -50,6 +50,8 @@
 }
 .btns-hero a {
   padding: 0 20px 20px 0;
+  width: auto;
+  height: auto;
 }
 .btn-green {
   background: #60B38D;
@@ -93,5 +95,13 @@
 @media (max-width: 576px) {
   .btns-hero {
     flex-flow: column;
+    text-align: center;
+  }
+  .text-hero h1,
+  .text-hero p {
+    text-align: center;
+  }
+  .btns-hero a {
+    padding: 0 0 20px;
   }
 }

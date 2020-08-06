@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import LogoHero from '../../static/assets/logo-verde.png'
 import Lupa from '../../static/assets/lupa.png'
@@ -15,9 +16,9 @@ const Header = () => {
       <div className={menuClassNames}>
         <div className="header-left">
           <div className="logo-header">
-            <a href="/">
-              <img src={LogoHero} alt="" />
-            </a>
+            <Link to={"/"}>
+              <img src={LogoHero} alt="logo blog" />
+            </Link>
           </div>
         </div>
         <div className="header-right-desk">

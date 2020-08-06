@@ -7,14 +7,14 @@
   align-items: center;
   flex-flow: column;
 }
-.planos-wrapper .title {
+.planos-title {
   color: #414141;
   font-size: 12px;
   font-weight: 600;
   padding: 0 0 50px;
   text-align: center;
 }
-.planos-wrapper .subtitle {
+.planos-subtitle {
   color: #06606B;
   font-size: 12px;
   font-weight: 600;
@@ -47,7 +47,7 @@
 }
 .three-cards-wrapper .card-wrapper {
   height: auto;
-  width: 250px;
+  width: 300px;
   background: #fff;
   border: 1px solid #60B38D;
   border-radius: 3px;
@@ -55,10 +55,78 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 .three-cards-wrapper .card-wrapper img {
-  height: 58px;
-  width: 58px;
+  height: 78px;
+  width: 78px;
+}
+.three-cards-wrapper .card-wrapper .title {
+  color: #06606B;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 30px 0 20px;
+}
+.three-cards-wrapper .card-wrapper .apartir {
+  color: #414141;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 20px 0 5px;
+}
+.three-cards-wrapper .card-wrapper .preco {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.three-cards-wrapper .card-wrapper .preco p {
+  color: #60B38D;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 0 0 5px;
+}
+.three-cards-wrapper .card-wrapper .preco span {
+  color: #60B38D;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 0 10px;
+}
+.three-cards-wrapper .card-wrapper .subtitle {
+  color: #06606B;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+.three-cards-wrapper .card-wrapper .cnpj {
+  color: #414141;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+.three-cards-wrapper .card-wrapper button {
+  background: #06606B;
+  color: #fff;
+  padding: 10px 40px;
+  border: unset;
+  border-radius: 3px;
+  margin: 30px 0;
+}
+.three-cards-wrapper .card-wrapper button:hover {
+opacity: 0.8;
+}
+.planos-btn {
+  background: #60B38D;
+  color: #fff;
+  padding: 10px 40px;
+  border: unset;
+  border-radius: 3px;
+  margin: 40px 0;
+  font-size: 16px;
+}
+.planos-btn:hover {
+opacity: 0.8;
 }
 @media (max-width: 992px) {
   .three-cards-wrapper { 

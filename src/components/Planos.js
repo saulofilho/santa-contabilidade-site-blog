@@ -11,7 +11,7 @@ const Planos = () => {
         <h1>
           Você pediu e nós atendemos
         </h1>
-        <p className="title">
+        <p className="planos-title">
           Planos que realmente têm a cara da sua empresa.
           <br/>
           Com a gente você sabe exatamente quanto vai pagar sem aquelas surpresinhas na fatura
@@ -19,7 +19,7 @@ const Planos = () => {
         <h2>
           PLANOS QUE CABEM NO SEU BOLSO
         </h2>
-        <p className="subtitle">
+        <p className="planos-subtitle">
           SIMPLIFICAMOS TUDO PARA VOCÊ
         </p>
         <div className="three-cards-wrapper">
@@ -121,8 +121,8 @@ const Planos = () => {
           </div>
         </div>
         <a href="">
-          <button>
-            tire dúvidas no zap
+          <button className="planos-btn">
+            Tire dúvidas no WhatsApp
           </button>
         </a>
       </div>

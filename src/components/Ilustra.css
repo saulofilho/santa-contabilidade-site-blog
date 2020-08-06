@@ -40,6 +40,13 @@
   .ilustra-wrapper .container {
     flex-flow: column;
   }
+  .ilustra-wrapper .texts-wrapper {
+    padding-left: 0;
+  }
 }
 @media (max-width: 576px) {
+  .ilustra-wrapper .texts-wrapper {
+    padding-left: 0;
+    text-align: center;
+  }
 }
