@@ -96,6 +96,6 @@ contentbody:
 
       Entre eles está a representação comercial. Entenda mais sobre esse assunto!
 autor:
-  - autorname: Eva Maria
+  - autorname: Flavia
 status: Destaque
 ---
