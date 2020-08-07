@@ -3,8 +3,6 @@ import Modal from 'react-modal';
 import './Hero.css'
 import ImgHero from '../../static/assets/hero-img.png'
 
-Modal.setAppElement('#___gatsby')
-
 const Hero = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 

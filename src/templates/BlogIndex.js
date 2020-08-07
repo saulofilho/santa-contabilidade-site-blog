@@ -59,12 +59,12 @@ export const BlogIndexTemplate = ({
     return el.categories.map(cat => cat.category) == "Empreendedorismo"
   });
   
-  const postsFinancas = posts.filter(el => {
-    return el.categories.map(cat => cat.category) == "Finanças"
+  const postsFinancasGestao = posts.filter(el => {
+    return el.categories.map(cat => cat.category) == "Finanças" || el.categories.map(cat => cat.category) == "Gestão"
   });
   
-  const postsGestao = posts.filter(el => {
-    return el.categories.map(cat => cat.category) == "Gestão"
+  const postsTributos = posts.filter(el => {
+    return el.categories.map(cat => cat.category) == "Tributos"
   });
 
   const showContabilidade = () => {
@@ -76,11 +76,11 @@ export const BlogIndexTemplate = ({
   }
   
   const showFinancas = () => {
-    setAllPosts(postsFinancas)
+    setAllPosts(postsFinancasGestao)
   }
   
   const showGestao = () => {
-    setAllPosts(postsGestao)
+    setAllPosts(postsTributos)
   }
   
   const showAll = () => {

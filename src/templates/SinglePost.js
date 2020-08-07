@@ -174,9 +174,11 @@ export const SinglePostTemplate = ({
                     {item.greenboxlink &&
                       <div className="box-green container">
                         {item.greenboxtitle && <p>{item.greenboxtitle}</p>}
-                        <button>
-                          <a href={item.greenboxlink}>{item.greenboxtitlebutton}</a>
-                        </button>
+                          <a href={item.greenboxlink}>
+                            <button>
+                                {item.greenboxtitlebutton}
+                            </button>
+                          </a>
                       </div>
                     }
                     {item.yellowboxtitle &&
@@ -256,7 +258,7 @@ export const SinglePostTemplate = ({
           }
         </article>
         <div className="comentarios-wrapper container">
-          <p>Gostou? Deixe seu comentario</p>
+          <p>Gostou? Deixe seu comentário</p>
           <Disqus config={disqusConfig} />
         </div>
         <section className="posts-relacionados">
@@ -293,9 +295,11 @@ export const SinglePostTemplate = ({
                           <p>{item.subtitle}</p>
                         </div>
                         <div className="related-button">
-                          <button>
-                            <Link to={item.slug}>LER AGORA</Link>
-                          </button>
+                          <Link to={item.slug}>
+                            <button>
+                              LER AGORA
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </div>

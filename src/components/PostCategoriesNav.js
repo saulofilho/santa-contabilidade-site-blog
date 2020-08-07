@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import loadable from '@loadable/component'
-import LupaGrande from '../../static/assets/lupa-grande.png'
+// import LupaGrande from '../../static/assets/lupa-grande.png'
 import './PostCategoriesNav.css'
+import onClickOutside from "react-onclickoutside";
 
 const SearchField = loadable(() => import('react-search-field'))
 
@@ -17,9 +18,7 @@ const PostCategoriesNav = ({
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  // const clickOutsideConfig = {
-  //   handleClickOutside: () => PostCategoriesNav.handleClickOutside
-  // };
+  PostCategoriesNav.handleClickOutside = () => setIsOpen(false);
 
   return (
     <div className="post-categories-nav">
@@ -33,14 +32,15 @@ const PostCategoriesNav = ({
         <button onClick={() => showEmpreendedorismo()}>Empreendedorismo</button>
       </div>
       <div className="box">
-        <button onClick={() => showFinancas()}>Finanças</button>
+        <button onClick={() => showFinancas()}>Finanças/Gestão</button>
       </div>
       <div className="box">
-        <button onClick={() => showGestao()}>Gestão</button>
+        <button onClick={() => showGestao()}>Tributos</button>
       </div>
       <div className="box box-full search-blog" id="search">
         <button onClick={toggle}>
-          <img src={LupaGrande} alt="lupa branca busca" />
+          {/* <img src={LupaGrande} alt="lupa branca busca" /> */}
+          Buscar
         </button>
       </div>
       <div className={isOpen ? 'search-toggle active' : 'search-toggle'} >
@@ -53,4 +53,8 @@ const PostCategoriesNav = ({
   )
 }
 
-export default PostCategoriesNav
+const clickOutsideConfig = {
+  handleClickOutside: () => PostCategoriesNav.handleClickOutside
+};
+
+export default onClickOutside(PostCategoriesNav, clickOutsideConfig);

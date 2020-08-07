@@ -27,6 +27,18 @@
 .Content ul {
   padding-left: 20px;
 }
+.Content ul li {
+  font-size: 14px;
+  padding: 0 0 10px;
+  text-align: left;
+  list-style-image: url('../../static/assets/ponto-verde.png');
+}
 .image-title {
   font-style: italic;
+  color: #707375;
+  font-size: 12px;
+}
+.Content h3 {
+  color: #06606B;
+  padding: 30px 0 50px;
 }
