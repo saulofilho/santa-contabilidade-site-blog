@@ -96,6 +96,6 @@ contentbody:
 
       Entre eles está a representação comercial. Entenda mais sobre esse assunto!
 autor:
-  - autorname: Flavia, filha da Sônia
+  - autorname: Francisco
 status: Destaque
 ---
