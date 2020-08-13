@@ -48,15 +48,20 @@ const FaleComAGente = () => {
             </a>
           </div>
           <div className="card-green">
-            <p>Nome</p>
-            <p>Telefone</p>
-            <p>E-mail</p>
-            <p>Como podemos te ajudar</p>
-            <a href="">
-              <button>
-                Enviar
-              </button>
-            </a>
+            <form action="https://paginas.rocks/Pages/Index/460755" method="post" target='_blank'>  
+            <input id="id" name="id" type="hidden" value="460755" />  
+            <input id="pid" name="pid" type="hidden" value="16428747" />  
+            <input id="list_id" name="list_id" type="hidden" value="460755" />  
+            <input id="provider" name="provider" type="hidden" value="leadlovers" />   
+            <input className="form-control form-ll form-name" id="name" name="name" placeholder="Nome" type="text"  />   
+            <input className="form-control form-ll form-phone" id="phone" name="phone" placeholder="Telefone" type="text" />   
+            <input className="form-control form-ll form-email" id="email" name="email" placeholder="E-mail" type="text" />   
+            <input className="form-control form-ll form-company" id="company" name="company" placeholder="Empresa" type="text" />   
+            <label htmlFor="message">Como podemos te ajudar?</label>   
+            <textarea className="form-control form-ll form-message" id="message" name="message" ></textarea>  
+            <button className="btn btn-danger" type="submit">Enviar</button>  
+            <input type="hidden" id="source" name="source" value="" />  
+          </form>
           </div>
         </div>
       </div>

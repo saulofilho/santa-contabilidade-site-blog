@@ -193,6 +193,22 @@ export const SinglePostTemplate = ({
               </div>
             )
           }
+        <div className="post-form">
+          <p className="post-form-title">
+            ASSINE NOSSA NEWSLETTER E
+            <br/>
+            <strong>GANHE CONTEÚDOS EXCLUSIVOS</strong>
+          </p>
+          <form action="https://paginas.rocks/Pages/Index/460771" method="post" target='_blank'>  
+            <input id="id" name="id" type="hidden" value="460771" />  
+            <input id="pid" name="pid" type="hidden" value="16429160" />  
+            <input id="list_id" name="list_id" type="hidden" value="460771" />  
+            <input id="provider" name="provider" type="hidden" value="leadlovers" />   
+            <input className="form-control form-ll" id="email" name="email" placeholder="Seu email" type="text" />  
+            <button className="btn btn-danger" type="submit">EU QUERO</button>  
+            <input type="hidden" id="source" name="source" value="" />  
+          </form>
+        </div>
           {autorInfos &&
             autorInfos.length > 0 && (
               <div className="container">
