@@ -5,7 +5,7 @@ import Computador from '../../static/assets/computador.png'
 
 const Cards = () => {
   return (
-    <section className="cards-wrapper">
+    <section className="cards-wrapper" id="servicos">
       <div className="container">
         <h1>
           O que nos faz <strong>diferentes</strong> e garante que 

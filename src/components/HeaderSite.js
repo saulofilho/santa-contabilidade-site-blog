@@ -8,6 +8,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper header-site container';
 
+  const scrollToServicos = () => {
+    document.querySelector('#servicos').scrollIntoView({ behavior: 'smooth' });
+  }
+  
+  const scrollToPlanos = () => {
+    document.querySelector('#planos').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <header
       className="header-site"
@@ -22,10 +30,22 @@ const Header = () => {
         </div>
         <div className="header-right-desk">
           <div className="btns-wrapper">
-              <a href="#servicos" className="btn-blog">
+              <a 
+                href="#servicos" 
+                className="btn-blog"
+                onClick={() => {
+                  scrollToServicos()
+                }}
+              >
                 Serviços
               </a>
-              <a href="#planos"  className="btn-blog">
+              <a 
+                href="#planos" 
+                className="btn-blog"
+                onClick={() => {
+                  scrollToPlanos()
+                }}
+              >
                 Planos
               </a>
               <Link to={"/blog"} className="btn-blog">
@@ -40,10 +60,22 @@ const Header = () => {
         </div>
         <div className="header-right-mob">
           <div className="btns-wrapper">
-              <a href="#servicos" className="btn-blog">
+              <a 
+                href="#servicos" 
+                className="btn-blog"
+                onClick={() => {
+                  scrollToServicos()
+                }}
+              >
                 Serviços
                 </a>
-              <a href="#planos" className="btn-blog">
+              <a 
+                href="#planos" 
+                className="btn-blog"
+                onClick={() => {
+                  scrollToPlanos()
+                }}
+              >
                 Planos
                 </a>
               <Link to={"/blog"} className="btn-blog">

@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import loadable from '@loadable/component'
 // import LupaGrande from '../../static/assets/lupa-grande.png'
 import './PostCategoriesNav.css'
-import onClickOutside from "react-onclickoutside";
 
 const SearchField = loadable(() => import('react-search-field'))
+const onClickOutside = loadable(() => import('react-onclickoutside'))
 
 const PostCategoriesNav = ({
   onSearchClick,

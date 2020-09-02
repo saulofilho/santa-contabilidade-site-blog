@@ -9,6 +9,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper container';
 
+  const scrollToSearch = () => {
+    document.querySelector('#search').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <header
       className="header-blog"
@@ -22,7 +26,12 @@ const Header = () => {
           </div>
         </div>
         <div className="header-right-desk">
-          <a href="#search">
+          <a 
+            href="#search"
+            onClick={() => {
+              scrollToSearch()
+            }}
+          >
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
@@ -37,7 +46,12 @@ const Header = () => {
           </div>
         </div>
         <div className="header-right-mob">
-          <a href="#search">
+          <a 
+            href="#search"
+            onClick={() => {
+              scrollToSearch()
+            }}  
+          >
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
