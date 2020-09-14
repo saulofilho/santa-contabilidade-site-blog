@@ -96,6 +96,6 @@ contentbody:
 
       Entre eles está a representação comercial. Entenda mais sobre esse assunto!
 autor:
-  - autorname: Francisco
-status: Destaque
+  - autorname: Flávia Souza, contadora e professora
+status: AllPosts
 ---
