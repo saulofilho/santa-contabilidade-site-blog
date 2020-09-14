@@ -1,6 +1,6 @@
-siteTitle: Santa Contabilidade | Blog
+siteTitle: Santa Contabilidade
 siteUrl: https://santacontabilidade-blog.netlify.app/
-siteDescription: Blog da Santa Contabilidade.
+siteDescription: Santa Contabilidade.
 socialMediaCard:
-  image: /assets/default-img.jpg
+  image: /assets/logo-verde.svg
 googleTrackingId: "123456"
