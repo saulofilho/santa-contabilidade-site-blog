@@ -32,11 +32,6 @@ const FaleComAGente = () => {
                 <p>francisco@santacontabilidade.com.br</p>
               </div>
             </div>
-            <p className="ficou-duvida">
-              Ficou com alguma dúvida?
-              <br/>
-              Solicite uma consultoria gratuita!
-            </p>
             <a 
               target='_blank'
               rel="noopener" 

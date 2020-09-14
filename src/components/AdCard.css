@@ -50,6 +50,15 @@ opacity: 0.8;
 }
 @media screen and (max-width: 400px) {
   .ad-card-content {
-    width: 290px;
+    width: 100%;
+    padding: 20px;
+  }
+  .yellow .ad-titulo {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .green .ad-titulo {
+    font-size: 26px;
+    line-height: 30px;
   }
 }

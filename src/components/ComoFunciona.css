@@ -12,8 +12,7 @@
 }
 .como-funciona-wrapper .subtitle {
   color: #414141;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 16px;
   padding: 0 0 70px;
   text-align: center;
 }
@@ -63,5 +62,11 @@
   .como-funciona-wrapper .nos ul {
     width: 100%;
     margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .como-funciona-wrapper h1 {
+    font-size: 30px;
+    line-height: 36px;
   }
 }

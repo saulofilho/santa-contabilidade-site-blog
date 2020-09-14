@@ -19,9 +19,9 @@ const VamosConversar = () => {
             E aí, vamos conversar?
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing
-            <br />
-            elit, sed diam nonummy nibh euismod tincidunt ut
+            Tire todas as suas dúvidas, deixe o seu cadastro 
+            <br/>
+            com contato ou consulte um dos nossos especialistas! 
           </p>
           <a
             target='_blank'

@@ -123,5 +123,6 @@ blockquote {
 @media (max-width: 576px) {
   .container {
     max-width: 540px;
+    padding: 20px 20px;
   }
 }

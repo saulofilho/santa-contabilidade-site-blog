@@ -5,9 +5,9 @@ const Duvidas = () => {
   return (
     <section className="duvidas-wrapper">
       <div className="container">
-        <p className="title">
+        <h1>
           Está com dúvidas?
-        </p>
+        </h1>
         <p className="subtitle">
           Converse com nosso time de especialistas e  e descubra mais 
           sobre a contabilidade digital

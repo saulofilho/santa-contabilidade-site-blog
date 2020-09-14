@@ -64,7 +64,10 @@
   height: 15px;
 }
 @media screen and (max-width: 400px) {
-  .post-card {
-    width: 290px;
+  .date-leitura-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

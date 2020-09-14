@@ -13,65 +13,62 @@ const Cards = () => {
           você pode confiar na <strong>Santa Contabilidade</strong>?
         </h1>
         <p className="title-header">
-          Planos que realmente têm a cara da sua empresa.
+          Planos que realmente têm a cara da sua empresa. 
           <br/>
-          Com a gente você sabe exatamente quanto vai pagar sem aquelas surpresinhas na fatura
+          Com a gente você sabe exatamente quanto vai pagar, sem surpresinhas na fatura.
         </p>
         <div className="four-cards-wrapper">
           <div className="card-wrapper">
             <img src={PessoaFone} alt="ilustracao pessoa com fone"/>
             <p className="title">
-              Preços Justos e 
+              Atendimento humanizado 
               <br/>
-              Transparentes
-              <br/>
-              online
+              de verdade
             </p>
             <p className="text">
-              Nós usamos a tecnologia a favor da contabilidade para a sua empresa. 
-              Com isso conseguimos entregar mais praticidade, agilidade e transparência
+              Você é atendido por pessoas, tira as dúvidas com um profissional 
+              especialista na área, que vai te indicar a melhor solução para o 
+              seu problema. Nosso atendimento é consultivo e personalizado!
             </p>
           </div>
           <div className="card-wrapper">
             <img src={Computador} alt="ilustracao computador"/>
             <p className="title">
-              Suporte 
+              Redução 
               <br/>
-              humanizado 
-              <br/>
-              de verdade
+              de custos
             </p>
             <p className="text">
-              Nós usamos a tecnologia a favor da contabilidade para a sua empresa. 
-              Com isso conseguimos entregar mais praticidade, agilidade e transparência
+              Nossos preços são justos e transparentes. 
+              Com planos de honorários mais flexíveis em relação aos praticados 
+              pela contabilidade tradicional, a economia é significativa!
             </p>
           </div>
           <div className="card-wrapper">
             <img src={PessoaFone} alt="ilustracao pessoa com fone"/>
             <p className="title">
-              Preços Justos e 
+              Agilidade 
               <br/>
-              Transparentes
-              <br/>
-              online
+              e praticidade
             </p>
             <p className="text">
-              Nós usamos a tecnologia a favor da contabilidade para a sua empresa. 
-              Com isso conseguimos entregar mais praticidade, agilidade e transparência
+              Com a contabilidade digital, você não precisa mais se preocupar 
+              em enviar e receber documentos na forma física. Na plataforma on-line, 
+              todos os arquivos podem ser rapidamente compartilhados, editados e visualizados.
             </p>
           </div>
           <div className="card-wrapper">
             <img src={Computador} alt="ilustracao computador"/>
             <p className="title">
-              Suporte 
+              Qualidade 
               <br/>
-              humanizado 
-              <br/>
-              de verdade
+              e autonomia
             </p>
             <p className="text">
-              Nós usamos a tecnologia a favor da contabilidade para a sua empresa. 
-              Com isso conseguimos entregar mais praticidade, agilidade e transparência
+              Uma das maiores vantagens da contabilidade digital é ter acesso às 
+              informações financeiras em tempo real, os serviços são completos e 
+              em tempo hábil. Isso significa acompanhar de perto as movimentações 
+              financeiras, além de monitorar o fluxo de caixa a qualquer hora e lugar.
             </p>
           </div>
         </div>

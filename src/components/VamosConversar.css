@@ -12,15 +12,14 @@
   padding: 0 0 30px;
 }
 .vamos-conversar-wrapper p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   color: #000;
-  font-weight: 600;
   padding: 0 0 30px;
 }
 .vamos-conversar-wrapper button {
   background: #0A616C;
-  font-size: 12px;
+  font-size: 16px;
   color: #fff;
   font-weight: 400;
   padding: 10px 30px;
@@ -62,5 +61,20 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .vamos-conversar-wrapper .container {
+    flex-flow: column;
+    padding: 50px 20px;
+  }
+  .conversa-img {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+  }
+  .vamos-conversar-wrapper h1 {
+    font-size: 30px;
+    line-height: 36px;
   }
 }

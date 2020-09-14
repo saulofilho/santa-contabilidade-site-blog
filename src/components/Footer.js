@@ -62,6 +62,12 @@ const Footer = () => {
           </p>
           <br/>
           <p>
+            <a href="https://santacontabilidade.com.br/area-do-cliente">
+            Área do cliente
+            </a>
+          </p>
+          <br/>
+          <p>
             <a href="https://santacontabilidade.com.br/">
             Blog
             </a>
@@ -82,9 +88,9 @@ const Footer = () => {
             <br/>
             Telefones: 
             <br/> 
-            (48)3259-2880
+            (48) 3259-2880
             <br/>
-            (48)99647-0220
+            (48 )99647-0220
             <br/>
             <br/>
             francisco@santacontabilidade.com.br

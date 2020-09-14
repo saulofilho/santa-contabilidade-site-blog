@@ -43,23 +43,23 @@ const Hero = () => {
         <div className="container">
           <div className="text-hero">
             <h1>
-              <strong>Contabilidade online</strong> da 
-              <br/> sua empresa de forma 
+              <strong>Contabilidade digital</strong> 
+              <br/> para a sua empresa de 
               <br/>
-              <strong>prática</strong> e <strong>segura</strong> e <strong>econômica</strong>
+              forma <strong>acessível</strong>, 
+              <br/>
+              <strong>confiável </strong> e <strong>humanizada</strong>
             </h1>
             <p>
-            Acesse gratuitamente eBooks, Webinars, Templates e outros 
-            <br/>
-            materiais educativos para ampliar seus conhecimentos em 
-            <br/>
-            tecnologia, empreendedorismo, marketing digital e outros.
+              Escolha a contabilidade que facilita a sua vida e traz economia 
+              para a sua empresa. Transforme a gestão do seu negócio com o apoio 
+              dos nossos contadores.
             </p>
             <div className="btns-hero">
+              <button className="btn-transparent" onClick={handleOpenModal}>Abra sua empresa grátis</button>
               <a href="">
-                <button className="btn-green">Conheça mais</button>
+                <button className="btn-green">Troque de contabilidade</button>
               </a>
-                <button className="btn-transparent" onClick={handleOpenModal}>Abertura de empresa grátis</button>
             </div>
           </div>
           <div className="img-hero">

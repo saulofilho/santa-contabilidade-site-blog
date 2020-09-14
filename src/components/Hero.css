@@ -28,7 +28,6 @@
 }
 .text-hero p {
   font-size: 16px;
-  line-height: 30px;
   color: #fff;
   font-weight: 200;
   padding: 40px 0;
@@ -49,7 +48,7 @@
   flex-flow: row;
 }
 .btns-hero a {
-  padding: 0 20px 20px 0;
+  padding: 0 0 20px 20px;
   width: auto;
   height: auto;
 }
@@ -83,6 +82,10 @@
   left: 10% !important;
   right: 10% !important;
   bottom: 10% !important;
+  z-index: 999 !important;
+}
+.ReactModal__Overlay {
+  z-index: 999 !important;
 }
 .form-abrir-empresa form {
   display: flex;
@@ -163,5 +166,9 @@
   }
   .form-abrir-empresa form button {
     padding: 5px 15px;
+  }
+  .text-hero h1 {
+    font-size: 30px;
+    line-height: 36px;
   }
 }

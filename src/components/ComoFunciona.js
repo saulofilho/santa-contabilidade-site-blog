@@ -6,35 +6,29 @@ const ComoFunciona = () => {
     <section className="como-funciona-wrapper" id="contabilidade-digital">
       <div className="container">
         <h1>
-          Como funciona a
-          <br />
-          Contabilidade Digital na prática
+          Como é ser cliente da Santa
         </h1>
         <p className="subtitle">
-          Planos que realmente têm a cara da sua empresa.
-          <br />
-          Com a gente você sabe exatamente quanto vai pagar sem aquelas 
-          surpresinhas na fatura
+          Contabilidade digital é assim: acessível, prática e confiável. 
+          <br/>
+          Em poucos minutos no mês você resolve tudo.
         </p>
         <div className="texts-wrapper">
           <section className="voce">
             <p>o que você vai fazer</p>
             <ul>
-              <li>Emitir as notas fiscais e importar seu extrato mensal na nossa platorforma.</li>
-              <li>Resolve as suas dúvidas com nosso atendimento.</li>
-              <li>Emitir as notas fiscais e importar seu extrato mensal na nossa platorforma.</li>
-              <li>Resolve as suas dúvidas com nosso atendimento.</li>
+              <li>Durante o mês, você emite as notas fiscais da sua atividade, e envia o seu extrato bancário mensal.</li>
+              <li>Para qualquer dúvida, conte com o nosso atendimento.</li>
             </ul>
           </section>
           <section className="nos">
-            <p>o que você nós vamos fazer</p>
+            <p>O que nós vamos fazer</p>
             <ul>
-              <li>Calculamos as guias de impostos, folha de pagamento e pró-labore.</li>
-              <li>Mantemos a sua empresa em dia com todas as obrigações do governo - IRPJ incluso.</li>
-              <li>Fazemos e assinamos relatórios contábeis como balanço, DRE e outros para você ficar sempre tranquilo.</li>
-              <li>Atendimento rápido por diversos canais (telefone, whatsapp, chat e email).</li>
-              <li>Emissão de nota fiscal e boleto gratuito.</li>
-              <li>E a sua contabilidade, completa.</li>
+              <li>Calculamos as guias de impostos, folha de pagmento e pró-labore.</li>
+              <li>Mantemos o seu CNPJ regularizado, em dia com as obrigações legais.</li>
+              <li>Elaboramos os seus relatórios contábeis, Balanço, DRE, Fluxo de caixa, para você acompanhar o desempenho da sua empresa. </li>
+              <li>Prestamos todo o atendimento humanizado e rápido pelo canal de sua preferência (telefone, e-mail, chat, whatsapp)</li>
+              <li>A sua contabilidade completa! </li>
             </ul>
           </section>
         </div>

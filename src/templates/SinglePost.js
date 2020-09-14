@@ -138,6 +138,7 @@ export const SinglePostTemplate = ({
                     data-layout="button" data-size="small">
                       <a 
                         target="_blank" 
+                        rel="noreferrer" 
                         href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
                         className="fb-xfbml-parse-ignore"
                       >
@@ -146,7 +147,7 @@ export const SinglePostTemplate = ({
                   </div>
                   <a 
                     target='_blank'
-                    rel="noopener" 
+                    rel="noreferrer" 
                     href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
                     className="twitter-share-button" 
                     data-show-count="false"
@@ -156,7 +157,7 @@ export const SinglePostTemplate = ({
                   <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
                   <a 
                     target='_blank'
-                    rel="noopener" 
+                    rel="noreferrer" 
                     href="https://wa.me/5548984289990?text=SantaContabilidade"
                   >
                     <img src={Whatsapp} alt="whatsapp buton share"/>
@@ -236,7 +237,7 @@ export const SinglePostTemplate = ({
                         <p className="escrito">Curtiu? Compartilhe</p>
                         <a
                           target='_blank'
-                          rel="noopener"
+                          rel="noreferrer" 
                           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                           className="twitter-share-button"
                           data-show-count="false"
@@ -248,7 +249,7 @@ export const SinglePostTemplate = ({
                         </LinkedinShareButton>
                         <a
                           target='_blank'
-                          rel="noopener"
+                          rel="noreferrer" 
                           href="https://wa.me/5548984289990?text=SantaContabilidade"
                         >
                           <img src={Whatsapp} alt="whatsapp buton share" />
@@ -259,6 +260,7 @@ export const SinglePostTemplate = ({
                           data-layout="button" data-size="small">
                           <a
                             target="_blank"
+                            rel="noreferrer" 
                             href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
                             className="fb-xfbml-parse-ignore"
                           >

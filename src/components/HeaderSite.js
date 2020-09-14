@@ -25,7 +25,7 @@ const Header = () => {
         style={{
           position: "fixed",
           background: "transparent",
-          zIndex: 90
+          zIndex: 99
         }}
       >
       <header
@@ -66,7 +66,7 @@ const Header = () => {
                         }}
                       >
                         <a href="http://localhost:8000/">
-                        Abertura de empresa Grátis
+                          Abertura de empresa Grátis
                         </a>
                         <a
                           href="#planos"
@@ -112,7 +112,7 @@ const Header = () => {
                 <Link to={"/blog"} className="btn-blog">
                     Blog
                 </Link>
-                <a href="http://localhost:8000/">
+                <a href="http://santacontabilidade.com.br/especialista/">
                   <button className="btn-fale">
                     Fale com um especialista
                   </button>
@@ -192,7 +192,7 @@ const Header = () => {
                 <Link to={"/blog"} className="btn-blog">
                   Blog
                 </Link>
-                <a href="http://localhost:8000/">
+                <a href="http://santacontabilidade.com.br/especialista/">
                   <button className="btn-fale">
                     Fale com um especialista
                   </button>

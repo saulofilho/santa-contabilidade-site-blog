@@ -114,4 +114,8 @@
   .carousel-wrapper {
     height: 600px;
   }
+  .slick-prev, 
+  .slick-next {
+    display: none !important;
+  }
 }

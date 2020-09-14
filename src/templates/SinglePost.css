@@ -218,8 +218,7 @@
   padding-left: 40px;
 }
 .escrito {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 14px;
   font-weight: bolder;
 }
 .autor-texts {
@@ -227,8 +226,7 @@
   height: 100%;
 }
 .autor-texts .titulo {
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 20px;
   font-weight: bolder;
   color: #60B38D;
   padding: 20px 0;
@@ -430,5 +428,13 @@
     width: auto;
     height: 16px;
     padding-left: 20px;
+  }
+  .post-titulo p {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .box-green p {
+    font-size: 20px;
+    line-height: 26px;
   }
 }

@@ -16,8 +16,7 @@
 }
 .cards-wrapper .container .title-header {
   color: #414141;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
   padding: 0 0 50px;
   text-align: center;
 }
@@ -35,11 +34,11 @@
 }
 .card-wrapper {
   height: auto;
-  width: 250px;
+  width: 100%;
   background: #fff;
   border-radius: 3px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column;
 }
@@ -72,5 +71,12 @@
 @media (max-width: 576px) {
   .four-cards-wrapper { 
     grid-template-columns: 1fr;
+  }
+  .cards-wrapper .container h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .card-wrapper {
+    width: 100%;
   }
 }

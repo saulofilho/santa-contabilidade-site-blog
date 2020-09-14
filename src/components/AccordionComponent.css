@@ -20,8 +20,7 @@
 }
 .accordion-wrapper p {
   color: #fff;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 16px;
   padding: 0 0 10px;
   text-align: center;
 }
@@ -52,7 +51,7 @@
 .react-sanfona-item-body-wrapper {
   background: #0A616C;
   border-radius: 0 0 3px 3px;
-  padding: 50px;
+  padding: 20px;
   text-align: left;
 }
 .react-sanfona-item-title[aria-expanded="false"] {
@@ -66,7 +65,7 @@
 }
 .react-sanfona-item-title[aria-expanded="true"] {
   content: '';
-  background-image: url('../../static/assets/arrow-up.png');
+  background-image: url('../../static/assets/arrow-green-up.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: auto;
@@ -86,8 +85,13 @@
 @media (max-width: 576px) {
   .react-sanfona {
     max-width: 540px;
+    padding: 20px;
   }
   .react-sanfona-item {
-    margin: 20px 20px;
+    margin: 10px 0;
+  }
+  .accordion-wrapper h1 {
+    font-size: 30px;
+    line-height: 36px;
   }
 }

@@ -31,10 +31,10 @@ const Header = () => {
         </div>
         <div className="header-right-desk">
           <div className="btns-wrapper">
-              <a href="http://localhost:8000/" className="btn-materiais-post">
+              <a href="http://santacontabilidade.com.br/materiais/" className="btn-materiais-post">
                 Materiais Gratuitos
               </a>
-              <a href="http://localhost:8000/">
+              <a href="http://santacontabilidade.com.br/especialista/">
                 <button className="btn-fale">
                   Fale com um especialista
                 </button>
@@ -43,10 +43,10 @@ const Header = () => {
         </div>
         <div className="header-right-mob">
           <div className="btns-wrapper">
-              <a href="http://localhost:8000/" className="btn-materiais-post">
+              <a href="http://santacontabilidade.com.br/materiais/" className="btn-materiais-post">
                 Materiais Gratuitos
               </a>
-              <a href="http://localhost:8000/">
+              <a href="http://santacontabilidade.com.br/especialista/">
                 <button className="btn-fale">
                   Fale com um especialista
                 </button>

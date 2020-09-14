@@ -11,39 +11,36 @@ const AccordionComponent = () => {
           <br/>
           Confira abaixo as dúvidas mais frequentes
         </h1>
-        <p>
+        {/* <p>
           Planos que realmente têm a cara da sua empresa.
           <br/>
           Com a gente você sabe exatamente quanto vai pagar sem aquelas surpresinhas na fatura
-        </p>
+        </p> */}
         <Accordion>
-          <AccordionItem title={"Quanto custa para abrir uma empresa MEI"} >
+          <AccordionItem title={"Vocês atendem todas as cidades?"} >
             <div>
-              No painel Camadas, clique no ícone de cadeado perto da sua camada 
-              original para prevenir qualquer mudança acidental. E seguida, 
-              selecione a ferramenta Retângulo e arraste sobre a área que você 
-              gostaria de inverter. Selecione o seu novo retângulo e a camada 
-              duplicada, e então vá para "Janela"
+              Não atendemos ainda, solicite uma proposta e avaliamos a disponibilidade de atendimento.
             </div>
           </AccordionItem>
-          <AccordionItem title={"Quanto custa para abrir uma empresa MEI"}>
+          <AccordionItem title={"Como é o atendimento ao cliente?"}>
             <div>
-              teste ss
+            Você será atendido por profissionais qualificados, via WhatsApp, 
+            e-mail, chat e ferramentas próprias de comunicação. Em casos específicos, 
+            poderão acontecer reuniões por videoconferência ou telefone. Na Santa 
+            Contabilidade você não fala com um robô.
             </div>
           </AccordionItem>
-          <AccordionItem title={"Preços Justos e Transparentes online?"}>
+          <AccordionItem title={"Como ocorre a abertura da empresa?"}>
             <div>
-              teste ss
+              Após a assinatura do contrato de prestação de serviços você receberá 
+              instruções para instalar um aplicativo de envio e recebimento de documentos, 
+              de forma totalmente segura e confidencial. Na sequência, será encaminhado 
+              um checklist dos documentos necessários.
             </div>
           </AccordionItem>
-          <AccordionItem title={"Preços Justos e Transparentes online?"}>
+          <AccordionItem title={"Meu faturamento é superior a 30 mil, vocês atendem?"}>
             <div>
-              teste ss
-            </div>
-          </AccordionItem>
-          <AccordionItem title={"Preços Justos e Transparentes online?"}>
-            <div>
-              teste ss
+              Sim, atendemos. Solicite um orçamento.
             </div>
           </AccordionItem>
         </Accordion>

@@ -20,7 +20,7 @@
   padding: 50px 0 30px;
 }
 .ilustra-wrapper .container .pessoa-cel {
-  max-width: 900px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   padding: 50px 0 0;
@@ -48,5 +48,9 @@
   .ilustra-wrapper .texts-wrapper {
     padding-left: 0;
     text-align: center;
+  }
+  .ilustra-wrapper .container h1 {
+    font-size: 30px;
+    line-height: 36px;
   }
 }

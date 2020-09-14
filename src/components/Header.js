@@ -20,7 +20,7 @@ const Header = () => {
     style={{
       position: "fixed",
       background: "transparent",
-      zIndex: 9
+      zIndex: 99
     }}
   >
     <header
@@ -44,10 +44,10 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-              <a href="http://localhost:8000/" className="btn-materiais">
+              <a href="http://santacontabilidade.com.br/materiais/" className="btn-materiais">
                 Materiais Gratuitos
               </a>
-              <a href="http://localhost:8000/">
+              <a href="http://santacontabilidade.com.br/especialista/">
                 <button className="btn-fale">
                   Fale com um especialista
                 </button>
@@ -64,10 +64,10 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-            <a href="http://localhost:8000/" className="btn-materiais">
+            <a href="http://santacontabilidade.com.br/materiais/" className="btn-materiais">
               Materiais Gratuitos
             </a>
-            <a href="http://localhost:8000/">
+            <a href="http://santacontabilidade.com.br/especialista/">
               <button className="btn-fale">
                 Fale com um especialista
               </button>

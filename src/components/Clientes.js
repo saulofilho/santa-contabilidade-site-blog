@@ -14,10 +14,10 @@ const Clientes = () => {
         <h1>Quem <strong>confia</strong> na gente? Confere aí :)</h1>
         <div className="logos-grid">
           <img src={AMar} className="AMar" alt="logos dos clientes"/>
-          <img src={PromoPrev} className="PromoPrev" alt="logos dos clientes"/>
           <img src={DoisW} className="DoisW" alt="logos dos clientes"/>
-          <img src={Reiko} className="Reiko" alt="logos dos clientes"/>
           <img src={Growth} className="Growth" alt="logos dos clientes"/>
+          <img src={PromoPrev} className="PromoPrev" alt="logos dos clientes"/>
+          <img src={Reiko} className="Reiko" alt="logos dos clientes"/>
           <img src={Wdi} className="Wdi" alt="logos dos clientes"/>
         </div>
       </div>
