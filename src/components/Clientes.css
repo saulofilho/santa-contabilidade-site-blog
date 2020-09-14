@@ -16,8 +16,32 @@
   padding: 0 0 30px;
   text-align: center;
 }
-.clientes-wrapper .container img {
-  max-width: 900px;
+.clientes-wrapper .logos-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+.clientes-wrapper .logos-grid .AMar,
+.clientes-wrapper .logos-grid .PromoPrev,
+.clientes-wrapper .logos-grid .DoisW,
+.clientes-wrapper .logos-grid .Reiko
+ {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  
+}
+.clientes-wrapper .logos-grid .Growth
+ {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+.clientes-wrapper .logos-grid .Wdi
+ {
+  max-width: 50px;
   width: 100%;
   height: auto;
 }

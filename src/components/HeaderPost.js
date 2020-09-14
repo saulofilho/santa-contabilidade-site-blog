@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
+import Headroom from 'react-headroom'
 import { Menu, X } from 'react-feather'
 import LogoHero from '../../static/assets/logo-branco.png'
 import './HeaderPost.css'
@@ -9,6 +10,14 @@ const Header = () => {
   const menuClassNames = isOpen ? 'header-wrapper-active bg-header-green container' : 'header-wrapper container';
 
   return (
+    <Headroom
+      parent={() => document }
+      style={{
+        position: "fixed",
+        background: "transparent",
+        zIndex: 99
+      }}
+    >
     <header
       className="header-post"
     >
@@ -61,6 +70,7 @@ const Header = () => {
         </button>
       </div>
     </header>
+    </Headroom>
   )
 }
 

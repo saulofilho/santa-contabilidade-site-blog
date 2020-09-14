@@ -59,4 +59,9 @@
     flex-flow: column;
     align-items: center;
   }
+  .como-funciona-wrapper .voce ul,
+  .como-funciona-wrapper .nos ul {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

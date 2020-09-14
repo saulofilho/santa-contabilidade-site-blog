@@ -205,7 +205,7 @@ export const SinglePostTemplate = ({
             <input id="list_id" name="list_id" type="hidden" value="460771" />  
             <input id="provider" name="provider" type="hidden" value="leadlovers" />   
             <input className="form-control form-ll" id="email" name="email" placeholder="Seu email" type="text" />  
-            <button className="btn btn-danger" type="submit">EU QUERO</button>  
+            <button className="btn btn-danger" type="submit">EU QUERO!</button>  
             <input type="hidden" id="source" name="source" value="" />  
           </form>
         </div>

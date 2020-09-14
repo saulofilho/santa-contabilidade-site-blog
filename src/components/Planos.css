@@ -47,7 +47,7 @@
 }
 .three-cards-wrapper .card-wrapper {
   height: auto;
-  width: 300px;
+  width: 100%;
   background: #fff;
   border: 1px solid #60B38D;
   border-radius: 3px;

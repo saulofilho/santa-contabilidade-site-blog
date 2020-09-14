@@ -47,13 +47,13 @@
   padding-bottom: 30px;
 }
 .card-white {
-  width: auto;
+  width: 100%;
   height: auto;
   background: #fff;
   border: 1px solid #06585E;
   border-radius: 3px;
   font-size: 8px;
-  padding: 50px 20px;
+  padding: 50px 10px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -137,5 +137,7 @@
   }
 }
 @media (max-width: 576px) {
-
+  .fale-gente-wrapper .container {
+    padding: 20px;
+  }
 }

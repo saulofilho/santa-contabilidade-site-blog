@@ -38,32 +38,26 @@ const Footer = () => {
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/abrir-empresa">
             Abrir uma empresa
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/especialista">
             Fale com um especialista
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="http://localhost:8000/#planos">
             Escolha seu plano
             </a>
           </p>
           <br/>
           <p>
-            <a href="https://santacontabilidade.com.br/">
+            <a href="https://santacontabilidade.com.br/#contabilidade-digital">
             Contabilidade digital
-            </a>
-          </p>
-          <br/>
-          <p>
-            <a href="https://santacontabilidade.com.br/">
-            Área do cliente
             </a>
           </p>
           <br/>
@@ -81,7 +75,9 @@ const Footer = () => {
           Unidade Florianópolis
             <br/>
             <br/>
-            Rua Adelino Boschetti Mateus, 99 - São José - SC
+            Rua Adelino Boschetti Mateus, 99
+            <br/>
+            São José - SC
             <br/>
             <br/>
             Telefones: 

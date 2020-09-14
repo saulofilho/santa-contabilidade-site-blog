@@ -52,6 +52,7 @@ export default ({ children, meta, title }) => {
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
             >
+              <script src="//code.jivosite.com/widget/3R1MrzAPJj" async></script>
               {title}
               {/* Add font link tags here */}
             </Helmet>

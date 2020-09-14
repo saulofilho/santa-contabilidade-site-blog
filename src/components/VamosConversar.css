@@ -35,6 +35,9 @@
   height: 400px;
   border: 1px solid #60B38D;
   margin: 0 80px 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 700px) {
   .vamos-conversar-wrapper .container {

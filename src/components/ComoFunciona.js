@@ -3,7 +3,7 @@ import './ComoFunciona.css'
 
 const ComoFunciona = () => {
   return (
-    <section className="como-funciona-wrapper">
+    <section className="como-funciona-wrapper" id="contabilidade-digital">
       <div className="container">
         <h1>
           Como funciona a

@@ -57,7 +57,7 @@
 }
 .react-sanfona-item-title[aria-expanded="false"] {
   content: '';
-  background-image: url('../../static/assets/arrow-down.png');
+  background-image: url('../../static/assets/arrow-green-down.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: auto;

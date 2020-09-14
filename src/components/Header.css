@@ -1,5 +1,5 @@
 .header-blog {
-  background: #fff !important;
+  background: transparent;
   height: auto;
   width: 100%;
   padding-top: 30px;
@@ -25,6 +25,9 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
+}
+.header-right-desk a {
+  height: 18px;
 }
 .header-right-desk a:hover {
   opacity: 0.6;

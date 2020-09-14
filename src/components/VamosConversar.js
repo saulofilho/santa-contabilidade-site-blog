@@ -1,12 +1,18 @@
 import React from "react"
 import './VamosConversar.css'
+import Francisco from '../../static/assets/foto-fran2.png'
 
 const VamosConversar = () => {
   return (
     <section className="vamos-conversar-wrapper">
       <div className="container">
-        <div className="conversa-img">
-          <img src="" alt="" />
+        <div 
+          className="conversa-img"
+          style={{
+            backgroundImage: `url(${Francisco})`
+          }}
+          alt="foto do francisco"
+        >
         </div>
         <div className="text-btn-wrapper">
           <h1>

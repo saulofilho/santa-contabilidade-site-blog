@@ -29,8 +29,8 @@ export const BlogIndexTemplate = ({
   
   const yellowAd = insertYellowAd(posts, 5, 
       {
-        title: "CONTABILIDADE ONLINE?",
-        subtitle: "MITOS E VERDADES AGORA!",
+        title: "Contabilidade digital:",
+        subtitle: "o que você precisa saber!",
         leitura: "yellow",
         slug: "http://localhost:8000/",
         status: "Ad"
@@ -40,7 +40,7 @@ export const BlogIndexTemplate = ({
   const postsAndAds = insertGreenAd(yellowAd, 10, 
       {
         title: "FICOU COM GOSTINHO DE QUERO MAIS?",
-        subtitle: "CONFIRA NOSSA PÁGINA DE MATERIAIS RICOS",
+        subtitle: "CONFIRA NOSSA PÁGINA DE MATERIAIS RICOS!",
         leitura: "green",
         slug: "http://localhost:8000/",
         status: "Ad"
@@ -127,7 +127,7 @@ export const BlogIndexTemplate = ({
               </section>
               {!!posts.length && (
                 <section className="container">
-                  <h1>{title}</h1>
+                  <h1>Todos os posts</h1>
                   <PostSection posts={allPosts} />
                 </section>
               )}
