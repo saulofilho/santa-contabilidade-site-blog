@@ -50,7 +50,7 @@ const Footer = () => {
           </p>
           <br/>
           <p>
-            <a href="http://localhost:8000/#planos">
+            <a href="https://santacontabilidade.com.br/#planos">
             Escolha seu plano
             </a>
           </p>

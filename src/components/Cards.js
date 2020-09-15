@@ -1,7 +1,9 @@
 import React from "react"
 import './Cards.css'
-import PessoaFone from '../../static/assets/pessoa-fone.png'
-import Computador from '../../static/assets/computador.png'
+import CardHeart from '../../static/assets/card-heart.png'
+import CardNote from '../../static/assets/card-note.png'
+import CardPc from '../../static/assets/card-pc.png'
+import CardPessoa from '../../static/assets/card-pessoa.png'
 
 const Cards = () => {
   return (
@@ -19,7 +21,7 @@ const Cards = () => {
         </p>
         <div className="four-cards-wrapper">
           <div className="card-wrapper">
-            <img src={PessoaFone} alt="ilustracao pessoa com fone"/>
+            <img src={CardPessoa} alt="ilustracao pessoa com fone"/>
             <p className="title">
               Atendimento humanizado 
               <br/>
@@ -32,7 +34,7 @@ const Cards = () => {
             </p>
           </div>
           <div className="card-wrapper">
-            <img src={Computador} alt="ilustracao computador"/>
+            <img src={CardPc} alt="ilustracao computador"/>
             <p className="title">
               Redução 
               <br/>
@@ -45,7 +47,7 @@ const Cards = () => {
             </p>
           </div>
           <div className="card-wrapper">
-            <img src={PessoaFone} alt="ilustracao pessoa com fone"/>
+            <img src={CardNote} alt="ilustracao pessoa com fone"/>
             <p className="title">
               Agilidade 
               <br/>
@@ -58,7 +60,7 @@ const Cards = () => {
             </p>
           </div>
           <div className="card-wrapper">
-            <img src={Computador} alt="ilustracao computador"/>
+            <img src={CardHeart} alt="ilustracao computador"/>
             <p className="title">
               Qualidade 
               <br/>
