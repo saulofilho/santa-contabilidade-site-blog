@@ -24,6 +24,10 @@
   row-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
 }
+.clientes-wrapper .logos-grid a {
+  justify-self: center;
+  align-self: center;
+}
 .clientes-wrapper .logos-grid .AMar,
 .clientes-wrapper .logos-grid .PromoPrev,
 .clientes-wrapper .logos-grid .DoisW,

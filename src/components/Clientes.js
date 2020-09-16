@@ -13,12 +13,24 @@ const Clientes = () => {
       <div className="container">
         <h1>Quem <strong>confia</strong> na gente? Confere aí :)</h1>
         <div className="logos-grid">
-          <img src={AMar} className="AMar" alt="logos dos clientes"/>
-          <img src={DoisW} className="DoisW" alt="logos dos clientes"/>
-          <img src={Growth} className="Growth" alt="logos dos clientes"/>
-          <img src={PromoPrev} className="PromoPrev" alt="logos dos clientes"/>
-          <img src={Reiko} className="Reiko" alt="logos dos clientes"/>
-          <img src={Wdi} className="Wdi" alt="logos dos clientes"/>
+          <a href="https://www.amareco.com.br/">
+            <img src={AMar} className="AMar" alt="logos dos clientes"/>
+          </a>
+          <a href="https://agencia2w.com/">
+            <img src={DoisW} className="DoisW" alt="logos dos clientes"/>
+          </a>
+          <a href="https://www.growthsales.com.br/">
+            <img src={Growth} className="Growth" alt="logos dos clientes"/>
+          </a>
+          <a href="https://www.promoprev.com.br/">
+            <img src={PromoPrev} className="PromoPrev" alt="logos dos clientes"/>
+          </a>
+          <a href="http://www.reiko.top/">
+            <img src={Reiko} className="Reiko" alt="logos dos clientes"/>
+          </a>
+          <a href="http://wdi.digital/">
+            <img src={Wdi} className="Wdi" alt="logos dos clientes"/>
+          </a>
         </div>
       </div>
     </section>

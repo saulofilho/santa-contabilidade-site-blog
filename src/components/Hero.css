@@ -160,6 +160,7 @@
   }
   .btns-hero button {
     margin: 0 auto;
+    margin-bottom: 10px;
   }
   .form-abrir-empresa form {
     padding: 20px 5px;

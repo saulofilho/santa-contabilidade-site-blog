@@ -4,7 +4,7 @@ import Francisco from '../../static/assets/foto-fran2.png'
 
 const VamosConversar = () => {
   return (
-    <section className="vamos-conversar-wrapper">
+    <section className="vamos-conversar-wrapper" id="fale-contador">
       <div className="container">
         <div 
           className="conversa-img"

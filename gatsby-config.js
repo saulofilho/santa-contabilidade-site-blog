@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'santacontabilidade',
-        short_name: 'santacontabilidade-blog',
+        short_name: 'santacontabilidade-site-blog',
         start_url: '/',
         background_color: '#00C2BD',
         theme_color: '#00C2BD',

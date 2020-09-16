@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { ToggleLayer, Arrow, Transition } from "react-laag"
 import Headroom from 'react-headroom'
-import { Menu, X } from 'react-feather'
+import { Menu, X, ArrowDown } from 'react-feather'
 import LogoHero from '../../static/assets/logo-branco.png'
 import './HeaderSite.css'
 
@@ -10,10 +10,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper header-site container';
 
-  const scrollToServicos = () => {
-    document.querySelector('#servicos').scrollIntoView({ behavior: 'smooth' });
-  }
-  
   const scrollToPlanos = () => {
     document.querySelector('#planos').scrollIntoView({ behavior: 'smooth' });
   }
@@ -41,15 +37,12 @@ const Header = () => {
           </div>
           <div className="header-right-desk">
             <div className="btns-wrapper">
-                {/* <a 
-                  href="#servicos" 
-                  className="btn-blog"
-                  onClick={() => {
-                    scrollToServicos()
-                  }}
-                >
-                  Serviços
-                </a> */}
+              <a 
+                className="btn-blog"
+                href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa"
+              >
+                Abertura de empresa Grátis
+              </a>
               <ToggleLayer
                 renderLayer={({ isOpen, layerProps, arrowStyle, layerSide }) => (
                   <Transition isOpen={isOpen}>
@@ -65,9 +58,6 @@ const Header = () => {
                           transform: "scale(" + isOpen ? 1 : 0.5 + ")",
                         }}
                       >
-                        <a href="http://localhost:8000/">
-                          Abertura de empresa Grátis
-                        </a>
                         <a
                           href="#planos"
                           onClick={() => {
@@ -76,10 +66,10 @@ const Header = () => {
                         >
                           Planos
                         </a>
-                        <a href="http://santacontabilidade.com.br/bpo-financeiro">
+                        <a href="https://contabilidade.santacontabilidade.com.br/bpo-financeiro">
                           BPO Financeiro
                         </a>
-                        <a href="http://santacontabilidade.com.br/trocar-de-contador">
+                        <a href="https://contabilidade.santacontabilidade.com.br/trocar-de-contador">
                           Trocar de Contador
                         </a>
                         <Arrow
@@ -106,13 +96,14 @@ const Header = () => {
                 {({ triggerRef, toggle }) => (
                   <a className="btn-blog" ref={triggerRef} onClick={toggle}>
                     Serviços
+                    <ArrowDown color={"#fff"} className="arrow-down" size={18} />
                   </a>
                 )}
               </ToggleLayer>
                 <Link to={"/blog"} className="btn-blog">
                     Blog
                 </Link>
-                <a href="http://santacontabilidade.com.br/especialista/">
+                <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                   <button className="btn-fale">
                     Fale com um especialista
                   </button>
@@ -121,15 +112,12 @@ const Header = () => {
           </div>
           <div className="header-right-mob">
             <div className="btns-wrapper">
-                {/* <a 
-                  href="#servicos" 
-                  className="btn-blog"
-                  onClick={() => {
-                    scrollToServicos()
-                  }}
-                >
-                  Serviços
-                </a> */}
+            <a 
+                className="btn-blog"
+                href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa"
+              >
+                Abertura de empresa Grátis
+              </a>
               <ToggleLayer
                 renderLayer={({ isOpen, layerProps, arrowStyle, layerSide }) => (
                   <Transition isOpen={isOpen}>

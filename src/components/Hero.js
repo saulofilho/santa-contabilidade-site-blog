@@ -57,7 +57,7 @@ const Hero = () => {
             </p>
             <div className="btns-hero">
               <button className="btn-transparent" onClick={handleOpenModal}>Abra sua empresa grátis</button>
-              <a href="">
+              <a href="#planos">
                 <button className="btn-green">Troque de contabilidade</button>
               </a>
             </div>
