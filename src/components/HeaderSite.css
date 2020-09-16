@@ -47,7 +47,7 @@
 }
 .btn-blog svg {
   position: relative;
-  top: 5px;
+  top: 6px;
   left: 5px;
 }
 a.btn-blog {
@@ -116,10 +116,13 @@ header button:hover {
 .layer a:hover {
   font-weight: bolder;
 }
+.btn-arrow {
+  border: unset;
+}
 
 /* desktop */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .header-site .btns-wrapper {
     display: flex;
     flex-flow: column;
@@ -155,6 +158,11 @@ header button:hover {
     align-items: center;
   }
   .layer {
-    width: 100%;
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .btn-arrow {
+    margin-top: 10px;
   }
 }

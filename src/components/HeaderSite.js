@@ -2,12 +2,13 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { ToggleLayer, Arrow, Transition } from "react-laag"
 import Headroom from 'react-headroom'
-import { Menu, X, ArrowDown } from 'react-feather'
+import { Menu, X, ChevronDown, ChevronUp } from 'react-feather'
 import LogoHero from '../../static/assets/logo-branco.png'
 import './HeaderSite.css'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenArrow, setIsOpenArrow] = useState(false);
   const menuClassNames = isOpen ? 'header-wrapper-active container' : 'header-wrapper header-site container';
 
   const scrollToPlanos = () => {
@@ -94,10 +95,24 @@ const Header = () => {
                 closeOnOutsideClick
               >
                 {({ triggerRef, toggle }) => (
-                  <a className="btn-blog" ref={triggerRef} onClick={toggle}>
-                    Serviços
-                    <ArrowDown color={"#fff"} className="arrow-down" size={18} />
-                  </a>
+                  <button
+                    className="btn-arrow"
+                    onClick={() => setIsOpenArrow(!isOpenArrow)}
+                  >
+                    <a className="btn-blog" ref={triggerRef} onClick={toggle}>
+                      Serviços
+                      {isOpenArrow ?
+                        <ChevronUp
+                          color={"#fff"}
+                          className="arrow-down"
+                        />
+                        :
+                        <ChevronDown
+                          color={"#fff"}
+                          className="arrow-down"
+                        />}
+                    </a>
+                  </button>
                 )}
               </ToggleLayer>
                 <Link to={"/blog"} className="btn-blog">
@@ -172,9 +187,24 @@ const Header = () => {
                 closeOnOutsideClick
               >
                 {({ triggerRef, toggle }) => (
+                  <button
+                  className="btn-arrow"
+                  onClick={() => setIsOpenArrow(!isOpenArrow)}
+                >
                   <a className="btn-blog" ref={triggerRef} onClick={toggle}>
                     Serviços
+                    {isOpenArrow ?
+                      <ChevronUp
+                        color={"#fff"}
+                        className="arrow-down"
+                      />
+                      :
+                      <ChevronDown
+                        color={"#fff"}
+                        className="arrow-down"
+                      />}
                   </a>
+                </button>
                 )}
               </ToggleLayer>
                 <Link to={"/blog"} className="btn-blog">
