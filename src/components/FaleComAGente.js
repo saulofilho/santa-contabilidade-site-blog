@@ -17,15 +17,21 @@ const FaleComAGente = () => {
             <div className="enderecos">
               <div className="endereco-wrapper">
                 <img src={WhatsApp} alt="whats app icon"/>
-                <p>Rua Adelino Boschetti Mateus, 144, Picadas do Sul</p>
+                <p>
+                  Rua Adelino Boschetti Mateus, 49, Picadas do Sul
+                </p>
               </div>
               <div className="endereco-wrapper">
                 <img src={WhatsApp} alt="whats app icon"/>
-                <p>São José  Santa Catarina</p>
+                <p>
+                  São José - Santa Catarina
+                </p>
               </div>
               <div className="endereco-wrapper">
                 <img src={WhatsApp} alt="whats app icon"/>
-                <p>(48) 999616963</p>
+                <p>
+                  (48) 996470220
+                </p>
               </div>
               <div className="endereco-wrapper">
                 <img src={WhatsApp} alt="whats app icon"/>

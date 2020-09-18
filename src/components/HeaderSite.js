@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { ToggleLayer, Arrow, Transition } from "react-laag"
-import Headroom from 'react-headroom'
 import { Menu, X, ChevronDown, ChevronUp } from 'react-feather'
 import LogoHero from '../../static/assets/logo-branco.png'
 import './HeaderSite.css'
@@ -17,14 +16,6 @@ const Header = () => {
 
   return (
     <div className="header-bg">
-      <Headroom
-        parent={() => document }
-        style={{
-          position: "fixed",
-          background: "transparent",
-          zIndex: 99
-        }}
-      >
       <header
         className="header-site"
       >
@@ -234,7 +225,6 @@ const Header = () => {
           </button>
         </div>
       </header>
-      </Headroom>
     </div>
   )
 }

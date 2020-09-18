@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
-import Headroom from 'react-headroom'
 import { Menu, X } from 'react-feather'
 import LogoHero from '../../static/assets/logo-verde.png'
 import Lupa from '../../static/assets/lupa.png'
@@ -15,14 +14,6 @@ const Header = () => {
   }
 
   return (
-    <Headroom
-    parent={() => document }
-    style={{
-      position: "fixed",
-      background: "transparent",
-      zIndex: 99
-    }}
-  >
     <header
       className="header-blog"
     >
@@ -91,7 +82,6 @@ const Header = () => {
         </button>
       </div>  
     </header>
-    </Headroom>
   )
 }
 

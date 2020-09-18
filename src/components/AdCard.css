@@ -6,7 +6,7 @@
 .ad-card-content {
   width: 100%;
   height: auto;
-  padding: 40px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +14,11 @@
 }
 .yellow {
   background: #FCEB65;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-flow: column;
 }
 .yellow .ad-titulo {
   color: #06606B;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 34px;
   text-transform: uppercase;
 }
 .green {
@@ -30,8 +26,9 @@
 }
 .green .ad-titulo {
   color: #fff;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
 }
 .ad-button button {
   cursor: pointer;

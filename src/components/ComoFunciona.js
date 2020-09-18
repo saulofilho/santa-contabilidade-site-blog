@@ -17,8 +17,18 @@ const ComoFunciona = () => {
           <section className="voce">
             <p>o que você vai fazer</p>
             <ul>
-              <li>Durante o mês, você emite as notas fiscais da sua atividade, e envia o seu extrato bancário mensal.</li>
-              <li>Para qualquer dúvida, conte com o nosso atendimento.</li>
+              <li>
+                Durante o mês, você emite as notas fiscais da sua atividade    
+              </li>
+              <li>
+                No primeiro dia do mês seguinte você envia as notas emitidas 
+                pela sua empresa, as notas de serviços tomados e compras de 
+                produtos, todas as despesas e também envia o extrato bancário 
+                mensal da sua empresa      
+              </li>
+              <li>
+                E, para qualquer dúvida, conte com nosso atendimento!
+              </li>
             </ul>
           </section>
           <section className="nos">
