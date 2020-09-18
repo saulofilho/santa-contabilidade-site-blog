@@ -20,11 +20,9 @@ const AdCard = ({
           {subtitle}
         </strong>
       }
-      <div className="ad-button">
-        <button>
-          <a href={slug}>EU QUERO!</a>
-        </button>
-      </div>
+      <button>
+        <a href={slug}>EU QUERO!</a>
+      </button>
   </div>
 )
 
