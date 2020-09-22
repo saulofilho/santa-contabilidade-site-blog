@@ -22,9 +22,12 @@ const Header = () => {
         </div>
         <div className="header-right-desk">
           <div className="btns-wrapper">
-              <a href="http://materiais.santacontabilidade.com.br" className="btn-materiais-post">
-                Materiais Gratuitos
-              </a>
+            <Link
+              to={"/materiais"}
+              className="btn-materiais"
+            >
+              Materiais Gratuitos
+            </Link>
               <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                 <button className="btn-fale">
                   Fale com um especialista
@@ -34,9 +37,12 @@ const Header = () => {
         </div>
         <div className="header-right-mob">
           <div className="btns-wrapper">
-              <a href="http://materiais.santacontabilidade.com.br" className="btn-materiais-post">
-                Materiais Gratuitos
-              </a>
+            <Link
+              to={"/materiais"}
+              className="btn-materiais"
+            >
+              Materiais Gratuitos
+            </Link>
               <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                 <button className="btn-fale">
                   Fale com um especialista

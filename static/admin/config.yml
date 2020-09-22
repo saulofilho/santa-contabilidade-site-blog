@@ -129,6 +129,32 @@ collections:
         widget: image
       }
 
+  - name: material
+    label: Criar Material
+    folder: content/material
+    slug: '{{slug}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Titulo, widget: string }
+      - { name: body, label: Body, widget: markdown }
+      - { name: link, label: Link, widget: string }
+      - label: Image
+        name: image
+        widget: image
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options: ["Destaque", "Materiais" ]
+        default: ["Materiais"]
+
   - name: 'settings'
     label: 'Settings'
     delete: false 

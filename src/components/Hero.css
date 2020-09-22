@@ -1,10 +1,10 @@
-.hero {
+.hero-site {
   height: auto;
   width: 100%;
   background: #06606B;
   padding: 30px 0 80px 0;
 }
-.hero .container {
+.hero-site .container {
   height: auto;
   width: 100%;
   background: #06606B;
@@ -14,45 +14,45 @@
   align-items: flex-start;
   padding-top: 50px;
 }
-.text-hero {
+.hero-site .text-hero {
   width: 100%;
   height: auto;
   padding: 30px 50px 0 0;
   color: #fff;
 }
-.text-hero h1 {
+.hero-site .text-hero h1 {
   font-size: 38px;
   line-height: 40px;
   color: #fff;
   font-weight: 400;
 }
-.text-hero p {
+.hero-site .text-hero p {
   font-size: 16px;
   color: #fff;
   font-weight: 200;
   padding: 40px 0;
 }
-.img-hero {
+.hero-site .img-hero {
   width: 100%;
   height: auto;
   padding-left: 50px;
 }
-.img-hero img {
+.hero-site .img-hero img {
   width: 100%;
   height: auto;
 }
-.btns-hero {
+.hero-site .btns-hero {
   width: 100%;
   height: auto;
   display: flex;
   flex-flow: row;
 }
-.btns-hero a {
+.hero-site .btns-hero a:nth-child(2) {
   padding: 0 0 20px 20px;
   width: auto;
   height: auto;
 }
-.btn-green {
+.hero-site .btn-green {
   background: #60B38D;
   width: 220px;
   height: 40px;
@@ -62,7 +62,7 @@
   border-radius: 3px;
   font-size: 14px;
 }
-.btn-transparent {
+.hero-site .btn-transparent {
   background: transparent;
   width: 220px;
   height: 40px;
@@ -72,8 +72,8 @@
   border-radius: 3px;
   font-size: 14px;
 }
-.btn-green:hover,
-.btn-transparent:hover {
+.hero-site .btn-green:hover,
+.hero-site .btn-transparent:hover {
   opacity: 0.8 ;
 }
 .ReactModal__Content {
@@ -135,40 +135,40 @@
   color: #fff;
 }
 @media (max-width: 768px) {
-  .hero .container {
+  .hero-site .container {
     flex-flow: column;
   }
-  .text-hero {
+  .hero-site .text-hero {
     padding-right: unset;
   }
-  .img-hero {
+  .hero-site .img-hero {
     padding-left: unset;
     padding-top: 40px;
   }
 }
 @media (max-width: 576px) {
-  .btns-hero {
+  .hero-site .btns-hero {
     flex-flow: column;
     text-align: center;
   }
-  .text-hero h1,
-  .text-hero p {
+  .hero-site .text-hero h1,
+  .hero-site .text-hero p {
     text-align: center;
   }
-  .btns-hero a {
+  .hero-site .btns-hero a {
     padding: 0 0 20px;
   }
-  .btns-hero button {
+  .hero-site .btns-hero button {
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  .form-abrir-empresa form {
+  .hero-site .form-abrir-empresa form {
     padding: 20px 5px;
   }
-  .form-abrir-empresa form button {
+  .hero-site .form-abrir-empresa form button {
     padding: 5px 15px;
   }
-  .text-hero h1 {
+  .hero-site .text-hero h1 {
     font-size: 30px;
     line-height: 36px;
   }

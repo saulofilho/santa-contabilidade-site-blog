@@ -39,7 +39,7 @@ const Hero = () => {
           </form>
         </div>
       </Modal>
-      <section className="hero">
+      <section className="hero-site">
         <div className="container">
           <div className="text-hero">
             <h1>

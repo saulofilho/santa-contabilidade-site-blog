@@ -35,14 +35,17 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-              <a href="http://materiais.santacontabilidade.com.br/" className="btn-materiais">
-                Materiais Gratuitos
-              </a>
-              <a href="https://contabilidade.santacontabilidade.com.br/especialista">
-                <button className="btn-fale">
-                  Fale com um especialista
-                </button>
-              </a>
+            <Link 
+              to={"/materiais"}
+              className="btn-materiais"
+            >
+              Materiais Gratuitos
+            </Link>
+            <a href="https://contabilidade.santacontabilidade.com.br/especialista">
+              <button className="btn-fale">
+                Fale com um especialista
+              </button>
+            </a>
           </div>
         </div>
         <div className="header-right-mob">
@@ -55,9 +58,12 @@ const Header = () => {
             <img src={Lupa} alt="lupa anchor search" />
           </a>
           <div className="btns-wrapper">
-            <a href="http://materiais.santacontabilidade.com.br" className="btn-materiais">
+            <Link
+              to={"/materiais"}
+              className="btn-materiais"
+            >
               Materiais Gratuitos
-            </a>
+            </Link>
             <a href="https://contabilidade.santacontabilidade.com.br/especialista">
               <button className="btn-fale">
                 Fale com um especialista
