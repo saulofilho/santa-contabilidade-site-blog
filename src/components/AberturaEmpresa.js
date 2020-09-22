@@ -77,9 +77,14 @@ const Ilustra = () => {
                 públicos necessários para abertura da empresa.
               </p>
             </div>
-            <button onClick={handleOpenModal}>
+            {/* <button onClick={handleOpenModal}>
               Quero abrir minha empresa grátis
-            </button>
+            </button> */}
+            <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
+              <button>
+                Quero abrir minha empresa grátis
+              </button>
+            </a>
           </div>
           <img src={PessoaCelular} alt="pessoa segurando celular" className="pessoa-cel" />
         </div>

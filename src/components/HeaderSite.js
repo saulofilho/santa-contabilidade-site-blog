@@ -139,9 +139,6 @@ const Header = () => {
                           transform: "scale(" + isOpen ? 1 : 0.5 + ")",
                         }}
                       >
-                        <a href="http://localhost:8000/">
-                        Abertura de empresa Grátis
-                        </a>
                         <a
                           href="#planos"
                           onClick={() => {

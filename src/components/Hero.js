@@ -56,8 +56,11 @@ const Hero = () => {
               dos nossos contadores.
             </p>
             <div className="btns-hero">
-              <button className="btn-transparent" onClick={handleOpenModal}>Abra sua empresa grátis</button>
-              <a href="#planos">
+              {/* <button className="btn-transparent" onClick={handleOpenModal}>Abra sua empresa grátis</button> */}
+              <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
+                <button className="btn-transparent">Abra sua empresa grátis</button>
+              </a>
+              <a href="https://contabilidade.santacontabilidade.com.br/trocar-de-contador">
                 <button className="btn-green">Troque de contabilidade</button>
               </a>
             </div>

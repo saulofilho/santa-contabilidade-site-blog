@@ -18,13 +18,13 @@ const ComoFunciona = () => {
             <p>o que você vai fazer</p>
             <ul>
               <li>
-                Durante o mês, você emite as notas fiscais da sua atividade    
+                Durante o mês, você emite as notas fiscais da sua atividade.
               </li>
               <li>
                 No primeiro dia do mês seguinte você envia as notas emitidas 
                 pela sua empresa, as notas de serviços tomados e compras de 
                 produtos, todas as despesas e também envia o extrato bancário 
-                mensal da sua empresa      
+                mensal da sua empresa.
               </li>
               <li>
                 E, para qualquer dúvida, conte com nosso atendimento!
@@ -34,10 +34,10 @@ const ComoFunciona = () => {
           <section className="nos">
             <p>O que nós vamos fazer</p>
             <ul>
-              <li>Calculamos as guias de impostos, folha de pagmento e pró-labore.</li>
+              <li>Calculamos as guias de impostos, folha de pagamento e pró-labore.</li>
               <li>Mantemos o seu CNPJ regularizado, em dia com as obrigações legais.</li>
               <li>Elaboramos os seus relatórios contábeis, Balanço, DRE, Fluxo de caixa, para você acompanhar o desempenho da sua empresa. </li>
-              <li>Prestamos todo o atendimento humanizado e rápido pelo canal de sua preferência (telefone, e-mail, chat, whatsapp)</li>
+              <li>Prestamos todo o atendimento humanizado e rápido pelo canal de sua preferência (telefone, e-mail, chat, whatsapp).</li>
               <li>A sua contabilidade completa! </li>
             </ul>
           </section>

@@ -34,6 +34,11 @@ const Ilustra = () => {
             gostaria de inverter. Selecione o seu novo retângulo e a camada 
             duplicada, e então vá para "Janela"
           </p> */}
+          <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
+            <button>
+              Quero abrir minha empresa grátis
+            </button>
+          </a>
         </div>
       </div>
     </section>

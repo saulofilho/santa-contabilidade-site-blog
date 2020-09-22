@@ -14,11 +14,11 @@ const Cards = () => {
           <br/>
           você pode confiar na <strong>Santa Contabilidade</strong>?
         </h1>
-        <p className="title-header">
+        {/* <p className="title-header">
           Planos que realmente têm a cara da sua empresa. 
           <br/>
-          Com a gente você sabe exatamente quanto vai pagar, sem surpresinhas na fatura.
-        </p>
+          Com a gente você sabe exatamente quanto vai pagar, sem surpresinhas na fatura!
+        </p> */}
         <div className="four-cards-wrapper">
           <div className="card-wrapper">
             <img src={CardPessoa} alt="ilustracao pessoa com fone"/>

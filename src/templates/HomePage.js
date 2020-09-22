@@ -29,8 +29,8 @@ export const HomePageTemplate = ({
       <Cards />
       <Ilustra />
       <Planos />
-      <Carousel />
-      <Duvidas />
+      {/* <Carousel /> */}
+      {/* <Duvidas /> */}
       <ComoFunciona />
       <AberturaEmpresa />
       <AccordionComponent />

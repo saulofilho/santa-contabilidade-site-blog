@@ -49,7 +49,7 @@ const Planos = () => {
           <p className="planos-title">
             Planos que realmente têm a cara da sua empresa.
             <br/>
-            Com a gente você sabe exatamente quanto vai pagar sem aquelas surpresinhas na fatura
+            Com a gente você sabe exatamente quanto vai pagar sem aquelas surpresinhas na fatura!
           </p>
           <h2>
             PLANOS ACESSÍVEIS A PARTIR DE R$ 97,00
@@ -84,9 +84,14 @@ const Planos = () => {
                 <br/>
                 Suporte humanizado
               </p>
-              <button onClick={handleOpenModal}>
+              {/* <button onClick={handleOpenModal}>
                 quero abrir empresa
-              </button>
+              </button> */}
+              <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
+                <button onClick={handleOpenModal}>
+                  quero abrir empresa
+                </button>
+              </a>
             </div>
             <div className="card-wrapper">
               <p className="title">
@@ -114,9 +119,11 @@ const Planos = () => {
                 <br/>
                 Suporte humanizado
               </p>
-              <button onClick={handleOpenModal}>
-                quero abrir empresa
-              </button>
+              <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
+                <button onClick={handleOpenModal}>
+                  quero abrir empresa
+                </button>
+              </a>
             </div>
             <div className="card-wrapper">
               <p className="title">
@@ -144,9 +151,11 @@ const Planos = () => {
                 <br/>
                 Suporte humanizado
               </p>
-              <button onClick={handleOpenModal}>
-                quero abrir empresa
-              </button>
+              <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
+                <button onClick={handleOpenModal}>
+                  quero abrir empresa
+                </button>
+              </a>
             </div>
           </div>
           <div className="container">
