@@ -1,7 +1,7 @@
 import React, { Fragment } from "react"
 import MateriaisHeader from './MateriaisHeader'
 import MateriaisHero from './MateriaisHero'
-import Footer from './Footer'
+import MateriaisFooter from './MateriaisFooter'
 
 export default ({ children }) => {
   return (
@@ -11,7 +11,7 @@ export default ({ children }) => {
       <MateriaisHeader />
       <MateriaisHero />
       <Fragment>{children}</Fragment>
-      <Footer />
+      <MateriaisFooter />
     </section>
   )
 }

@@ -16,6 +16,7 @@ const Header = () => {
   return (
     <header
       className="header-blog"
+      id="Header-Blog"
     >
       <div className={menuClassNames}>
         <div className="header-left">

@@ -88,7 +88,7 @@ const Planos = () => {
                 quero abrir empresa
               </button> */}
               <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
-                <button onClick={handleOpenModal}>
+                <button>
                   quero abrir empresa
                 </button>
               </a>
@@ -120,7 +120,7 @@ const Planos = () => {
                 Suporte humanizado
               </p>
               <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
-                <button onClick={handleOpenModal}>
+                <button>
                   quero abrir empresa
                 </button>
               </a>
@@ -152,7 +152,7 @@ const Planos = () => {
                 Suporte humanizado
               </p>
               <a href="https://contabilidade.santacontabilidade.com.br/abertura-de-empresa">
-                <button onClick={handleOpenModal}>
+                <button>
                   quero abrir empresa
                 </button>
               </a>

@@ -11,6 +11,7 @@ const Header = () => {
   return (
     <header
       className="header-post"
+      id="Header-Post"
     >
       <div className={menuClassNames}>
         <div className="header-left">
@@ -28,11 +29,11 @@ const Header = () => {
             >
               Materiais Gratuitos
             </Link>
-              <a href="https://contabilidade.santacontabilidade.com.br/especialista">
-                <button className="btn-fale">
-                  Fale com um especialista
-                </button>
-              </a>
+            <a href="https://contabilidade.santacontabilidade.com.br/especialista">
+              <button className="btn-fale">
+                Fale com um especialista
+              </button>
+            </a>
           </div>
         </div>
         <div className="header-right-mob">

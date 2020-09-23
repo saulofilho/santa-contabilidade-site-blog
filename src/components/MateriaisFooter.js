@@ -7,14 +7,6 @@ import Insta from '../../static/assets/btn-insta.png'
 import WhatsApp from '../../static/assets/whatsapp-wht.png'
 
 const Footer = () => {
-  const scrollToPlanos = () => {
-    document.querySelector('#planos').scrollIntoView({ behavior: 'smooth' });
-  }
-
-  const scrollToServicos = () => {
-    document.querySelector('#servicos').scrollIntoView({ behavior: 'smooth' });
-  }
-
   return (
     <footer>
       <div className="infos-footer container">
@@ -63,9 +55,6 @@ const Footer = () => {
           <p>
             <a
               href="https://santacontabilidade.com.br/#planos"
-              onClick={() => {
-                scrollToPlanos()
-              }}
             >
             Escolha seu plano
             </a>
@@ -74,9 +63,6 @@ const Footer = () => {
           <p>
             <a
               href="https://santacontabilidade.com.br/#servicos"
-              onClick={() => {
-                scrollToServicos()
-              }}
             >
             Contabilidade digital
             </a>

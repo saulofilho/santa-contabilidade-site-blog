@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   return (
-    <div className="header-bg">
+    <div className="header-bg" id="Header-Site">
       <header
         className="header-site"
       >
@@ -106,7 +106,7 @@ const Header = () => {
                   </button>
                 )}
               </ToggleLayer>
-                <Link to={"/blog"} className="btn-blog">
+                <Link to={"/blog"} className="btn-blog pad-rig-none">
                     Blog
                 </Link>
                 <a href="https://contabilidade.santacontabilidade.com.br/especialista">
@@ -147,10 +147,10 @@ const Header = () => {
                         >
                           Planos
                         </a>
-                        <a href="http://santacontabilidade.com.br/bpo-financeiro">
+                        <a href="https://contabilidade.santacontabilidade.com.br/bpo-financeiro">
                           BPO Financeiro
                         </a>
-                        <a href="http://santacontabilidade.com.br/trocar-de-contador">
+                        <a href="https://contabilidade.santacontabilidade.com.br/trocar-de-contador">
                           Trocar de Contador
                         </a>
                         <Arrow
@@ -199,7 +199,7 @@ const Header = () => {
                   Blog
                 </Link>
                 <a href="http://santacontabilidade.com.br/especialista/">
-                  <button className="btn-fale">
+                  <button className="btn-fale pad-top-none">
                     Fale com um especialista
                   </button>
                 </a>

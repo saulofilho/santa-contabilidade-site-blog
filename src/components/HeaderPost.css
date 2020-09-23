@@ -1,7 +1,7 @@
-.header-post {
-  padding-top: 30px;
+#Header-Post.header-post {
+  padding-top: 10px;
 }
-.header-wrapper {
+#Header-Post .header-wrapper {
   width: 100%;
   height: auto;
   display: flex;
@@ -9,48 +9,48 @@
   justify-content: space-between;
   align-items: center;
 }
-.header-wrapper-active {
+#Header-Post .header-wrapper-active {
   width: 100%;
   height: auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+  z-index: 99;
   position: relative;
 }
-.bg-header-green {
+#Header-Post .bg-header-green {
   background: #06606B !important;
 }
-.header-right-desk {
+#Header-Post .header-right-desk {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
 }
-.header-right-desk a:hover {
+#Header-Post .header-right-desk a:hover {
   opacity: 0.6;
 }
-.logo-header {
+#Header-Post .logo-header {
   width: 100%;
   height: auto;
 }
-.logo-header img {
+#Header-Post .logo-header img {
   max-width: 100%;
   height: auto;
 }
-.btn-materiais-post {
+#Header-Post .btn-materiais {
   width: auto;
   height: auto;
   margin-right: 30px;
 }
-a.btn-materiais-post {
+#Header-Post a.btn-materiais {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
   font-family: 'Open Sans';
 }
-header .btn-fale {
+#Header-Post .btn-fale {
   width: 240px;
   height: 40px;
   background: #06606B;
@@ -58,13 +58,13 @@ header .btn-fale {
   border: 1px solid #fff;
   border-radius: 4px;
 }
-header a .btn-fale {
+#Header-Post .btn-fale {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
   font-family: 'Open Sans';
 }
-header button:hover {
+button:hover {
   opacity: 0.9;
 }
 .button-blank {
@@ -90,34 +90,34 @@ header button:hover {
 /* desktop */
 
 @media (max-width: 1000px) {
-  .header-post .btns-wrapper {
+  #Header-Post.header-post .btns-wrapper {
     display: flex;
     flex-flow: column;
     padding-top: 20px;
     text-align: center;
   }
-  .btn-materiais-post {
+  #Header-Post .btn-materiais {
     width: 100%;
   }
-  header button.btn-fale {
+  #Header-Post button.btn-fale {
     margin-top: 20px;
   }
-  .search-header {
+  #Header-Post .search-header {
     padding-top: 40px;
   }
-  .menu-button {
+  #Header-Post .menu-button {
     display: flex;
   }
-  .menu-button .x {
+  #Header-Post .menu-button .x {
     margin-top: 20px;
   }
-  .header-right-desk {
+  #Header-Post .header-right-desk {
     display: none;
   }
-  .header-right-mob a {
+  #Header-Post .header-right-mob a {
     padding-top: 20px;
   }
-  .header-wrapper-active .header-right-mob {
+  #Header-Post .header-wrapper-active .header-right-mob {
     display: flex;
     flex-flow: column;
     justify-content: center;

@@ -41,7 +41,7 @@ export const BlogIndexTemplate = ({
         title: "FICOU COM GOSTINHO DE QUERO MAIS?",
         subtitle: "CONFIRA NOSSA PÁGINA DE MATERIAIS RICOS",
         leitura: "green",
-        slug: "http://materiais.santacontabilidade.com.br/",
+        slug: "http://santacontabilidade.com.br/materiais",
         status: "Ad"
       }
     )

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
-import Headroom from 'react-headroom'
 import LogoHero from '../../static/assets/logo-verde.png'
 import Lupa from '../../static/assets/lupa.png'
 import './MateriaisHeader.css'
@@ -14,16 +14,9 @@ const Header = () => {
   }
 
   return (
-    <Headroom
-      parent={() => document }
-      style={{
-        position: "fixed",
-        background: "transparent",
-        zIndex: 9
-      }}
-    >
       <header
         className="header-pag"
+        id="Header-Mat"
       >
         <div className={menuClassNames}>
           <div className="header-left">
@@ -43,9 +36,9 @@ const Header = () => {
               <img src={Lupa} alt="lupa anchor search" />
             </a>
             <div className="btns-wrapper">
-              <a href="https://santacontabilidade/blog" className="btn-materiais">
+              <Link to={"/blog"} className="btn-materiais">
                 Blog
-              </a>
+              </Link>
               <button className="btn-fale">
                 <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                   Fale com um especialista
@@ -58,9 +51,9 @@ const Header = () => {
               <img src={Lupa} alt="lupa anchor search" />
             </a>
             <div className="btns-wrapper">
-              <a href="https://santacontabilidade/blog" className="btn-materiais">
+              <Link to={"/blog"} className="btn-materiais">
                 Blog
-              </a>
+              </Link>
               <button className="btn-fale">
                 <a href="https://contabilidade.santacontabilidade.com.br/especialista">
                   Fale com um especialista
@@ -85,7 +78,6 @@ const Header = () => {
           </button>
         </div>
       </header>
-    </Headroom>
   )
 }
 
