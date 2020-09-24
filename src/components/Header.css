@@ -51,7 +51,7 @@
   font-size: 14px;
   font-family: 'Open Sans';
 }
-#Header-Blog header .btn-fale {
+#Header-Blog .btn-fale {
   width: 240px;
   height: 40px;
   background: #06606B;
@@ -59,7 +59,7 @@
   border: unset;
   border-radius: 4px;
 }
-#Header-Blog header a .btn-fale {
+#Header-Blog a .btn-fale {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
