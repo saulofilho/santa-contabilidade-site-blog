@@ -51,6 +51,10 @@ contentbody:
     greenboxlink: https://santacontabilidade.com.br/
   - type: addbodypost
     bodypost: >-
+      ![mulher estressada com várias tarefas para executar ao mesmo
+      tempo](/assets/multitarefa.jpg "Multitarefa quem, eu?")
+
+
       ### Não fazer muitas tarefas ao mesmo tempo!
 
 
@@ -63,25 +67,10 @@ contentbody:
       Um plus nessa dica: TERCEIRIZE as tarefas que for possível, delegue! Se você tem uma tarefa que seja repetitiva, sem grande complexidade e risco, que pode ser feita por outra pessoa por uma fração do valor da sua hora de trabalho, por que continuar fazendo? Pensa aí rapidinho, quanto do seu tempo você gasta com tarefas que custam menos que o valor da sua hora, por exemplo? Ok, delegar dá trabalho, demanda tempo (não é ironia!), mas para ganhar na frente, você precisa perder um pouco agora. Você pode pensar também, ah, “mas ninguém vai fazer como eu faço”, ou, “são só cinco minutinhos por dia”. Pense que, no logo prazo, o tempo investido em descrever a tarefa e delegar, você estará ganhado de presente para focar em outras tarefas com maior retorno!
   - type: addbodypost
     bodypost: >-
-      ### Vantagens da Contabilidade Online
-
-
-      A contabilidade mudou bastante nos últimos anos, ela não é usada somente para resolver burocracias típicas de um negócio, mas sim, como uma eficiente ferramenta de gestão. Por isso, o representante comercial pode contar com especialistas focados no seu segmento de mercado.
-
-
-      Contar com profissionais conhecedores de um área é fundamental para tratar não só de assuntos tributários, mas também, de fins gerenciais que melhoram a tomada de decisão.
-
-
-      Mediante a isso, os nichos contábeis estão cada vez mais em evidência fazendo com que os escritório de contabilidade se especializem em determinados segmentos para se diferenciar frente ao mercado. 
-
-
-      Entre eles está a representação comercial. Entenda mais sobre esse assunto!
-  - type: addbodypost
-    bodypost: >-
       ### Autoconhecimento – cuide do seu corpo
 
 
-      ![mulher sentada em frente ao computador com um copo de água na mão]( "Beba água, hidrate-se!")
+      ![mulher sentada em frente ao computador com um copo de água na mão](/assets/água.jpg "Beba água, hidrate-se!")
 
 
       A sua qualidade de vida e os seus hábitos pessoais impactam de forma direta na sua produtividade profissional. Por isso, cuidar do seu corpo e da sua mente é uma forma de ver o seu trabalho render mais. O que você come, se você se alimenta de forma saudável, com alimentos que ajudam a ter mais energia e disposição durante o dia, se hidrata, são fatores que te ajudam nos desafios diários. Ter alguma atividade física na agenda ajuda a controlar a ansiedade e relaxar das tensões, além de alongar e fortalecer o corpo. Outro ponto de atenção é o sono! Dormir menos que o seu corpo precisa compromete a sua produtividade no dia seguinte, interfere na produção de hormônios e vários processos necessários à sua saúde.
@@ -91,6 +80,18 @@ contentbody:
 
 
       Um plus nessa dica: você não precisa tratar toda decisão como uma grande decisão. Exemplo: tente classificar as decisões em dois tipos, decisões delicadas e de alto risco e decisões reversíveis, que podem ser consertadas. Assim, você consegue tratar decisões reversíveis com maior rapidez e dedicar mais atenção às decisões de alto risco, e não sai tratando tudo como como delicado e super urgente.
+  - type: addbodypost
+    bodypost: >-
+      ### Agilidade nas tarefas pessoais – pequenas pausas durante o dia
+
+
+      Você realizar pequenas pausas entre as tarefas ao longo do dia pode funcionar como um aliado à sua produtividade. Levantar, beber água, dar uma pequena caminhada... Fazer uma pausa entre uma atividade e outra promove a oxigenação do cérebro, libera espaço para você [ter ideias e insights](https://blog.sage.com.br/5-habitos-das-pessoas-inovadoras/). Após essas pausas você consegue voltar ao trabalho com maior concentração e foco.
+
+
+      Além dessas pequenas pausas, ao final de cada semana é interessante avaliar cada aspecto da sua rotina e ir ajustando onde for necessário. Assim, você consegue organizar o seu tempo em relação a exercício físico, alimentação, conexão e bem-estar.
+
+
+      Um plus nessa dica: experimente agrupar tarefas, o que é diferente de desempenha rmúltiplas tarefas ao mesmo tempo. Tente agrupar coisas que você quer fazer com coisas que você precisa fazer, isso pode ajudar na formação de hábitos positivos. Por exemplo: você pode combinar a execução de uma atividade física com ouvir um podcast. Assim, você dá menos desculpas e cultiva uma rotina com mais propósito.
   - type: addgreenbox
     greenboxlink: https://santacontabilidade.com.br/
     greenboxtitlebutton: QUERO SABER MAIS
@@ -100,7 +101,7 @@ contentbody:
       ### Espaço físico de trabalho – usar o e-mail com sabedoria
 
 
-      Experimente personalizar o seu espaço de trabalho conforme seu estilo, estabeleça uma conexão emocional com esse espaço. Provavelmente você tem uma mesa e cadeira como seu espaço individual de trabalho, por que não deixar esse cantinho com a sua cara? Esse simples ato desperta a vontade de sermos mais eficientes no trabalho, mais felizes e com maior nível de bem-estar.
+      Experimente personalizar o seu espaço de trabalho conforme seu estilo, estabeleça uma [conexão emocional](https://www.businessnewsdaily.com/7456-workspace-design-productivity.html) com esse espaço. Provavelmente você tem uma mesa e cadeira [como seu espaço individual de trabalho,](https://www.vitalk.com.br/blog/espaco-de-trabalho/) por que não deixar esse cantinho com a sua cara? Esse simples ato desperta a vontade de sermos mais eficientes no trabalho, mais felizes e com maior nível de bem-estar.
 
 
       Outro ponto de atenção é o uso do e-mail. Acessar o e-mail a cada 5 segundos pode minar sua produtividade. Além de desperdiçar um tempo muito importante, esse ato prejudica a concentração e a execução de tarefas que são mais importantes que o e-mail. Defina, ao longo do dia, horários para conferir a caixa de entrada. Vai começar a fazer uma atividade que exije concentração? Fecha o e-mail e desliga o telephone, assim você não corre o risco de perder o foco.
