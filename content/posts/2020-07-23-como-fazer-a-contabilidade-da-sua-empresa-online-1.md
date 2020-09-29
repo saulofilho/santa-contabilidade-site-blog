@@ -118,5 +118,5 @@ contentbody:
       Menos tarefas para priorizar reduz a procrastinação e também o sentimento de frustração. Sempre que possível, compartilhe o que está fazendo com um colega de trabalho e busque estratégias em conjunto para aumentar a agilidade. E, para descobrir o que funciona pra você, não tenha medo de testar e experimentar. Com o entendimento do que dá certo ou não, você vai se adaptando e criando novos hábitos. Comece a trabalhar nessas pequenas mudanças de hábitos e veja o dia a dia no seu negócio render muito mais. Tornar-se uma pessoa mais produtiva depende apenas e exclusivamente de você.
 autor:
   - autorname: Flávia Souza, contadora e professora
-status: AllPosts
+status: Destaque
 ---
