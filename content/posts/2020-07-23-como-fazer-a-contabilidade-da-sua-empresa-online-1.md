@@ -13,7 +13,7 @@ contentbody:
       ### Estamos sempre muito ocupados, já parou para pensar?
 
 
-      Seja porque temos contas para pagar, uma empresa para administrar, uma casa, filhos para cuidar e, obviamente, prazos a cumprir. Todos esses variados compromissos nos deixam com pouco tempo disponível para nós mesmos e para cuidar com qualidade dos nossos relacionamentos. Mas, em meio a tudo isso, existem algumas formas de organizar a sua rotina, e buscar algumas estratégias para gastarmos melhor esse recurso chamado tempo![](<>)
+      Seja porque temos contas para pagar, uma empresa para administrar, uma casa, filhos para cuidar e, obviamente, prazos a cumprir. Todos esses variados compromissos nos deixam com pouco tempo disponível para nós mesmos e para cuidar com qualidade dos nossos relacionamentos. Mas, em meio a tudo isso, existem algumas formas de organizar a sua rotina, e buscar algumas estratégias para gastarmos melhor esse recurso chamado tempo.![](<>)
 
 
       ![mulheres saindo do trabalho tomando um café e sorrindo](/assets/produtivas.jpg "Tempo é riqueza!")
@@ -25,7 +25,7 @@ contentbody:
       Atualmente, um dos conceitos de riqueza é usar o tempo de forma mais inteligente, para ter mais tempo livre, é acreditar que podemos fazer mais em menos tempo.
 
 
-      Quem nunca participou de reuniões que não tinham importância, quem nunca deixou de delegar uma tarefa, com medo de que não fique tão bem feito como se fosse você mesmo a fazer? E quando nos damos conta, passamos o dia presos ao *telefone celular,* e realizamos tarefas que poderiam muitas vezes ser terceirizadas ou automatizadas.
+      Quem nunca participou de reuniões que não tinham importância, quem nunca deixou de delegar uma tarefa, com medo de que não fique tão bem feito como se fosse você mesmo a fazer? E quando nos damos conta, passamos o dia presos ao telefone celular, e realizamos tarefas que poderiam muitas vezes ser terceirizadas ou automatizadas.
 
 
       A maioria de nós toma muito cuidado quando o assunto é como gastar o seu dinheiro. Mas, quando se trata de tempo, muitas vezes não paramos para pensar. Saímos dizendo “sim” para qualquer demanda sem avaliar o tempo que irá levar, tratamos todos os assuntos como se fossem urgentes. Mas, não podemos esquecer, diferente do dinheiro, não podemos recuperar o tempo!
@@ -35,7 +35,7 @@ contentbody:
   - type: addbodypost
     bodypost: >-
       ### 1 - Coloque**,** no máximo**,** 3 coisas prioritárias na lista de “a
-      fazer” do dia, organize a sua agenda!
+      fazer” do dia - organize a sua agenda
 
 
       Palavra de ordem: PRIORIZAR! Tá, mas...como se faz isso? Liste, enumere, descreva todas as suas tarefas. E, defina um plano com datas limites para a realização de cada uma. Assim, você começa pelas mais importantes, e não vê uma lista enorme de coisas a serem feitas “pra ontem”. Para cada dia, defina as 3 coisas mais importantes, se organize para elas. Para as demais, você vai olhando, colocando no radar e recuperando ideias e assuntos semelhantes ao longo da semana.
@@ -44,7 +44,7 @@ contentbody:
       Em outras palavras, crie o hábito de planejar os seus dias, organizar a sua rotina com certeza te ajuda a melhorar a produtividade. Use agenda, seja de papel, virtual, aplicativo, o que for mais prático e acessível pra você, mas tenha algum apoio para não pirar tentando gravar na mente todos os seus compromissos. Pra te ajudar nessa organização, um conselho: sempre que possível, não deixe uma tarefa muito importante para o final do dia, quando já estará cansado. E sabe aquela agenda cheia de reuniões? Dá uma revisada, veja se todas são realmente essenciais ou podem ser resolvidas com uma mensagem ou ligação.
 
 
-      Um plus nessa dica: AUTOMATIZE as tarefas que forem possíveis! Já existem diversas ferramentas que podem te poupar trabalho mecânico ou repetitivo. Por exemplo, na área de vendas e marketing, automatizar a geração e cultivo de *leads*, padronização de *e-mails*, ou a distribuição de conteúdo. Para suporte aos seus clientes, automatizar pesquisas e questionários, para a sua gestão, utilizar uma plataforma digital para gestão financeira e contábil.
+      Um plus nessa dica: AUTOMATIZE as tarefas que forem possíveis! Já existem diversas ferramentas que podem te poupar trabalho mecânico ou repetitivo. Por exemplo, na área de vendas e marketing, automatizar a geração e cultivo de leads, padronização de e-mails, ou a distribuição de conteúdo. Para suporte aos seus clientes, automatizar pesquisas e questionários, para a sua gestão, utilizar uma plataforma digital para gestão financeira e contábil.
   - type: addgreenbox
     greenboxtitle: Economize até 70% com a contabilidade online
     greenboxtitlebutton: FALE COM UM ESPECIALISTA
@@ -55,7 +55,7 @@ contentbody:
       tempo](/assets/multitarefa.jpg "Multitarefa quem, eu?")
 
 
-      ### 2 - Não fazer muitas tarefas ao mesmo tempo!
+      ### 2 - Não faça muitas tarefas ao mesmo tempo
 
 
       Para muitas pessoas, ser multitarefa é entendido como uma qualidade, mas saiba que, na verdade, esse não é um hábito muito saudável… Esse hábito leva a dois problemas: você não consegue garantir que as tarefas serão concluídas mais rapidamente, e também pode comprometer a qualidade do resultado final do seu trabalho. Tome produtividade como sinônimo de, sempre que possível, fazer uma tarefa de cada vez, se concentrar naquela tarefa, e só partir para a próxima quando a primeira tarefa estiver concluída. E esse é um grande desafio, com tantas distrações ao alcance das mãos e dos olhos.
@@ -67,7 +67,7 @@ contentbody:
       Um plus nessa dica: TERCEIRIZE as tarefas que for possível, delegue! Se você tem uma tarefa que seja repetitiva, sem grande complexidade e risco, que pode ser feita por outra pessoa por uma fração do valor da sua hora de trabalho, por que continuar fazendo? Pensa aí rapidinho, quanto do seu tempo você gasta com tarefas que custam menos que o valor da sua hora, por exemplo? Ok, delegar dá trabalho, demanda tempo (não é ironia!), mas para ganhar na frente, você precisa perder um pouco agora. Você pode pensar também, ah, “mas ninguém vai fazer como eu faço”, ou, “são só cinco minutinhos por dia”. Pense que, no logo prazo, o tempo investido em descrever a tarefa e delegar, você estará ganhado de presente para focar em outras tarefas com maior retorno!
   - type: addbodypost
     bodypost: >-
-      ### 3 - Autoconhecimento – cuide do seu corpo
+      ### 3 - Autoconhecimento - cuide do seu corpo
 
 
       ![mulher sentada em frente ao computador com um copo de água na mão](/assets/água.jpg "Beba água, hidrate-se!")
@@ -82,29 +82,30 @@ contentbody:
       Um plus nessa dica: você não precisa tratar toda decisão como uma grande decisão. Exemplo: tente classificar as decisões em dois tipos, decisões delicadas e de alto risco e decisões reversíveis, que podem ser consertadas. Assim, você consegue tratar decisões reversíveis com maior rapidez e dedicar mais atenção às decisões de alto risco, e não sai tratando tudo como como delicado e super urgente.
   - type: addbodypost
     bodypost: >-
-      ### 4 - Agilidade nas tarefas pessoais – pequenas pausas durante o dia
+      ### 4 - Agilidade nas tarefas pessoais - faça pequenas pausas durante o
+      dia
 
 
-      Você realizar pequenas pausas entre as tarefas ao longo do dia pode funcionar como um aliado à sua produtividade. Levantar, beber água, dar uma pequena caminhada... Fazer uma pausa entre uma atividade e outra promove a oxigenação do cérebro, libera espaço para você [ter ideias e insights](https://blog.sage.com.br/5-habitos-das-pessoas-inovadoras/). Após essas pausas você consegue voltar ao trabalho com maior concentração e foco.
+      Você realizar pequenas pausas entre as tarefas ao longo do dia pode funcionar como um aliado à sua produtividade. Levantar, beber água, dar uma pequena caminhada... Fazer uma pausa entre uma atividade e outra promove a oxigenação do cérebro, libera espaço para você ter ideias e insights. Após essas pausas você consegue voltar ao trabalho com maior concentração e foco.
 
 
       Além dessas pequenas pausas, ao final de cada semana é interessante avaliar cada aspecto da sua rotina e ir ajustando onde for necessário. Assim, você consegue organizar o seu tempo em relação a exercício físico, alimentação, conexão e bem-estar.
 
 
-      Um plus nessa dica: experimente agrupar tarefas, o que é diferente de desempenha rmúltiplas tarefas ao mesmo tempo. Tente agrupar coisas que você quer fazer com coisas que você precisa fazer, isso pode ajudar na formação de hábitos positivos. Por exemplo: você pode combinar a execução de uma atividade física com ouvir um podcast. Assim, você dá menos desculpas e cultiva uma rotina com mais propósito.
+      Um plus nessa dica: experimente agrupar tarefas, o que é diferente de desempenhar múltiplas tarefas ao mesmo tempo. Tente agrupar coisas que você quer fazer com coisas que você precisa fazer, isso pode ajudar na formação de hábitos positivos. Por exemplo: você pode combinar a execução de uma atividade física com ouvir um podcast. Assim, você dá menos desculpas e cultiva uma rotina com mais propósito.
   - type: addgreenbox
     greenboxlink: https://santacontabilidade.com.br/
     greenboxtitlebutton: QUERO SABER MAIS
     greenboxtitle: A contabilidade pode salvar o seu negócio!
   - type: addbodypost
     bodypost: >-
-      ### 5 - Espaço físico de trabalho – usar o e-mail com sabedoria
+      ### 5 - Espaço físico de trabalho - use o e-mail com sabedoria
 
 
-      Experimente personalizar o seu espaço de trabalho conforme seu estilo, estabeleça uma [conexão emocional](https://www.businessnewsdaily.com/7456-workspace-design-productivity.html) com esse espaço. Provavelmente você tem uma mesa e cadeira [como seu espaço individual de trabalho,](https://www.vitalk.com.br/blog/espaco-de-trabalho/) por que não deixar esse cantinho com a sua cara? Esse simples ato desperta a vontade de sermos mais eficientes no trabalho, mais felizes e com maior nível de bem-estar.
+      Experimente personalizar o seu espaço de trabalho conforme seu estilo, estabeleça uma conexão emocional com esse espaço. Provavelmente você tem uma mesa e cadeira como seu espaço individual de trabalho, por que não deixar esse cantinho com a sua cara? Esse simples ato desperta a vontade de sermos mais eficientes no trabalho, mais felizes e com maior nível de bem-estar.
 
 
-      Outro ponto de atenção é o uso do e-mail. Acessar o e-mail a cada 5 segundos pode minar sua produtividade. Além de desperdiçar um tempo muito importante, esse ato prejudica a concentração e a execução de tarefas que são mais importantes que o e-mail. Defina, ao longo do dia, horários para conferir a caixa de entrada. Vai começar a fazer uma atividade que exije concentração? Fecha o e-mail e desliga o telephone, assim você não corre o risco de perder o foco.
+      Outro ponto de atenção é o uso do e-mail. Acessar o e-mail a cada 5 segundos pode minar sua produtividade. Além de desperdiçar um tempo muito importante, esse ato prejudica a concentração e a execução de tarefas que são mais importantes que o e-mail. Defina, ao longo do dia, horários para conferir a caixa de entrada. Vai começar a fazer uma atividade que exije concentração? Fecha o e-mail e desliga o telefone, assim você não corre o risco de perder o foco.
 
 
       Um plus nessa dica: use a comunicação assíncrona. Exemplo, pra que você precisa participar de uma reunião de 2 horas onde você dará uma contribuição de apenas 5 minutos?
