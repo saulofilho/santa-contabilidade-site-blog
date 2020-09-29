@@ -34,7 +34,7 @@ contentbody:
       E, se você está afim de gastar o seu tempo de forma mais produtiva, se liga nesses passos!
   - type: addbodypost
     bodypost: >-
-      ### Coloque**,** no máximo**,** 3 coisas prioritárias na lista de “a
+      ### 1 - Coloque**,** no máximo**,** 3 coisas prioritárias na lista de “a
       fazer” do dia, organize a sua agenda!
 
 
@@ -55,7 +55,7 @@ contentbody:
       tempo](/assets/multitarefa.jpg "Multitarefa quem, eu?")
 
 
-      ### Não fazer muitas tarefas ao mesmo tempo!
+      ### 2 - Não fazer muitas tarefas ao mesmo tempo!
 
 
       Para muitas pessoas, ser multitarefa é entendido como uma qualidade, mas saiba que, na verdade, esse não é um hábito muito saudável… Esse hábito leva a dois problemas: você não consegue garantir que as tarefas serão concluídas mais rapidamente, e também pode comprometer a qualidade do resultado final do seu trabalho. Tome produtividade como sinônimo de, sempre que possível, fazer uma tarefa de cada vez, se concentrar naquela tarefa, e só partir para a próxima quando a primeira tarefa estiver concluída. E esse é um grande desafio, com tantas distrações ao alcance das mãos e dos olhos.
@@ -67,7 +67,7 @@ contentbody:
       Um plus nessa dica: TERCEIRIZE as tarefas que for possível, delegue! Se você tem uma tarefa que seja repetitiva, sem grande complexidade e risco, que pode ser feita por outra pessoa por uma fração do valor da sua hora de trabalho, por que continuar fazendo? Pensa aí rapidinho, quanto do seu tempo você gasta com tarefas que custam menos que o valor da sua hora, por exemplo? Ok, delegar dá trabalho, demanda tempo (não é ironia!), mas para ganhar na frente, você precisa perder um pouco agora. Você pode pensar também, ah, “mas ninguém vai fazer como eu faço”, ou, “são só cinco minutinhos por dia”. Pense que, no logo prazo, o tempo investido em descrever a tarefa e delegar, você estará ganhado de presente para focar em outras tarefas com maior retorno!
   - type: addbodypost
     bodypost: >-
-      ### Autoconhecimento – cuide do seu corpo
+      ### 3 - Autoconhecimento – cuide do seu corpo
 
 
       ![mulher sentada em frente ao computador com um copo de água na mão](/assets/água.jpg "Beba água, hidrate-se!")
@@ -82,7 +82,7 @@ contentbody:
       Um plus nessa dica: você não precisa tratar toda decisão como uma grande decisão. Exemplo: tente classificar as decisões em dois tipos, decisões delicadas e de alto risco e decisões reversíveis, que podem ser consertadas. Assim, você consegue tratar decisões reversíveis com maior rapidez e dedicar mais atenção às decisões de alto risco, e não sai tratando tudo como como delicado e super urgente.
   - type: addbodypost
     bodypost: >-
-      ### Agilidade nas tarefas pessoais – pequenas pausas durante o dia
+      ### 4 - Agilidade nas tarefas pessoais – pequenas pausas durante o dia
 
 
       Você realizar pequenas pausas entre as tarefas ao longo do dia pode funcionar como um aliado à sua produtividade. Levantar, beber água, dar uma pequena caminhada... Fazer uma pausa entre uma atividade e outra promove a oxigenação do cérebro, libera espaço para você [ter ideias e insights](https://blog.sage.com.br/5-habitos-das-pessoas-inovadoras/). Após essas pausas você consegue voltar ao trabalho com maior concentração e foco.
@@ -98,7 +98,7 @@ contentbody:
     greenboxtitle: A contabilidade pode salvar o seu negócio!
   - type: addbodypost
     bodypost: >-
-      ### Espaço físico de trabalho – usar o e-mail com sabedoria
+      ### 5 - Espaço físico de trabalho – usar o e-mail com sabedoria
 
 
       Experimente personalizar o seu espaço de trabalho conforme seu estilo, estabeleça uma [conexão emocional](https://www.businessnewsdaily.com/7456-workspace-design-productivity.html) com esse espaço. Provavelmente você tem uma mesa e cadeira [como seu espaço individual de trabalho,](https://www.vitalk.com.br/blog/espaco-de-trabalho/) por que não deixar esse cantinho com a sua cara? Esse simples ato desperta a vontade de sermos mais eficientes no trabalho, mais felizes e com maior nível de bem-estar.
