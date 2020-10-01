@@ -77,5 +77,7 @@ contentbody:
 
 
       Gostaria de uma ajuda especializada para vencer mais facilmente? Conhecer o caminho das pedras e indicar a direção mais assertiva é a nossa especialidade, quer saber mais? Estamos prontos para te atender!
-status: AllPosts
+autor:
+  - autorname: Flávia Souza, contadora e professora
+status: Destaque
 ---
