@@ -1,9 +1,10 @@
 ---
-date: 2020-09-22T19:16:32.520Z
-title: Apple Teste Titulo
-link: https://www.apple.com/br/
-image: /assets/d635600c-c374-4d24-b066-bcf727bd7b2f.jpg
+date: 2020-10-01T00:20:28.418Z
+title: O que você gostaria de saber sobre contabilidade digital  e ninguém nunca
+  te falou!
+link: https://drive.google.com/file/d/1H95uMTi-086lVaWp75-AA1id7gJiL4ky/view?usp=sharing
+image: /assets/capa-e-book-contabilidade-digital.jpg
 tags:
   - Destaque
 ---
-**Ebook:** 10 *estratégias* para SaaS que **você** precisa conhecer
+**Ebook:** O que você gostaria de saber sobre contabilidade digital  e ninguém nunca te falou!
