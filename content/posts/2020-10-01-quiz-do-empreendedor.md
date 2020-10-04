@@ -27,10 +27,6 @@ contentbody:
       4. Controlar o financeiro da minha empresa
 
       5. Ter um planejamento tributário adequado
-  - type: addgreenbox
-    greenboxtitle: Fale com um especialista em desafios!
-    greenboxtitlebutton: ESPECIALISTA AQUI!
-    greenboxlink: https://contabilidade.santacontabilidade.com.br/especialista
   - type: addbodypost
     bodypost: >-
       ### Já escolheu? Conseguiu escolher um só? 
