@@ -28,10 +28,10 @@ export const BlogIndexTemplate = ({
   
   const yellowAd = insertYellowAd(posts, 5, 
       {
-        title: "CONTABILIDADE DIGITAL?",
-        subtitle: "MITOS E VERDADES AGORA!",
+        title: "Tudo o que você precisa saber sobre",
+        subtitle: "contabilidade digital!",
         leitura: "yellow",
-        slug: "http://santacontabilidade.com.br/blog/mitos-e-verdades",
+        slug: "https://contabilidade.santacontabilidade.com.br/o-que-voce-gostaria-de-saber-sobre-contabilidade-digital",
         status: "Ad"
       }
     )
@@ -41,7 +41,7 @@ export const BlogIndexTemplate = ({
         title: "FICOU COM GOSTINHO DE QUERO MAIS?",
         subtitle: "CONFIRA NOSSA PÁGINA DE MATERIAIS RICOS",
         leitura: "green",
-        slug: "http://santacontabilidade.com.br/materiais",
+        slug: "https://santacontabilidade.com.br/materiais",
         status: "Ad"
       }
     )

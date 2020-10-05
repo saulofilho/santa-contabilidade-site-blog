@@ -128,7 +128,9 @@ const Footer = () => {
       </div>
       <div className="logo-footer">
         <div className="container">
-          <img src={LogoFooter} alt=""/>
+          <Link to={"/"}>
+            <img src={LogoFooter} alt=""/>
+          </Link>
         </div>
       </div>
     </footer>

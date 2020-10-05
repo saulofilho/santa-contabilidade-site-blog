@@ -21,7 +21,7 @@ const AdCard = ({
         </strong>
       }
       <button>
-        <a href={slug}>EU QUERO!</a>
+        <a href={slug}>VER MAIS</a>
       </button>
   </div>
 )

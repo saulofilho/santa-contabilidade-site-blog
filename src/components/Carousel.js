@@ -27,52 +27,28 @@ const Carousel = () => {
                   a dizer sobre o nosso trabalho
                 </h3>
                 <p className="quote">
-                  “Quando comecei a Santa Contabilidade eu
-                  <br/> 
-                  resolvi problemas 
-                  contábeis de 3 anos em 
-                  <br/> 
-                  apenas 2 meses! Incrívell"
-                </p>
-                <p className="quote-autor">
-                  Marcela Viana da Empresa TAL
-                </p>
-              </div>
-              <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/z9XmawB0t7Q?controls=0" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen 
-              />
-              <span className="green-box"></span>
-            </div>
-          </div>
-          <div>
-            <div className="car-items-wrapper">
-              <div className="car-texts-wrapper">
-                <h3>
-                  Veja o que os  nossos clientes têm
+                  “A nossa empresa está completando dois anos, 
                   <br/>
-                  a dizer sobre o nosso trabalho
-                </h3>
-                <p className="quote">
-                  “Quando comecei a Santa Contabilidade eu
-                  <br/> 
-                  resolvi problemas 
-                  contábeis de 3 anos em 
-                  <br/> 
-                  apenas 2 meses! Incrívell"
+                  e desde o início nós temos essa parceria. 
+                  <br/>
+                  Muito mais do que a questão financeira, 
+                  <br/>
+                  de números, a Santa Contabilidade tem me 
+                  <br/>
+                  auxiliado em diversos aspectos, 
+                  <br/>
+                  com diversas dúvidas, eles são hoje o meu 
+                  <br/>
+                  ponto principal de apoio!"
                 </p>
                 <p className="quote-autor">
-                  Marcela Viana da Empresa TAL
+                  Natalia Rodrigues da Unit Escola de Dança
                 </p>
               </div>
               <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/z9XmawB0t7Q?controls=0" 
+                src="https://www.youtube.com/embed/8ZiESGjrOKw?controls=0" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen 
