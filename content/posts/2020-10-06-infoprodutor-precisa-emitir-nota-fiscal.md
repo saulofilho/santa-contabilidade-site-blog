@@ -1,6 +1,8 @@
 ---
 template: SinglePost
 date: 06/10/2020
+categories:
+  - category: Gestão
 title: Infoprodutor precisa emitir nota fiscal?
 subtitle: Saiba exatamente o que precisa fazer e seja feliz no mundo digital!
 featuredImage: /assets/infoprodutor.jpg
