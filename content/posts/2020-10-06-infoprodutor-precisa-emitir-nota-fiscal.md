@@ -103,7 +103,7 @@ contentbody:
   - type: addyellowbox
     yellowboxtitle: Veja nesse fluxograma como é a troca de informações na atividade
       do infoprodutor!
-    yellowboxlink: Receber material
+    yellowboxlink: https://contabilidade.santacontabilidade.com.br/entendendo-a-venda-do-infoproduto
   - type: addbodypost
     bodypost: >-
       ### Emitir as notas fiscais corretamente
