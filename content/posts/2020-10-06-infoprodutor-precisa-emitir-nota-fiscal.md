@@ -63,10 +63,10 @@ contentbody:
       Por exemplo: digamos que você é o produtor de um determinado infoproduto, e que durante o mês realizou 80 vendas. Nessa situação, nesse mês, será necessário emitir 80 notas fiscais, destinadas a cada um dos compradores.
 
 
-      Portanto, guarde essa informação: O [produtor digital](https://eucontador.com.br/produtor-digital-quem-sao-e-como-trabalham/) SEMPRE emite a nota fiscal para o cliente final.
+      Portanto, guarde essa informação: O produtor digital SEMPRE emite a nota fiscal para o cliente final.
 
 
-      Se você é um [produtor digital](https://eucontador.com.br/como-vender-como-afiliado-de-produtos-digitais/), um infoprodutor, para que a sua empresa se desenvolva e cresça, saiba que a melhor opção para você é a abertura de uma empresa no regime do Simples Nacional.
+      Se você é um produtor digital, um infoprodutor, para que a sua empresa se desenvolva e cresça, saiba que a melhor opção para você é a abertura de uma empresa no regime do Simples Nacional.
 
 
       Como você desenvolve a atividade de vender serviços e produtos, você precisa emitir notas fiscais, como já explicado, e assim, a sua atividade comercial será tributada pelo governo.
@@ -84,10 +84,10 @@ contentbody:
       ### Tenha uma orientação especializada
 
 
-      É comum que no início de um negócio o empreendedor realize muitas (senão todas!) as tarefas por conta própria. Isso envolve comprar os equipamentos necessários, como uma câmera nova, negociar com parceiros e até mesmo gerenciar o [caixa](https://enotas.com.br/blog/fluxo-de-caixa-o-que-e-como-fazer/), controlar o financeiro. Será que cabe aí cuidar também dos aspectos contábeis e tributários? Será que vale a pena agregar mais essa atividade na sua rotina?
+      É comum que no início de um negócio o empreendedor realize muitas (senão todas!) as tarefas por conta própria. Isso envolve comprar os equipamentos necessários, como uma câmera nova, negociar com parceiros e até mesmo gerenciar o caixa, controlar o financeiro. Será que cabe aí cuidar também dos aspectos contábeis e tributários? Será que vale a pena agregar mais essa atividade na sua rotina?
 
 
-      Saiba que, quando se trata dos aspectos tributários e fiscais, é importante você ter um [contador](https://enotas.com.br/blog/o-que-faz-um-contador/) como parceiro para te auxiliar e orientar. O contador é o profissional que tem o conhecimento especializado para entender as legislações e definir as práticas contábeis, tributárias e financeiras mais assertivas para o seu nicho de atuação.
+      Saiba que, quando se trata dos aspectos tributários e fiscais, é importante você ter um contador como parceiro para te auxiliar e orientar. O contador é o profissional que tem o conhecimento especializado para entender as legislações e definir as práticas contábeis, tributárias e financeiras mais assertivas para o seu nicho de atuação.
 
 
       Se você ainda tem a ideia que um contador só deve ser procurado no momento de declarar o imposto de renda, recomendamos mudar esse pensamento o quanto antes! Para o bem do seu negócio e da sua prosperidade!
@@ -115,7 +115,7 @@ contentbody:
       Como cada venda exige a emissão de uma nota fiscal, você pode ficar perdido com a quantidade de tarefas a realizar. Além disso, quanto maior for o número de produtos e serviços negociados, maior será a quantidade de notas emitidas.
 
 
-      Então, para facilitar a sua rotina, você pode utilizar um [emissor de nota fiscal](https://enotas.com.br/blog/emissor-de-nota-fiscal/) conectado às principais plataformas digitais e aos meios de pagamento do mercado. A emissão de nota fiscal eletrônica está disponível em muitas cidades do país, e caso a prefeitura onde sua empresa está sediada ainda não opere dessa forma, você pode mudar o registro da sua empresa para outra cidade onde possa emitir notas fiscais eletrônicas.
+      Então, para facilitar a sua rotina, você pode utilizar um emissor de nota fiscal conectado às principais plataformas digitais e aos meios de pagamento do mercado. A emissão de nota fiscal eletrônica está disponível em muitas cidades do país, e caso a prefeitura onde sua empresa está sediada ainda não opere dessa forma, você pode mudar o registro da sua empresa para outra cidade onde possa emitir notas fiscais eletrônicas.
 
 
       Fique atento, reforçamos que para implementar todas as dicas deste post no seu negócio digital é aconselhável que você procure um contador especializado para te ajudar a cuidar de todos os detalhes.
