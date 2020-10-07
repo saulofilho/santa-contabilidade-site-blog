@@ -9,10 +9,13 @@ featuredImage: /assets/infoprodutor.jpg
 leitura: 8 min de leitura
 contentbody:
   - type: addbodypost
-    bodypost: >-
-      
-
-      Você criou a sua autoridade, criou muito conteúdo, entregou muito valor, e agora está colhendo os frutos da dedicação ao mundo digital, com a venda de cursos, mentorias, e serviços personalizados pela internet. Parabéns, essa é uma jornada árdua, cujos resultados são muito valiosos. Mas aí surge uma dúvida: infoprodutor é empresário? Como formalizar, legalizar essa atividade? Acompanhe essas dicas que vão te deixar muito tranquilo e seguro para prosperar.
+    bodypost: "### Você criou a sua autoridade, criou muito conteúdo, entregou muito
+      valor, e agora está colhendo os frutos da dedicação ao mundo digital, com
+      a venda de cursos, mentorias, e serviços personalizados pela internet.
+      Parabéns, essa é uma jornada árdua, cujos resultados são muito valiosos.
+      Mas aí surge uma dúvida: infoprodutor é empresário? Como formalizar,
+      legalizar essa atividade? Acompanhe essas dicas que vão te deixar muito
+      tranquilo e seguro para prosperar."
   - type: addbodypost
     bodypost: >-
       ### Por que se preocupar com essa questão?
