@@ -49,15 +49,16 @@ const FaleComAGente = () => {
             </a>
           </div>
           <div className="card-green">
-            <form action="https://paginas.rocks/Pages/Index/460755" method="post" target='_blank'>  
-            <input id="id" name="id" type="hidden" value="460755" />  
-            <input id="pid" name="pid" type="hidden" value="16428747" />  
-            <input id="list_id" name="list_id" type="hidden" value="460755" />  
+            <form action="https://paginas.rocks/pages/index/435467" method="post" target='_blank'>  
+            <input id="id" name="id" type="hidden" value="435467" />  
+            <input id="mid" name="mid" type="hidden" value="435467" />  
+            <input id="pid" name="pid" type="hidden" value="17099727" />  
+            <input id="list_id" name="list_id" type="hidden" value="435467" />  
             <input id="provider" name="provider" type="hidden" value="leadlovers" />   
-            <input className="form-control form-ll form-name" id="name" name="name" placeholder="Nome" type="text"  />   
-            <input className="form-control form-ll form-phone" id="phone" name="phone" placeholder="Telefone" type="text" />   
-            <input className="form-control form-ll form-email" id="email" name="email" placeholder="E-mail" type="text" />   
-            <input className="form-control form-ll form-company" id="company" name="company" placeholder="Empresa" type="text" />   
+            <input className="form-control form-ll form-name" id="name" name="name" placeholder="Informe o seu nome" type="text"  />   
+            <input className="form-control form-ll form-phone" id="phone" name="phone" placeholder="Informe o seu telefone" type="text" />   
+            <input className="form-control form-ll form-email" id="email" name="email" placeholder="Informe o seu e-mail" type="text" />   
+            <input className="form-control form-ll form-company" id="company" name="company" placeholder="Informe o nome da empresa" type="text" />   
             <label htmlFor="message">Como podemos te ajudar?</label>   
             <textarea className="form-control form-ll form-message" id="message" name="message" ></textarea>  
             <button className="btn btn-danger" type="submit">Enviar</button>  
