@@ -6,4 +6,4 @@ image: /assets/feed-entendendo-a-venda-do-infoproduto.jpg
 tags:
   - Materiais
 ---
-Entenda a venda do infoproduto
+**Fluxograma:** Entenda a venda do infoproduto
