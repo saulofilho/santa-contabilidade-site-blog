@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-display_url: https://santacontabilidade-site-blog.netlify.app
+display_url: https://santacontabilidade.com.br/
 media_folder: static/assets
 public_folder: /assets
 

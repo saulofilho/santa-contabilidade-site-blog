@@ -30,10 +30,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/saulofilho/pagina-de-materiais
+$ git clone https://github.com/santacontabilidade/site
 
 # Go into the repository
-$ cd pagina-de-materiais
+$ cd site
 
 # Install dependencies
 $ yarn install
@@ -42,7 +42,7 @@ $ yarn install
 $ yarn start
 ```
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/71312769-dc26-4abf-8f24-87509844771c/deploy-status)](https://app.netlify.com/sites/pagina-de-materiais/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93c449e2-1213-4fd0-a336-ee0e692ee777/deploy-status)](https://app.netlify.com/sites/santacontabilidade/deploys)
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
