@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-date: 29/11/2020
+date: 30/11/2020
 categories:
   - category: Gestão
 title: Não faça isso!!!
